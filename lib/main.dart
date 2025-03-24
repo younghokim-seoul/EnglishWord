@@ -53,7 +53,7 @@ class App extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           routerConfig: router,
           themeMode: ThemeMode.light,
-          title: '테마 영어단어',
+          title: '테마 영어 단어',
           theme: AppTheme.light,
           darkTheme: AppTheme.dark,
           builder: EasyLoading.init(

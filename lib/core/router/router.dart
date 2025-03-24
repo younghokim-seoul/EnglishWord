@@ -1,3 +1,4 @@
+import 'package:englishword/feature/pages/home/home_page.dart';
 import 'package:englishword/feature/pages/splash/splash_page.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -31,10 +32,36 @@ class SplashRoute extends GoRouteData {
       transitionsBuilder: (context, animation, secondaryAnimation, child) {
         return FadeTransition(
           opacity: Tween(begin: 1.0, end: 0.0).animate(secondaryAnimation),
-          child: child,
+          child: child
         );
       },
       child: const SplashPage(),
     );
   }
 }
+
+@TypedGoRoute<HomeRoute>(
+  path: HomeRoute.path,
+  name: HomeRoute.name,
+)
+class HomeRoute extends GoRouteData {
+  const HomeRoute();
+
+  static const String path = '/';
+  static const String name = 'home';
+
+  @override
+  Page<Function> buildPage(BuildContext context, GoRouterState state) {
+    return CustomTransitionPage(
+      key: state.pageKey,
+      transitionsBuilder: (context, animation, secondaryAnimation, child) {
+        return FadeTransition(
+          opacity: Tween(begin: 1.0, end: 0.0).animate(secondaryAnimation),
+          child: child,
+        );
+      },
+      child: const HomePage(),
+    );
+  }
+}
+
