@@ -16,7 +16,7 @@ class AppColor extends ThemeExtension<AppColor> {
     gray5: const Color(0xFF42424A),
     gray6: const Color(0xFF282831),
     gray7: const Color(0xFF09090B),
-    background1: const Color(0xFFF6F6F9),
+    background1: const Color(0xFFEAEAEA),
     red1: const Color(0xFFFFE4E8),
     red2: const Color(0xFFFF445A),
     red3: const Color(0xFFF62B44),
@@ -29,6 +29,7 @@ class AppColor extends ThemeExtension<AppColor> {
     purple1: const Color(0xFFF4EDFF),
     purple2: const Color(0xFF8D3EFF),
     yellow1: const Color(0xFFFFD126),
+    yellow2: const Color(0x40EFEDCC),
   );
 
   static final AppColor _dark = AppColor._(
@@ -46,7 +47,7 @@ class AppColor extends ThemeExtension<AppColor> {
     gray5: const Color(0xFF42424A),
     gray6: const Color(0xFF282831),
     gray7: const Color(0xFF09090B),
-    background1: const Color(0xFFF6F6F9),
+    background1: const Color(0xFFEAEAEA),
     red1: const Color(0xFFFFE4E8),
     red2: const Color(0xFFFF445A),
     red3: const Color(0xFFF62B44),
@@ -59,6 +60,7 @@ class AppColor extends ThemeExtension<AppColor> {
     purple1: const Color(0xFFF4EDFF),
     purple2: const Color(0xFF8D3EFF),
     yellow1: const Color(0xFFFFD126),
+    yellow2: const Color(0x40EFEDCC),
   );
   factory AppColor() => _light;
 
@@ -90,6 +92,7 @@ class AppColor extends ThemeExtension<AppColor> {
     required this.purple1,
     required this.purple2,
     required this.yellow1,
+    required this.yellow2,
   });
 
   factory AppColor.dark() => _dark;
@@ -121,6 +124,7 @@ class AppColor extends ThemeExtension<AppColor> {
   final Color purple1;
   final Color purple2;
   final Color yellow1;
+  final Color yellow2;
 
   static late BuildContext _context;
   static Future<void> init(BuildContext context) async => _context = context;
@@ -156,6 +160,8 @@ class AppColor extends ThemeExtension<AppColor> {
     Color? green3,
     Color? purple1,
     Color? purple2,
+    Color? yellow1,
+    Color? yellow2,
   }) {
     return AppColor._(
       white: white ?? this.white,
@@ -185,6 +191,7 @@ class AppColor extends ThemeExtension<AppColor> {
       purple1: purple1 ?? this.purple1,
       purple2: purple2 ?? this.purple2,
       yellow1: yellow1 ?? this.yellow1,
+      yellow2: yellow2 ?? this.yellow2,
     );
   }
 
@@ -224,6 +231,7 @@ class AppColor extends ThemeExtension<AppColor> {
       purple1: Color.lerp(purple1, other.purple1, t)!,
       purple2: Color.lerp(purple2, other.purple2, t)!,
       yellow1: Color.lerp(yellow1, other.yellow1, t)!,
+      yellow2: Color.lerp(yellow2, other.yellow2, t)!,
     );
   }
 }

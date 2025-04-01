@@ -5,6 +5,9 @@ import 'package:englishword/core/style/app_color.dart';
 import 'package:englishword/core/style/app_size.dart';
 import 'package:englishword/core/style/app_text_style.dart';
 import 'package:englishword/feature/base/base_page.dart';
+import 'package:englishword/feature/pages/home/widget/body_tab_view.dart';
+import 'package:englishword/feature/pages/home/widget/human_tab_view.dart';
+import 'package:englishword/feature/pages/home/widget/medical_tab_view.dart';
 import 'package:englishword/feature/widget/app_bar/home_app_bar.dart';
 import 'package:englishword/feature/widget/tab_bar/tab_bar_decorate_view.dart';
 import 'package:flutter/material.dart';
@@ -15,6 +18,7 @@ class HomePage extends BasePage {
 
   @override
   Widget buildPage(BuildContext context, WidgetRef ref) {
+
     return DefaultTabController(
       length: WordBoardTabType.values.length,
       child: Column(
@@ -33,8 +37,9 @@ class HomePage extends BasePage {
                 onTap: (_) {
                   FocusScope.of(context).unfocus();
                 },
-                overlayColor:
-                WidgetStateProperty.all<Color>(Colors.grey.shade200),
+                overlayColor: WidgetStateProperty.all<Color>(
+                  Colors.grey.shade200,
+                ),
                 labelColor: AppColor.of.black,
                 unselectedLabelColor: AppColor.of.gray3,
                 indicatorColor: AppColor.of.black,
@@ -55,16 +60,11 @@ class HomePage extends BasePage {
               ),
             ],
           ),
-          Expanded(
+          const Expanded(
             child: TabBarView(
-              children: [
-                Container(color: Colors.blue),
-                Container(color: Colors.green),
-                Container(color: Colors.red),
-              ],
+              children: [HumanTabView(), BodyTabView(), MedicalTabView()],
             ),
           ),
-
         ],
       ),
     );
