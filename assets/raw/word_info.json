@@ -1,0 +1,9818 @@
+[
+	{
+		"word" : "human",
+		"depth" : 1,
+		"bold" : "",
+		"p_word" : ""
+	},
+	{
+		"word" : "body",
+		"depth" : 1,
+		"bold" : "",
+		"p_word" : ""
+	},
+	{
+		"word" : "medical",
+		"depth" : 1,
+		"bold" : "",
+		"p_word" : ""
+	},
+	{
+		"word" : "human",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "human"
+	},
+	{
+		"word" : "man",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "human"
+	},
+	{
+		"word" : "adult",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "human"
+	},
+	{
+		"word" : "character",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "human"
+	},
+	{
+		"word" : "family",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "human"
+	},
+	{
+		"word" : "ancestor",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "human"
+	},
+	{
+		"word" : "race",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "human"
+	},
+	{
+		"word" : "king",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "human"
+	},
+	{
+		"word" : "status",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "human"
+	},
+	{
+		"word" : "friend",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "human"
+	},
+	{
+		"word" : "crowd",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "human"
+	},
+	{
+		"word" : "organization",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "human"
+	},
+	{
+		"word" : "pair",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "human"
+	},
+	{
+		"word" : "name",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "human"
+	},
+	{
+		"word" : "marry",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "human"
+	},
+	{
+		"word" : "birth",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "human"
+	},
+	{
+		"word" : "sex",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "human"
+	},
+	{
+		"word" : "body",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "body"
+	},
+	{
+		"word" : "head",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "body"
+	},
+	{
+		"word" : "arm",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "body"
+	},
+	{
+		"word" : "mouth",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "body"
+	},
+	{
+		"word" : "eye",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "body"
+	},
+	{
+		"word" : "muscle",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "body"
+	},
+	{
+		"word" : "bone",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "body"
+	},
+	{
+		"word" : "skin",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "body"
+	},
+	{
+		"word" : "organ",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "body"
+	},
+	{
+		"word" : "genital",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "body"
+	},
+	{
+		"word" : "disease ",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "medical"
+	},
+	{
+		"word" : "medical ",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "medical"
+	},
+	{
+		"word" : "medicine",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "medical"
+	},
+	{
+		"word" : "germ",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "medical"
+	},
+	{
+		"word" : "ache",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "medical"
+	},
+	{
+		"word" : "cure",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "medical"
+	},
+	{
+		"word" : "symptom",
+		"depth" : 2,
+		"bold" : "",
+		"p_word" : "medical"
+	},
+	{
+		"word" : "human",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "human"
+	},
+	{
+		"word" : "citizen",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "human"
+	},
+	{
+		"word" : "population",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "human"
+	},
+	{
+		"word" : "individual",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "human"
+	},
+	{
+		"word" : "man",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "man"
+	},
+	{
+		"word" : "woman",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "man"
+	},
+	{
+		"word" : "virgin",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "man"
+	},
+	{
+		"word" : "boy",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "man"
+	},
+	{
+		"word" : "girl",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "man"
+	},
+	{
+		"word" : "male",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "man"
+	},
+	{
+		"word" : "female",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "man"
+	},
+	{
+		"word" : "sex",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "man"
+	},
+	{
+		"word" : "senior",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "adult"
+	},
+	{
+		"word" : "junior",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "adult"
+	},
+	{
+		"word" : "baby",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "adult"
+	},
+	{
+		"word" : "kid",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "adult"
+	},
+	{
+		"word" : "embryo",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "adult"
+	},
+	{
+		"word" : "character",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "character"
+	},
+	{
+		"word" : "introvert",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "character"
+	},
+	{
+		"word" : "hotheaded",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "character"
+	},
+	{
+		"word" : "fussy",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "character"
+	},
+	{
+		"word" : "optimism",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "character"
+	},
+	{
+		"word" : "active",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "character"
+	},
+	{
+		"word" : "conservative",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "character"
+	},
+	{
+		"word" : "family",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "family"
+	},
+	{
+		"word" : "relative",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "family"
+	},
+	{
+		"word" : "son ",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "family"
+	},
+	{
+		"word" : "mother",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "family"
+	},
+	{
+		"word" : "father-in-law",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "family"
+	},
+	{
+		"word" : "grand mother",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "family"
+	},
+	{
+		"word" : "ancestor",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "family"
+	},
+	{
+		"word" : "ancestor",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "ancestor"
+	},
+	{
+		"word" : "race",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "race"
+	},
+	{
+		"word" : "tribe",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "race"
+	},
+	{
+		"word" : "Eskimo",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "race"
+	},
+	{
+		"word" : "king",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "king"
+	},
+	{
+		"word" : "royal",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "king"
+	},
+	{
+		"word" : "throne",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "king"
+	},
+	{
+		"word" : "crown",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "king"
+	},
+	{
+		"word" : "aristocrat",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "status"
+	},
+	{
+		"word" : "Majesty",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "status"
+	},
+	{
+		"word" : "status",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "status"
+	},
+	{
+		"word" : "elite",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "status"
+	},
+	{
+		"word" : "slave",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "status"
+	},
+	{
+		"word" : "ruler",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "status"
+	},
+	{
+		"word" : "friend",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "friend"
+	},
+	{
+		"word" : "comrade",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "friend"
+	},
+	{
+		"word" : "company",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "friend"
+	},
+	{
+		"word" : "VIP",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "friend"
+	},
+	{
+		"word" : "hero",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "friend"
+	},
+	{
+		"word" : "crowd",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "crowd"
+	},
+	{
+		"word" : "flock",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "crowd"
+	},
+	{
+		"word" : "faction",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "crowd"
+	},
+	{
+		"word" : "group",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "crowd"
+	},
+	{
+		"word" : "join",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "crowd"
+	},
+	{
+		"word" : "association",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "organization"
+	},
+	{
+		"word" : "ally",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "organization"
+	},
+	{
+		"word" : "society",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "organization"
+	},
+	{
+		"word" : "team",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "organization"
+	},
+	{
+		"word" : "pair",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "pair"
+	},
+	{
+		"word" : "solo",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "pair"
+	},
+	{
+		"word" : "name",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "name"
+	},
+	{
+		"word" : "anonymous",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "name"
+	},
+	{
+		"word" : "nickname",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "name"
+	},
+	{
+		"word" : "symbol",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "name"
+	},
+	{
+		"word" : "brand",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "name"
+	},
+	{
+		"word" : "register",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "name"
+	},
+	{
+		"word" : "marry",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "marry"
+	},
+	{
+		"word" : "bride",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "marry"
+	},
+	{
+		"word" : "engaged",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "marry"
+	},
+	{
+		"word" : "divorce",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "marry"
+	},
+	{
+		"word" : "husband",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "marry"
+	},
+	{
+		"word" : "birth",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "birth"
+	},
+	{
+		"word" : "procreate",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "birth"
+	},
+	{
+		"word" : "pregnant",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "birth"
+	},
+	{
+		"word" : "contraception",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "birth"
+	},
+	{
+		"word" : "abort",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "birth"
+	},
+	{
+		"word" : "castrate",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "birth"
+	},
+	{
+		"word" : "menses",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "birth"
+	},
+	{
+		"word" : "gene",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "birth"
+	},
+	{
+		"word" : "native",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "birth"
+	},
+	{
+		"word" : "sex",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "sex"
+	},
+	{
+		"word" : "mate",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "sex"
+	},
+	{
+		"word" : "masturbate",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "sex"
+	},
+	{
+		"word" : "virginity",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "sex"
+	},
+	{
+		"word" : "adultery",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "sex"
+	},
+	{
+		"word" : "eros",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "sex"
+	},
+	{
+		"word" : "lewd",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "sex"
+	},
+	{
+		"word" : "arose",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "sex"
+	},
+	{
+		"word" : "prostitute",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "sex"
+	},
+	{
+		"word" : "porno",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "sex"
+	},
+	{
+		"word" : "gay",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "sex"
+	},
+	{
+		"word" : "sodomy",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "sex"
+	},
+	{
+		"word" : "body",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "body"
+	},
+	{
+		"word" : "waist",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "body"
+	},
+	{
+		"word" : "belly",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "body"
+	},
+	{
+		"word" : "chest",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "body"
+	},
+	{
+		"word" : "head",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "head"
+	},
+	{
+		"word" : "face",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "head"
+	},
+	{
+		"word" : "neck",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "head"
+	},
+	{
+		"word" : "arm",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "arm"
+	},
+	{
+		"word" : "finger",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "arm"
+	},
+	{
+		"word" : "leg",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "arm"
+	},
+	{
+		"word" : "foot",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "arm"
+	},
+	{
+		"word" : "hip",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "arm"
+	},
+	{
+		"word" : "mouth",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "mouth"
+	},
+	{
+		"word" : "jaw",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "mouth"
+	},
+	{
+		"word" : "tooth",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "mouth"
+	},
+	{
+		"word" : "dental",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "mouth"
+	},
+	{
+		"word" : "eye",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "eye"
+	},
+	{
+		"word" : "optic",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "eye"
+	},
+	{
+		"word" : "ear",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "eye"
+	},
+	{
+		"word" : "nose",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "eye"
+	},
+	{
+		"word" : "muscle",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "muscle"
+	},
+	{
+		"word" : "ligament",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "muscle"
+	},
+	{
+		"word" : "nerve",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "muscle"
+	},
+	{
+		"word" : "bone",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "bone"
+	},
+	{
+		"word" : "shin",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "bone"
+	},
+	{
+		"word" : "clavicle",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "bone"
+	},
+	{
+		"word" : "joint",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "bone"
+	},
+	{
+		"word" : "skin",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "skin"
+	},
+	{
+		"word" : "cell",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "skin"
+	},
+	{
+		"word" : "bump",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "skin"
+	},
+	{
+		"word" : "wart",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "skin"
+	},
+	{
+		"word" : "beard",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "skin"
+	},
+	{
+		"word" : "organ",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "organ"
+	},
+	{
+		"word" : "gullet",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "organ"
+	},
+	{
+		"word" : "bowels",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "organ"
+	},
+	{
+		"word" : "blood",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "organ"
+	},
+	{
+		"word" : "vessel",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "organ"
+	},
+	{
+		"word" : "genital",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "genital"
+	},
+	{
+		"word" : "penis",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "genital"
+	},
+	{
+		"word" : "vagina",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "genital"
+	},
+	{
+		"word" : "hormone",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "genital"
+	},
+	{
+		"word" : "secrete",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "genital"
+	},
+	{
+		"word" : "disease",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "disease "
+	},
+	{
+		"word" : "chronic",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "disease "
+	},
+	{
+		"word" : "infect",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "disease "
+	},
+	{
+		"word" : "cholera",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "disease "
+	},
+	{
+		"word" : "psyche",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "disease "
+	},
+	{
+		"word" : "neurosis",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "disease "
+	},
+	{
+		"word" : "arthritis",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "disease "
+	},
+	{
+		"word" : "cancer",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "disease "
+	},
+	{
+		"word" : "stroke",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "disease "
+	},
+	{
+		"word" : "flu",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "disease "
+	},
+	{
+		"word" : "indigestion",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "disease "
+	},
+	{
+		"word" : "acne",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "disease "
+	},
+	{
+		"word" : "leprosy",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "disease "
+	},
+	{
+		"word" : "venereal",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "disease "
+	},
+	{
+		"word" : "cataract",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "disease "
+	},
+	{
+		"word" : "allergy",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "disease "
+	},
+	{
+		"word" : "medical ",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "medical "
+	},
+	{
+		"word" : "syringe",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "medical "
+	},
+	{
+		"word" : "clinic",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "medical "
+	},
+	{
+		"word" : "doctor",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "medical "
+	},
+	{
+		"word" : "nurse",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "medical "
+	},
+	{
+		"word" : "patient",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "medical "
+	},
+	{
+		"word" : "oculist",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "medical "
+	},
+	{
+		"word" : "physio",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "medical "
+	},
+	{
+		"word" : "medicine",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "medicine"
+	},
+	{
+		"word" : "pill",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "medicine"
+	},
+	{
+		"word" : "pharmacy",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "medicine"
+	},
+	{
+		"word" : "aspirin",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "medicine"
+	},
+	{
+		"word" : "preservative",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "medicine"
+	},
+	{
+		"word" : "cocaine",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "medicine"
+	},
+	{
+		"word" : "addict",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "medicine"
+	},
+	{
+		"word" : "germ",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "germ"
+	},
+	{
+		"word" : "immune",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "germ"
+	},
+	{
+		"word" : "vaccine",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "germ"
+	},
+	{
+		"word" : "ache",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "ache"
+	},
+	{
+		"word" : "pain",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "ache"
+	},
+	{
+		"word" : "wound",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "ache"
+	},
+	{
+		"word" : "scar",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "ache"
+	},
+	{
+		"word" : "bruise",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "ache"
+	},
+	{
+		"word" : "chafe",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "ache"
+	},
+	{
+		"word" : "fracture",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "ache"
+	},
+	{
+		"word" : "cure",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "cure"
+	},
+	{
+		"word" : "physiotherapy",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "cure"
+	},
+	{
+		"word" : "diagnose",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "cure"
+	},
+	{
+		"word" : "operation",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "cure"
+	},
+	{
+		"word" : "first aid",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "cure"
+	},
+	{
+		"word" : "disinfect",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "cure"
+	},
+	{
+		"word" : "symptom",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "symptom"
+	},
+	{
+		"word" : "dizzy",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "symptom"
+	},
+	{
+		"word" : "inflame",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "symptom"
+	},
+	{
+		"word" : "numb",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "symptom"
+	},
+	{
+		"word" : "itch",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "symptom"
+	},
+	{
+		"word" : "convulse",
+		"depth" : 3,
+		"bold" : "",
+		"p_word" : "symptom"
+	},
+	{
+		"word" : "human",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "human"
+	},
+	{
+		"word" : "human being",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "human"
+	},
+	{
+		"word" : "humankind",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "human"
+	},
+	{
+		"word" : "mankind",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "human"
+	},
+	{
+		"word" : "people",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "human"
+	},
+	{
+		"word" : "folk",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "human"
+	},
+	{
+		"word" : "person",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "human"
+	},
+	{
+		"word" : "personal",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "human"
+	},
+	{
+		"word" : "personage",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "human"
+	},
+	{
+		"word" : "personify",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "human"
+	},
+	{
+		"word" : "personnel",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "human"
+	},
+	{
+		"word" : "figure",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "human"
+	},
+	{
+		"word" : "character",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "human"
+	},
+	{
+		"word" : "citizen",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "citizen"
+	},
+	{
+		"word" : "citizenship",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "citizen"
+	},
+	{
+		"word" : "civilian",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "citizen"
+	},
+	{
+		"word" : "civic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "citizen"
+	},
+	{
+		"word" : "civil",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "citizen"
+	},
+	{
+		"word" : "population",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "population"
+	},
+	{
+		"word" : "populous",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "population"
+	},
+	{
+		"word" : "census",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "population"
+	},
+	{
+		"word" : "populace",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "population"
+	},
+	{
+		"word" : "individual",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "individual"
+	},
+	{
+		"word" : "private",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "individual"
+	},
+	{
+		"word" : "privately",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "individual"
+	},
+	{
+		"word" : "privacy",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "individual"
+	},
+	{
+		"word" : "man",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "man"
+	},
+	{
+		"word" : "gentleman",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "man"
+	},
+	{
+		"word" : "guy",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "man"
+	},
+	{
+		"word" : "fellow",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "man"
+	},
+	{
+		"word" : "fella",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "man"
+	},
+	{
+		"word" : "bachelor",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "man"
+	},
+	{
+		"word" : "widower",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "man"
+	},
+	{
+		"word" : "dude",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "man"
+	},
+	{
+		"word" : "dick",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "man"
+	},
+	{
+		"word" : "chap",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "man"
+	},
+	{
+		"word" : "chappie",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "man"
+	},
+	{
+		"word" : "bloke",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "man"
+	},
+	{
+		"word" : "pip-squeak",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "man"
+	},
+	{
+		"word" : "buster",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "man"
+	},
+	{
+		"word" : "woman",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "woman"
+	},
+	{
+		"word" : "lady",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "woman"
+	},
+	{
+		"word" : "widow",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "woman"
+	},
+	{
+		"word" : "fishwife",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "woman"
+	},
+	{
+		"word" : "hag",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "woman"
+	},
+	{
+		"word" : "biddy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "woman"
+	},
+	{
+		"word" : "cunt",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "woman"
+	},
+	{
+		"word" : "harpy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "woman"
+	},
+	{
+		"word" : "matron",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "woman"
+	},
+	{
+		"word" : "virgin",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "virgin"
+	},
+	{
+		"word" : "spinster",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "virgin"
+	},
+	{
+		"word" : "maiden",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "virgin"
+	},
+	{
+		"word" : "damsel",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "virgin"
+	},
+	{
+		"word" : "boy",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "boy"
+	},
+	{
+		"word" : "brat",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "boy"
+	},
+	{
+		"word" : "scamp",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "boy"
+	},
+	{
+		"word" : "urchin",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "boy"
+	},
+	{
+		"word" : "lad",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "boy"
+	},
+	{
+		"word" : "kiddo",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "boy"
+	},
+	{
+		"word" : "girl",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "girl"
+	},
+	{
+		"word" : "missy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "girl"
+	},
+	{
+		"word" : "chick",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "girl"
+	},
+	{
+		"word" : "wench",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "girl"
+	},
+	{
+		"word" : "hussy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "girl"
+	},
+	{
+		"word" : "popsy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "girl"
+	},
+	{
+		"word" : "lass",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "girl"
+	},
+	{
+		"word" : "male",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "male"
+	},
+	{
+		"word" : "machismo",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "male"
+	},
+	{
+		"word" : "macho",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "male"
+	},
+	{
+		"word" : "manly",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "male"
+	},
+	{
+		"word" : "mannish",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "male"
+	},
+	{
+		"word" : "masculine",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "male"
+	},
+	{
+		"word" : "sissy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "male"
+	},
+	{
+		"word" : "spunk",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "male"
+	},
+	{
+		"word" : "female",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "female"
+	},
+	{
+		"word" : "feminism",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "female"
+	},
+	{
+		"word" : "feminist",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "female"
+	},
+	{
+		"word" : "feminine",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "female"
+	},
+	{
+		"word" : "effeminate",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "female"
+	},
+	{
+		"word" : "ma'am",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "female"
+	},
+	{
+		"word" : "madam",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "female"
+	},
+	{
+		"word" : "milady",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "female"
+	},
+	{
+		"word" : "sex",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "sex"
+	},
+	{
+		"word" : "gender",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "sex"
+	},
+	{
+		"word" : "sexism",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "sex"
+	},
+	{
+		"word" : "sexist",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "sex"
+	},
+	{
+		"word" : "misogynist",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "sex"
+	},
+	{
+		"word" : "misogyny",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "sex"
+	},
+	{
+		"word" : "senior",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "senior"
+	},
+	{
+		"word" : "adult",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "senior"
+	},
+	{
+		"word" : "grown-up",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "senior"
+	},
+	{
+		"word" : "middle-aged",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "senior"
+	},
+	{
+		"word" : "elder",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "senior"
+	},
+	{
+		"word" : "elderly",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "senior"
+	},
+	{
+		"word" : "senile",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "senior"
+	},
+	{
+		"word" : "old",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "senior"
+	},
+	{
+		"word" : "junior",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "junior"
+	},
+	{
+		"word" : "young ",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "junior"
+	},
+	{
+		"word" : "youth",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "junior"
+	},
+	{
+		"word" : "youngster",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "junior"
+	},
+	{
+		"word" : "teenage",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "junior"
+	},
+	{
+		"word" : "teenager",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "junior"
+	},
+	{
+		"word" : "juvenile",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "junior"
+	},
+	{
+		"word" : "adolescence",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "junior"
+	},
+	{
+		"word" : "adolescent",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "junior"
+	},
+	{
+		"word" : "minor",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "junior"
+	},
+	{
+		"word" : "minority",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "junior"
+	},
+	{
+		"word" : "fledgling",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "junior"
+	},
+	{
+		"word" : "baby",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "baby"
+	},
+	{
+		"word" : "babyish",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "baby"
+	},
+	{
+		"word" : "infant",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "baby"
+	},
+	{
+		"word" : "infantile",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "baby"
+	},
+	{
+		"word" : "infancy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "baby"
+	},
+	{
+		"word" : "toddler",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "baby"
+	},
+	{
+		"word" : "tot",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "baby"
+	},
+	{
+		"word" : "child",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "kid"
+	},
+	{
+		"word" : "childish",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "kid"
+	},
+	{
+		"word" : "childlike",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "kid"
+	},
+	{
+		"word" : "children",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "kid"
+	},
+	{
+		"word" : "childhood",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "kid"
+	},
+	{
+		"word" : "kid",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "kid"
+	},
+	{
+		"word" : "twin",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "kid"
+	},
+	{
+		"word" : "orphan",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "kid"
+	},
+	{
+		"word" : "orphanage",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "kid"
+	},
+	{
+		"word" : "embryo",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "embryo"
+	},
+	{
+		"word" : "embryonic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "embryo"
+	},
+	{
+		"word" : "fetus",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "embryo"
+	},
+	{
+		"word" : "foetus",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "embryo"
+	},
+	{
+		"word" : "character",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "character"
+	},
+	{
+		"word" : "characteristic",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "character"
+	},
+	{
+		"word" : "personality",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "character"
+	},
+	{
+		"word" : "persona",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "character"
+	},
+	{
+		"word" : "temper",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "character"
+	},
+	{
+		"word" : "temperament",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "character"
+	},
+	{
+		"word" : "temperamental",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "character"
+	},
+	{
+		"word" : "bad tempered",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "character"
+	},
+	{
+		"word" : "introvert",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "introvert"
+	},
+	{
+		"word" : "introverted",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "introvert"
+	},
+	{
+		"word" : "extrovert",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "introvert"
+	},
+	{
+		"word" : "extroverted",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "introvert"
+	},
+	{
+		"word" : "hotheaded",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "hotheaded"
+	},
+	{
+		"word" : "quick-tempered",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "hotheaded"
+	},
+	{
+		"word" : "feisty",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "hotheaded"
+	},
+	{
+		"word" : "testy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "hotheaded"
+	},
+	{
+		"word" : "waspish",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "hotheaded"
+	},
+	{
+		"word" : "fuss",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "fussy"
+	},
+	{
+		"word" : "fussy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "fussy"
+	},
+	{
+		"word" : "fussbudget",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "fussy"
+	},
+	{
+		"word" : "fusspot",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "fussy"
+	},
+	{
+		"word" : "finicky",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "fussy"
+	},
+	{
+		"word" : "fastidious",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "fussy"
+	},
+	{
+		"word" : "pedant",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "fussy"
+	},
+	{
+		"word" : "pedantic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "fussy"
+	},
+	{
+		"word" : "optimism",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "optimism"
+	},
+	{
+		"word" : "optimist",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "optimism"
+	},
+	{
+		"word" : "optimistic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "optimism"
+	},
+	{
+		"word" : "sanguine",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "optimism"
+	},
+	{
+		"word" : "pessimism",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "optimism"
+	},
+	{
+		"word" : "pessimist",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "optimism"
+	},
+	{
+		"word" : "pessimistic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "optimism"
+	},
+	{
+		"word" : "nihilism",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "optimism"
+	},
+	{
+		"word" : "nihilist",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "optimism"
+	},
+	{
+		"word" : "active",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "active"
+	},
+	{
+		"word" : "passive",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "active"
+	},
+	{
+		"word" : "positive",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "active"
+	},
+	{
+		"word" : "negative",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "active"
+	},
+	{
+		"word" : "conservative",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "conservative"
+	},
+	{
+		"word" : "conservatism",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "conservative"
+	},
+	{
+		"word" : "progressive",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "conservative"
+	},
+	{
+		"word" : "progressivism",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "conservative"
+	},
+	{
+		"word" : "family",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "family"
+	},
+	{
+		"word" : "household",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "family"
+	},
+	{
+		"word" : "home",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "family"
+	},
+	{
+		"word" : "aunt",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "family"
+	},
+	{
+		"word" : "auntie",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "family"
+	},
+	{
+		"word" : "aunty",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "family"
+	},
+	{
+		"word" : "uncle",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "family"
+	},
+	{
+		"word" : "nephew",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "family"
+	},
+	{
+		"word" : "niece",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "family"
+	},
+	{
+		"word" : "cousin",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "family"
+	},
+	{
+		"word" : "relative",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "relative"
+	},
+	{
+		"word" : "kinsfolk",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "relative"
+	},
+	{
+		"word" : "kin",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "relative"
+	},
+	{
+		"word" : "kinsman",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "relative"
+	},
+	{
+		"word" : "kinship",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "relative"
+	},
+	{
+		"word" : "kith and kin",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "relative"
+	},
+	{
+		"word" : "child",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "son "
+	},
+	{
+		"word" : "daughter",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "son "
+	},
+	{
+		"word" : "son ",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "son "
+	},
+	{
+		"word" : "brother",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "son "
+	},
+	{
+		"word" : "brotherhood",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "son "
+	},
+	{
+		"word" : "brethren",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "son "
+	},
+	{
+		"word" : "fraternal",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "son "
+	},
+	{
+		"word" : "sister",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "son "
+	},
+	{
+		"word" : "sisterhood",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "son "
+	},
+	{
+		"word" : "scion",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "son "
+	},
+	{
+		"word" : "sibling",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "son "
+	},
+	{
+		"word" : "filial",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "son "
+	},
+	{
+		"word" : "unfilial",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "son "
+	},
+	{
+		"word" : "father",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "mother"
+	},
+	{
+		"word" : "mother",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "mother"
+	},
+	{
+		"word" : "daddy",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "mother"
+	},
+	{
+		"word" : "mommy",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "mother"
+	},
+	{
+		"word" : "dad",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "mother"
+	},
+	{
+		"word" : "mum",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "mother"
+	},
+	{
+		"word" : "mom",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "mother"
+	},
+	{
+		"word" : "pa",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "mother"
+	},
+	{
+		"word" : "parent",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "mother"
+	},
+	{
+		"word" : "parental",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "mother"
+	},
+	{
+		"word" : "parentage",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "mother"
+	},
+	{
+		"word" : "paternal",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "mother"
+	},
+	{
+		"word" : "paternity",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "mother"
+	},
+	{
+		"word" : "maternal",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "mother"
+	},
+	{
+		"word" : "brother-in-law",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "father-in-law"
+	},
+	{
+		"word" : "daughter-in-law",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "father-in-law"
+	},
+	{
+		"word" : "father-in-law",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "father-in-law"
+	},
+	{
+		"word" : "mother-in-law",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "father-in-law"
+	},
+	{
+		"word" : "sister-in-law",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "father-in-law"
+	},
+	{
+		"word" : "son-in-law",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "father-in-law"
+	},
+	{
+		"word" : "stepfather",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "father-in-law"
+	},
+	{
+		"word" : "stepmother",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "father-in-law"
+	},
+	{
+		"word" : "half-brother",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "father-in-law"
+	},
+	{
+		"word" : "half-sister",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "father-in-law"
+	},
+	{
+		"word" : "grand mother",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "grand mother"
+	},
+	{
+		"word" : "granny",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "grand mother"
+	},
+	{
+		"word" : "nana",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "grand mother"
+	},
+	{
+		"word" : "nanny",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "grand mother"
+	},
+	{
+		"word" : "grand child",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "grand mother"
+	},
+	{
+		"word" : "grand daughter",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "grand mother"
+	},
+	{
+		"word" : "grand son",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "grand mother"
+	},
+	{
+		"word" : "great grandchild",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "grand mother"
+	},
+	{
+		"word" : "grand father",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "grand mother"
+	},
+	{
+		"word" : "great grandfather",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "grand mother"
+	},
+	{
+		"word" : "great grandmother",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "grand mother"
+	},
+	{
+		"word" : "grand parent",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "grand mother"
+	},
+	{
+		"word" : "ancestor",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "ancestor"
+	},
+	{
+		"word" : "forefather",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "ancestor"
+	},
+	{
+		"word" : "descendant",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "ancestor"
+	},
+	{
+		"word" : "forebear",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "ancestor"
+	},
+	{
+		"word" : "lineage",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "ancestor"
+	},
+	{
+		"word" : "posterity",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "ancestor"
+	},
+	{
+		"word" : "progeny",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "ancestor"
+	},
+	{
+		"word" : "race",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "race"
+	},
+	{
+		"word" : "racial",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "race"
+	},
+	{
+		"word" : "racism",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "race"
+	},
+	{
+		"word" : "racist",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "race"
+	},
+	{
+		"word" : "ethnic",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "race"
+	},
+	{
+		"word" : "skinhead",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "race"
+	},
+	{
+		"word" : "wog",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "race"
+	},
+	{
+		"word" : "apartheid",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "race"
+	},
+	{
+		"word" : "tribe",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "tribe"
+	},
+	{
+		"word" : "tribal",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "tribe"
+	},
+	{
+		"word" : "clan",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "tribe"
+	},
+	{
+		"word" : "nomad",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "tribe"
+	},
+	{
+		"word" : "nomadic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "tribe"
+	},
+	{
+		"word" : "Eskimo",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "Eskimo"
+	},
+	{
+		"word" : "Inuit",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "Eskimo"
+	},
+	{
+		"word" : "negro",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "Eskimo"
+	},
+	{
+		"word" : "nigger",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "Eskimo"
+	},
+	{
+		"word" : "gypsy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "Eskimo"
+	},
+	{
+		"word" : "cannibal",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "Eskimo"
+	},
+	{
+		"word" : "king",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "king"
+	},
+	{
+		"word" : "queen",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "king"
+	},
+	{
+		"word" : "emperor",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "king"
+	},
+	{
+		"word" : "empress",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "king"
+	},
+	{
+		"word" : "prince",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "king"
+	},
+	{
+		"word" : "princess",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "king"
+	},
+	{
+		"word" : "monarch",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "king"
+	},
+	{
+		"word" : "monarchy",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "king"
+	},
+	{
+		"word" : "sultan",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "king"
+	},
+	{
+		"word" : "sultana",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "king"
+	},
+	{
+		"word" : "royal",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "royal"
+	},
+	{
+		"word" : "royalty",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "royal"
+	},
+	{
+		"word" : "regal",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "royal"
+	},
+	{
+		"word" : "palace",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "royal"
+	},
+	{
+		"word" : "consort",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "royal"
+	},
+	{
+		"word" : "concubine",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "royal"
+	},
+	{
+		"word" : "eunuch",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "royal"
+	},
+	{
+		"word" : "dynasty",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "royal"
+	},
+	{
+		"word" : "court",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "royal"
+	},
+	{
+		"word" : "coronation",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "throne"
+	},
+	{
+		"word" : "throne",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "throne"
+	},
+	{
+		"word" : "enthrone",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "throne"
+	},
+	{
+		"word" : "dethrone",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "throne"
+	},
+	{
+		"word" : "enthronement",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "throne"
+	},
+	{
+		"word" : "abdicate",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "throne"
+	},
+	{
+		"word" : "crown",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "crown"
+	},
+	{
+		"word" : "diadem",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "crown"
+	},
+	{
+		"word" : "coronet",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "crown"
+	},
+	{
+		"word" : "tiara",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "crown"
+	},
+	{
+		"word" : "scepter",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "crown"
+	},
+	{
+		"word" : "aristocrat",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "aristocrat"
+	},
+	{
+		"word" : "aristocracy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "aristocrat"
+	},
+	{
+		"word" : "noble",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "aristocrat"
+	},
+	{
+		"word" : "nobility",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "aristocrat"
+	},
+	{
+		"word" : "peer",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "aristocrat"
+	},
+	{
+		"word" : "peerage",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "aristocrat"
+	},
+	{
+		"word" : "patrician",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "aristocrat"
+	},
+	{
+		"word" : "duke",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "aristocrat"
+	},
+	{
+		"word" : "earl",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "aristocrat"
+	},
+	{
+		"word" : "baron",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "aristocrat"
+	},
+	{
+		"word" : "viscount",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "aristocrat"
+	},
+	{
+		"word" : "knight",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "aristocrat"
+	},
+	{
+		"word" : "knighthood",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "aristocrat"
+	},
+	{
+		"word" : "dub",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "aristocrat"
+	},
+	{
+		"word" : "Excellency",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "Majesty"
+	},
+	{
+		"word" : "Highness",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "Majesty"
+	},
+	{
+		"word" : "Majesty",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "Majesty"
+	},
+	{
+		"word" : "sire",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "Majesty"
+	},
+	{
+		"word" : "ladyship",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "Majesty"
+	},
+	{
+		"word" : "lordship",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "Majesty"
+	},
+	{
+		"word" : "status",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "status"
+	},
+	{
+		"word" : "hierarchy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "status"
+	},
+	{
+		"word" : "hierarchical",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "status"
+	},
+	{
+		"word" : "pecking order",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "status"
+	},
+	{
+		"word" : "title",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "status"
+	},
+	{
+		"word" : "elite",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "elite"
+	},
+	{
+		"word" : "highborn",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "elite"
+	},
+	{
+		"word" : "bourgeois",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "elite"
+	},
+	{
+		"word" : "master",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "elite"
+	},
+	{
+		"word" : "mistress",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "elite"
+	},
+	{
+		"word" : "lord",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "elite"
+	},
+	{
+		"word" : "coat of arms",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "elite"
+	},
+	{
+		"word" : "servant",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "slave"
+	},
+	{
+		"word" : "lowborn",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "slave"
+	},
+	{
+		"word" : "proletariat",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "slave"
+	},
+	{
+		"word" : "slave",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "slave"
+	},
+	{
+		"word" : "slavery",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "slave"
+	},
+	{
+		"word" : "maid",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "slave"
+	},
+	{
+		"word" : "subject",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "slave"
+	},
+	{
+		"word" : "footman",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "slave"
+	},
+	{
+		"word" : "ruler",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "ruler"
+	},
+	{
+		"word" : "governor",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "ruler"
+	},
+	{
+		"word" : "patriarch",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "ruler"
+	},
+	{
+		"word" : "emir",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "ruler"
+	},
+	{
+		"word" : "regent",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "ruler"
+	},
+	{
+		"word" : "satrap",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "ruler"
+	},
+	{
+		"word" : "tribune",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "ruler"
+	},
+	{
+		"word" : "viceroy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "ruler"
+	},
+	{
+		"word" : "friend",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "friend"
+	},
+	{
+		"word" : "buddy",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "friend"
+	},
+	{
+		"word" : "mate",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "friend"
+	},
+	{
+		"word" : "crony",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "friend"
+	},
+	{
+		"word" : "amigo",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "friend"
+	},
+	{
+		"word" : "chum",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "friend"
+	},
+	{
+		"word" : "alter ego",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "friend"
+	},
+	{
+		"word" : "comrade",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "comrade"
+	},
+	{
+		"word" : "co-worker",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "comrade"
+	},
+	{
+		"word" : "colleague",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "comrade"
+	},
+	{
+		"word" : "peer",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "comrade"
+	},
+	{
+		"word" : "befriend",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "company"
+	},
+	{
+		"word" : "company",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "company"
+	},
+	{
+		"word" : "keep company",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "company"
+	},
+	{
+		"word" : "companion",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "company"
+	},
+	{
+		"word" : "acquaintance",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "company"
+	},
+	{
+		"word" : "VIP",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "VIP"
+	},
+	{
+		"word" : "kingpin",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "VIP"
+	},
+	{
+		"word" : "magnate",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "VIP"
+	},
+	{
+		"word" : "mogul",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "VIP"
+	},
+	{
+		"word" : "nabob",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "VIP"
+	},
+	{
+		"word" : "tycoon",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "VIP"
+	},
+	{
+		"word" : "celebrity",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "VIP"
+	},
+	{
+		"word" : "personage",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "VIP"
+	},
+	{
+		"word" : "lionize",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "VIP"
+	},
+	{
+		"word" : "hero",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "hero"
+	},
+	{
+		"word" : "heroic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "hero"
+	},
+	{
+		"word" : "heroine",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "hero"
+	},
+	{
+		"word" : "protagonist",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "hero"
+	},
+	{
+		"word" : "crowd",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "crowd"
+	},
+	{
+		"word" : "multitude",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "crowd"
+	},
+	{
+		"word" : "hoi polloi",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "crowd"
+	},
+	{
+		"word" : "populace",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "crowd"
+	},
+	{
+		"word" : "horde",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "crowd"
+	},
+	{
+		"word" : "posse",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "crowd"
+	},
+	{
+		"word" : "throng",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "crowd"
+	},
+	{
+		"word" : "mob",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "crowd"
+	},
+	{
+		"word" : "audience",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "crowd"
+	},
+	{
+		"word" : "spectator",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "crowd"
+	},
+	{
+		"word" : "public",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "crowd"
+	},
+	{
+		"word" : "flock",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "flock"
+	},
+	{
+		"word" : "herd",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "flock"
+	},
+	{
+		"word" : "swarm",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "flock"
+	},
+	{
+		"word" : "drove",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "flock"
+	},
+	{
+		"word" : "bevy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "flock"
+	},
+	{
+		"word" : "brood",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "flock"
+	},
+	{
+		"word" : "covey",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "flock"
+	},
+	{
+		"word" : "school",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "flock"
+	},
+	{
+		"word" : "shoal",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "flock"
+	},
+	{
+		"word" : "clutch",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "flock"
+	},
+	{
+		"word" : "cluster",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "flock"
+	},
+	{
+		"word" : "colony",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "flock"
+	},
+	{
+		"word" : "faction",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "faction"
+	},
+	{
+		"word" : "factious",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "faction"
+	},
+	{
+		"word" : "clique",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "faction"
+	},
+	{
+		"word" : "maverick",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "faction"
+	},
+	{
+		"word" : "group",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "group"
+	},
+	{
+		"word" : "circle",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "group"
+	},
+	{
+		"word" : "club",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "group"
+	},
+	{
+		"word" : "sorority",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "group"
+	},
+	{
+		"word" : "fraternity",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "group"
+	},
+	{
+		"word" : "member",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "group"
+	},
+	{
+		"word" : "membership",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "group"
+	},
+	{
+		"word" : "major",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "group"
+	},
+	{
+		"word" : "majority",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "group"
+	},
+	{
+		"word" : "minor",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "group"
+	},
+	{
+		"word" : "minority",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "group"
+	},
+	{
+		"word" : "join",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "join"
+	},
+	{
+		"word" : "partake",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "join"
+	},
+	{
+		"word" : "initiate",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "join"
+	},
+	{
+		"word" : "initiation",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "join"
+	},
+	{
+		"word" : "association",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "association"
+	},
+	{
+		"word" : "committee",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "association"
+	},
+	{
+		"word" : "organization",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "association"
+	},
+	{
+		"word" : "union",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "association"
+	},
+	{
+		"word" : "institute",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "association"
+	},
+	{
+		"word" : "institution",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "association"
+	},
+	{
+		"word" : "foundation",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "association"
+	},
+	{
+		"word" : "allied",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "ally"
+	},
+	{
+		"word" : "ally",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "ally"
+	},
+	{
+		"word" : "alliance",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "ally"
+	},
+	{
+		"word" : "federal",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "ally"
+	},
+	{
+		"word" : "federation",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "ally"
+	},
+	{
+		"word" : "confederate",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "ally"
+	},
+	{
+		"word" : "confederation",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "ally"
+	},
+	{
+		"word" : "confederacy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "ally"
+	},
+	{
+		"word" : "commonwealth",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "ally"
+	},
+	{
+		"word" : "coalition",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "ally"
+	},
+	{
+		"word" : "consortium",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "ally"
+	},
+	{
+		"word" : "syndicate",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "ally"
+	},
+	{
+		"word" : "society",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "society"
+	},
+	{
+		"word" : "social",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "society"
+	},
+	{
+		"word" : "anti-social",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "society"
+	},
+	{
+		"word" : "sociable",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "society"
+	},
+	{
+		"word" : "socialize",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "society"
+	},
+	{
+		"word" : "socialism",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "society"
+	},
+	{
+		"word" : "socialist",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "society"
+	},
+	{
+		"word" : "community",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "society"
+	},
+	{
+		"word" : "communal",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "society"
+	},
+	{
+		"word" : "gregarious",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "society"
+	},
+	{
+		"word" : "team",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "team"
+	},
+	{
+		"word" : "squad",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "team"
+	},
+	{
+		"word" : "cabal",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "team"
+	},
+	{
+		"word" : "cadre",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "team"
+	},
+	{
+		"word" : "rabble",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "team"
+	},
+	{
+		"word" : "coven",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "team"
+	},
+	{
+		"word" : "panel",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "team"
+	},
+	{
+		"word" : "contingent",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "team"
+	},
+	{
+		"word" : "retinue",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "team"
+	},
+	{
+		"word" : "attache",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "team"
+	},
+	{
+		"word" : "couple",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "pair"
+	},
+	{
+		"word" : "partner",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "pair"
+	},
+	{
+		"word" : "partnership",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "pair"
+	},
+	{
+		"word" : "duet",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "pair"
+	},
+	{
+		"word" : "pair",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "pair"
+	},
+	{
+		"word" : "set",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "pair"
+	},
+	{
+		"word" : "en suit",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "pair"
+	},
+	{
+		"word" : "suite",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "pair"
+	},
+	{
+		"word" : "single",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "solo"
+	},
+	{
+		"word" : "solo",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "solo"
+	},
+	{
+		"word" : "sole",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "solo"
+	},
+	{
+		"word" : "odd",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "solo"
+	},
+	{
+		"word" : "dual",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "solo"
+	},
+	{
+		"word" : "trio",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "solo"
+	},
+	{
+		"word" : "threesome",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "solo"
+	},
+	{
+		"word" : "triad",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "solo"
+	},
+	{
+		"word" : "name",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "name"
+	},
+	{
+		"word" : "first name",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "name"
+	},
+	{
+		"word" : "given name",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "name"
+	},
+	{
+		"word" : "family name",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "name"
+	},
+	{
+		"word" : "last name",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "name"
+	},
+	{
+		"word" : "surname",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "name"
+	},
+	{
+		"word" : "namely",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "name"
+	},
+	{
+		"word" : "nominal",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "name"
+	},
+	{
+		"word" : "esquire",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "name"
+	},
+	{
+		"word" : "initial",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "name"
+	},
+	{
+		"word" : "anonymous",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "anonymous"
+	},
+	{
+		"word" : "misnomer",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "anonymous"
+	},
+	{
+		"word" : "incognito",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "anonymous"
+	},
+	{
+		"word" : "nickname",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "nickname"
+	},
+	{
+		"word" : "alias",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "nickname"
+	},
+	{
+		"word" : "anonym",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "nickname"
+	},
+	{
+		"word" : "epithet",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "nickname"
+	},
+	{
+		"word" : "byword",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "nickname"
+	},
+	{
+		"word" : "moniker",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "nickname"
+	},
+	{
+		"word" : "pseudonym",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "nickname"
+	},
+	{
+		"word" : "symbol",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "symbol"
+	},
+	{
+		"word" : "icon",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "symbol"
+	},
+	{
+		"word" : "iconic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "symbol"
+	},
+	{
+		"word" : "mark",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "symbol"
+	},
+	{
+		"word" : "landmark",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "symbol"
+	},
+	{
+		"word" : "emblem",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "symbol"
+	},
+	{
+		"word" : "emblematic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "symbol"
+	},
+	{
+		"word" : "badge",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "symbol"
+	},
+	{
+		"word" : "betoken",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "symbol"
+	},
+	{
+		"word" : "token",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "symbol"
+	},
+	{
+		"word" : "coupon",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "symbol"
+	},
+	{
+		"word" : "brand",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "brand"
+	},
+	{
+		"word" : "trademark",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "brand"
+	},
+	{
+		"word" : "label",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "brand"
+	},
+	{
+		"word" : "sticker",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "brand"
+	},
+	{
+		"word" : "tag",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "brand"
+	},
+	{
+		"word" : "enroll",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "register"
+	},
+	{
+		"word" : "enrollment",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "register"
+	},
+	{
+		"word" : "enrollee",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "register"
+	},
+	{
+		"word" : "roll",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "register"
+	},
+	{
+		"word" : "catalogue",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "register"
+	},
+	{
+		"word" : "list",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "register"
+	},
+	{
+		"word" : "shortlist",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "register"
+	},
+	{
+		"word" : "register",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "register"
+	},
+	{
+		"word" : "registration",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "register"
+	},
+	{
+		"word" : "put down",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "register"
+	},
+	{
+		"word" : "marry",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "marry"
+	},
+	{
+		"word" : "married",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "marry"
+	},
+	{
+		"word" : "marriage",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "marry"
+	},
+	{
+		"word" : "wed",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "marry"
+	},
+	{
+		"word" : "wedding",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "marry"
+	},
+	{
+		"word" : "wedded",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "marry"
+	},
+	{
+		"word" : "wedlock",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "marry"
+	},
+	{
+		"word" : "nuptial",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "marry"
+	},
+	{
+		"word" : "de facto",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "marry"
+	},
+	{
+		"word" : "extramarital",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "marry"
+	},
+	{
+		"word" : "bride",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "bride"
+	},
+	{
+		"word" : "bridal",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "bride"
+	},
+	{
+		"word" : "bridegroom",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "bride"
+	},
+	{
+		"word" : "groom",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "bride"
+	},
+	{
+		"word" : "best man",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "bride"
+	},
+	{
+		"word" : "bridesmaid",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "bride"
+	},
+	{
+		"word" : "matchmaker",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "bride"
+	},
+	{
+		"word" : "dowry",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "bride"
+	},
+	{
+		"word" : "engaged",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "engaged"
+	},
+	{
+		"word" : "betroth",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "engaged"
+	},
+	{
+		"word" : "betrothal",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "engaged"
+	},
+	{
+		"word" : "plight one's troth",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "engaged"
+	},
+	{
+		"word" : "proposal",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "engaged"
+	},
+	{
+		"word" : "propose",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "engaged"
+	},
+	{
+		"word" : "fiance",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "engaged"
+	},
+	{
+		"word" : "fiancee",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "engaged"
+	},
+	{
+		"word" : "suitor",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "engaged"
+	},
+	{
+		"word" : "divorce",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "divorce"
+	},
+	{
+		"word" : "divorcee",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "divorce"
+	},
+	{
+		"word" : "break up",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "divorce"
+	},
+	{
+		"word" : "be through",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "divorce"
+	},
+	{
+		"word" : "jilt",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "divorce"
+	},
+	{
+		"word" : "separated",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "divorce"
+	},
+	{
+		"word" : "husband",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "husband"
+	},
+	{
+		"word" : "wife",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "husband"
+	},
+	{
+		"word" : "conjugal",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "husband"
+	},
+	{
+		"word" : "couple",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "husband"
+	},
+	{
+		"word" : "partner",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "husband"
+	},
+	{
+		"word" : "spouse",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "husband"
+	},
+	{
+		"word" : "housewife",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "husband"
+	},
+	{
+		"word" : "hubby",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "husband"
+	},
+	{
+		"word" : "sweetheart",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "husband"
+	},
+	{
+		"word" : "sweetie",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "husband"
+	},
+	{
+		"word" : "darling",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "husband"
+	},
+	{
+		"word" : "honey",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "husband"
+	},
+	{
+		"word" : "birth",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "birth"
+	},
+	{
+		"word" : "give birth to",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "birth"
+	},
+	{
+		"word" : "birthday",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "birth"
+	},
+	{
+		"word" : "bear",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "birth"
+	},
+	{
+		"word" : "born",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "birth"
+	},
+	{
+		"word" : "beget",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "birth"
+	},
+	{
+		"word" : "deliver",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "birth"
+	},
+	{
+		"word" : "delivery",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "birth"
+	},
+	{
+		"word" : "labour",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "birth"
+	},
+	{
+		"word" : "procreate",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "procreate"
+	},
+	{
+		"word" : "procreation",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "procreate"
+	},
+	{
+		"word" : "perinatal",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "procreate"
+	},
+	{
+		"word" : "postnatal",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "procreate"
+	},
+	{
+		"word" : "prenatal",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "procreate"
+	},
+	{
+		"word" : "postpartum",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "procreate"
+	},
+	{
+		"word" : "premature",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "procreate"
+	},
+	{
+		"word" : "obstetrics",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "procreate"
+	},
+	{
+		"word" : "midwife",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "procreate"
+	},
+	{
+		"word" : "pregnant",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "pregnant"
+	},
+	{
+		"word" : "pregnancy",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "pregnant"
+	},
+	{
+		"word" : "conceive",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "pregnant"
+	},
+	{
+		"word" : "conception",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "pregnant"
+	},
+	{
+		"word" : "gestation",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "pregnant"
+	},
+	{
+		"word" : "contraceptive",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "contraception"
+	},
+	{
+		"word" : "contraception",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "contraception"
+	},
+	{
+		"word" : "barren",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "contraception"
+	},
+	{
+		"word" : "infertile",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "contraception"
+	},
+	{
+		"word" : "sterile",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "contraception"
+	},
+	{
+		"word" : "sterilize",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "contraception"
+	},
+	{
+		"word" : "cross-fertilization",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "contraception"
+	},
+	{
+		"word" : "fertilize",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "contraception"
+	},
+	{
+		"word" : "abort",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "abort"
+	},
+	{
+		"word" : "abortion",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "abort"
+	},
+	{
+		"word" : "miscarriage",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "abort"
+	},
+	{
+		"word" : "miscarry",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "abort"
+	},
+	{
+		"word" : "stillborn",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "abort"
+	},
+	{
+		"word" : "castrate",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "castrate"
+	},
+	{
+		"word" : "castration",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "castrate"
+	},
+	{
+		"word" : "emasculate",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "castrate"
+	},
+	{
+		"word" : "emasculation",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "castrate"
+	},
+	{
+		"word" : "de sex",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "castrate"
+	},
+	{
+		"word" : "menses",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "menses"
+	},
+	{
+		"word" : "menstrual",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "menses"
+	},
+	{
+		"word" : "menstruate",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "menses"
+	},
+	{
+		"word" : "menstruation",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "menses"
+	},
+	{
+		"word" : "period",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "menses"
+	},
+	{
+		"word" : "menopause",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "menses"
+	},
+	{
+		"word" : "menopausal",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "menses"
+	},
+	{
+		"word" : "ovulate",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "menses"
+	},
+	{
+		"word" : "ovulation",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "menses"
+	},
+	{
+		"word" : "gene",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "gene"
+	},
+	{
+		"word" : "genetic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "gene"
+	},
+	{
+		"word" : "genetics",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "gene"
+	},
+	{
+		"word" : "inherit",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "gene"
+	},
+	{
+		"word" : "hereditary",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "gene"
+	},
+	{
+		"word" : "heredity",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "gene"
+	},
+	{
+		"word" : "chromosome",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "gene"
+	},
+	{
+		"word" : "clone",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "gene"
+	},
+	{
+		"word" : "mutant",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "gene"
+	},
+	{
+		"word" : "recessive",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "gene"
+	},
+	{
+		"word" : "congenital",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "native"
+	},
+	{
+		"word" : "inborn",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "native"
+	},
+	{
+		"word" : "indigenous",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "native"
+	},
+	{
+		"word" : "inherent",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "native"
+	},
+	{
+		"word" : "innate",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "native"
+	},
+	{
+		"word" : "intrinsic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "native"
+	},
+	{
+		"word" : "native",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "native"
+	},
+	{
+		"word" : "nativity",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "native"
+	},
+	{
+		"word" : "sexual",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "sex"
+	},
+	{
+		"word" : "sexy",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "sex"
+	},
+	{
+		"word" : "fuck",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "sex"
+	},
+	{
+		"word" : "intercourse",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "sex"
+	},
+	{
+		"word" : "deflower",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "sex"
+	},
+	{
+		"word" : "consummate",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "sex"
+	},
+	{
+		"word" : "consummation",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "sex"
+	},
+	{
+		"word" : "condom",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "sex"
+	},
+	{
+		"word" : "mate",
+		"depth" : 4,
+		"bold" : "3",
+		"p_word" : "mate"
+	},
+	{
+		"word" : "mating",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "mate"
+	},
+	{
+		"word" : "copulate",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "mate"
+	},
+	{
+		"word" : "copulation",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "mate"
+	},
+	{
+		"word" : "masturbate",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "masturbate"
+	},
+	{
+		"word" : "masturbation",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "masturbate"
+	},
+	{
+		"word" : "wank",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "masturbate"
+	},
+	{
+		"word" : "celibate",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "masturbate"
+	},
+	{
+		"word" : "celibacy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "masturbate"
+	},
+	{
+		"word" : "virginity",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "virginity"
+	},
+	{
+		"word" : "hymen",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "virginity"
+	},
+	{
+		"word" : "maidenhead",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "virginity"
+	},
+	{
+		"word" : "adultery",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "adultery"
+	},
+	{
+		"word" : "affair",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "adultery"
+	},
+	{
+		"word" : "infidelity",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "adultery"
+	},
+	{
+		"word" : "fornication",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "adultery"
+	},
+	{
+		"word" : "philanderer",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "adultery"
+	},
+	{
+		"word" : "philander",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "adultery"
+	},
+	{
+		"word" : "eros",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "eros"
+	},
+	{
+		"word" : "erotic",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "eros"
+	},
+	{
+		"word" : "lust",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "eros"
+	},
+	{
+		"word" : "lustful",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "eros"
+	},
+	{
+		"word" : "sensual",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "eros"
+	},
+	{
+		"word" : "bedroom eyes",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "eros"
+	},
+	{
+		"word" : "carnal",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "eros"
+	},
+	{
+		"word" : "nubile",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "eros"
+	},
+	{
+		"word" : "prurient",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "eros"
+	},
+	{
+		"word" : "sultry",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "eros"
+	},
+	{
+		"word" : "voluptuous",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "eros"
+	},
+	{
+		"word" : "amatory",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "eros"
+	},
+	{
+		"word" : "amorous",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "eros"
+	},
+	{
+		"word" : "lascivious",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "eros"
+	},
+	{
+		"word" : "lecherous",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "eros"
+	},
+	{
+		"word" : "lewd",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "lewd"
+	},
+	{
+		"word" : "lewdness",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "lewd"
+	},
+	{
+		"word" : "licentious",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "lewd"
+	},
+	{
+		"word" : "obscene",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "lewd"
+	},
+	{
+		"word" : "obscenity",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "lewd"
+	},
+	{
+		"word" : "promiscuous",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "lewd"
+	},
+	{
+		"word" : "raunch",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "lewd"
+	},
+	{
+		"word" : "raunchy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "lewd"
+	},
+	{
+		"word" : "ribald",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "lewd"
+	},
+	{
+		"word" : "salacious",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "lewd"
+	},
+	{
+		"word" : "smut",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "lewd"
+	},
+	{
+		"word" : "smutty",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "lewd"
+	},
+	{
+		"word" : "wanton",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "lewd"
+	},
+	{
+		"word" : "arose",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "arose"
+	},
+	{
+		"word" : "erect",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "arose"
+	},
+	{
+		"word" : "erection",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "arose"
+	},
+	{
+		"word" : "horny",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "arose"
+	},
+	{
+		"word" : "hunk",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "arose"
+	},
+	{
+		"word" : "libidinous",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "arose"
+	},
+	{
+		"word" : "libido",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "arose"
+	},
+	{
+		"word" : "virile",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "arose"
+	},
+	{
+		"word" : "virility",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "arose"
+	},
+	{
+		"word" : "prostitute",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "prostitute"
+	},
+	{
+		"word" : "prostitution",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "prostitute"
+	},
+	{
+		"word" : "whore",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "prostitute"
+	},
+	{
+		"word" : "hooker",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "prostitute"
+	},
+	{
+		"word" : "harlot",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "prostitute"
+	},
+	{
+		"word" : "slut",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "prostitute"
+	},
+	{
+		"word" : "brothel",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "prostitute"
+	},
+	{
+		"word" : "gigolo",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "prostitute"
+	},
+	{
+		"word" : "pander",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "prostitute"
+	},
+	{
+		"word" : "pimp",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "prostitute"
+	},
+	{
+		"word" : "procuress",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "prostitute"
+	},
+	{
+		"word" : "porno",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "porno"
+	},
+	{
+		"word" : "pornography",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "porno"
+	},
+	{
+		"word" : "porn",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "porno"
+	},
+	{
+		"word" : "erotica",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "porno"
+	},
+	{
+		"word" : "fetish",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "porno"
+	},
+	{
+		"word" : "gay",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "gay"
+	},
+	{
+		"word" : "homosexual",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "gay"
+	},
+	{
+		"word" : "lesbian",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "gay"
+	},
+	{
+		"word" : "heterosexual",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "gay"
+	},
+	{
+		"word" : "faggot",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "sodomy"
+	},
+	{
+		"word" : "sodomy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "sodomy"
+	},
+	{
+		"word" : "pedophile",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "sodomy"
+	},
+	{
+		"word" : "incest",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "sodomy"
+	},
+	{
+		"word" : "body",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "body"
+	},
+	{
+		"word" : "bodily",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "body"
+	},
+	{
+		"word" : "physique",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "body"
+	},
+	{
+		"word" : "torso",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "body"
+	},
+	{
+		"word" : "trunk",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "body"
+	},
+	{
+		"word" : "back",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "body"
+	},
+	{
+		"word" : "shoulder",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "body"
+	},
+	{
+		"word" : "corporal",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "body"
+	},
+	{
+		"word" : "corporeal",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "body"
+	},
+	{
+		"word" : "physical",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "body"
+	},
+	{
+		"word" : "embody",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "body"
+	},
+	{
+		"word" : "waist",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "waist"
+	},
+	{
+		"word" : "flank",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "waist"
+	},
+	{
+		"word" : "lumbar",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "waist"
+	},
+	{
+		"word" : "abdomen",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "belly"
+	},
+	{
+		"word" : "belly",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "belly"
+	},
+	{
+		"word" : "belly-button",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "belly"
+	},
+	{
+		"word" : "tummy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "belly"
+	},
+	{
+		"word" : "navel",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "belly"
+	},
+	{
+		"word" : "chest",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "chest"
+	},
+	{
+		"word" : "bust",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "chest"
+	},
+	{
+		"word" : "pectoral",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "chest"
+	},
+	{
+		"word" : "breast",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "chest"
+	},
+	{
+		"word" : "bosom",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "chest"
+	},
+	{
+		"word" : "boob",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "chest"
+	},
+	{
+		"word" : "buxom",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "chest"
+	},
+	{
+		"word" : "cleavage",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "chest"
+	},
+	{
+		"word" : "nipple",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "chest"
+	},
+	{
+		"word" : "teat",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "chest"
+	},
+	{
+		"word" : "head",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "head"
+	},
+	{
+		"word" : "forehead",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "head"
+	},
+	{
+		"word" : "brow",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "head"
+	},
+	{
+		"word" : "scalp",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "head"
+	},
+	{
+		"word" : "brain",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "head"
+	},
+	{
+		"word" : "cerebral",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "head"
+	},
+	{
+		"word" : "cortex",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "head"
+	},
+	{
+		"word" : "face",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "face"
+	},
+	{
+		"word" : "facial",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "face"
+	},
+	{
+		"word" : "profile",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "face"
+	},
+	{
+		"word" : "visage",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "face"
+	},
+	{
+		"word" : "cheek",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "face"
+	},
+	{
+		"word" : "temple",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "face"
+	},
+	{
+		"word" : "wrinkle",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "face"
+	},
+	{
+		"word" : "crow's feet",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "face"
+	},
+	{
+		"word" : "dimple",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "face"
+	},
+	{
+		"word" : "freckle",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "face"
+	},
+	{
+		"word" : "neck",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "neck"
+	},
+	{
+		"word" : "cervical",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "neck"
+	},
+	{
+		"word" : "scruff",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "neck"
+	},
+	{
+		"word" : "jowl",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "neck"
+	},
+	{
+		"word" : "arm",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "arm"
+	},
+	{
+		"word" : "armpit",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "arm"
+	},
+	{
+		"word" : "elbow",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "arm"
+	},
+	{
+		"word" : "hand",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "arm"
+	},
+	{
+		"word" : "fist",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "arm"
+	},
+	{
+		"word" : "palm",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "arm"
+	},
+	{
+		"word" : "wrist",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "arm"
+	},
+	{
+		"word" : "knuckle",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "arm"
+	},
+	{
+		"word" : "finger",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "finger"
+	},
+	{
+		"word" : "digit",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "finger"
+	},
+	{
+		"word" : "thumb",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "finger"
+	},
+	{
+		"word" : "forefinger",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "finger"
+	},
+	{
+		"word" : "index finger",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "finger"
+	},
+	{
+		"word" : "pinkie",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "finger"
+	},
+	{
+		"word" : "ring finger",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "finger"
+	},
+	{
+		"word" : "fingerprint",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "finger"
+	},
+	{
+		"word" : "nail",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "finger"
+	},
+	{
+		"word" : "leg",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "leg"
+	},
+	{
+		"word" : "lap",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "leg"
+	},
+	{
+		"word" : "knee",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "leg"
+	},
+	{
+		"word" : "calf",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "leg"
+	},
+	{
+		"word" : "thigh",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "leg"
+	},
+	{
+		"word" : "crotch",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "leg"
+	},
+	{
+		"word" : "groin",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "leg"
+	},
+	{
+		"word" : "extremity",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "leg"
+	},
+	{
+		"word" : "limb",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "leg"
+	},
+	{
+		"word" : "foot",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "foot"
+	},
+	{
+		"word" : "feet",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "foot"
+	},
+	{
+		"word" : "toe",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "foot"
+	},
+	{
+		"word" : "ankle",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "foot"
+	},
+	{
+		"word" : "heel",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "foot"
+	},
+	{
+		"word" : "sole",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "foot"
+	},
+	{
+		"word" : "hip",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "hip"
+	},
+	{
+		"word" : "ass",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "hip"
+	},
+	{
+		"word" : "arse",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "hip"
+	},
+	{
+		"word" : "bottom",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "hip"
+	},
+	{
+		"word" : "buttock",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "hip"
+	},
+	{
+		"word" : "fanny",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "hip"
+	},
+	{
+		"word" : "bum",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "hip"
+	},
+	{
+		"word" : "anal",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "hip"
+	},
+	{
+		"word" : "anus",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "hip"
+	},
+	{
+		"word" : "mouth",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "mouth"
+	},
+	{
+		"word" : "oral",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "mouth"
+	},
+	{
+		"word" : "lip",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "mouth"
+	},
+	{
+		"word" : "tongue",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "mouth"
+	},
+	{
+		"word" : "throat",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "mouth"
+	},
+	{
+		"word" : "larynx",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "mouth"
+	},
+	{
+		"word" : "palate",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "mouth"
+	},
+	{
+		"word" : "tonsil",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "mouth"
+	},
+	{
+		"word" : "uvula",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "mouth"
+	},
+	{
+		"word" : "jaw",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "jaw"
+	},
+	{
+		"word" : "chin",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "jaw"
+	},
+	{
+		"word" : "tooth",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "tooth"
+	},
+	{
+		"word" : "teeth",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "tooth"
+	},
+	{
+		"word" : "canine tooth",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "tooth"
+	},
+	{
+		"word" : "eye teeth",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "tooth"
+	},
+	{
+		"word" : "incisor",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "tooth"
+	},
+	{
+		"word" : "milk tooth",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "tooth"
+	},
+	{
+		"word" : "molar",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "tooth"
+	},
+	{
+		"word" : "teething",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "tooth"
+	},
+	{
+		"word" : "wisdom tooth",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "tooth"
+	},
+	{
+		"word" : "dental",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "dental"
+	},
+	{
+		"word" : "denture",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "dental"
+	},
+	{
+		"word" : "crown",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "dental"
+	},
+	{
+		"word" : "enamel",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "dental"
+	},
+	{
+		"word" : "gum",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "dental"
+	},
+	{
+		"word" : "scale",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "dental"
+	},
+	{
+		"word" : "eye",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "eye"
+	},
+	{
+		"word" : "eyebrow",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "eye"
+	},
+	{
+		"word" : "eyelash",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "eye"
+	},
+	{
+		"word" : "eyelid",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "eye"
+	},
+	{
+		"word" : "iris",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "eye"
+	},
+	{
+		"word" : "optic",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "optic"
+	},
+	{
+		"word" : "optical",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "optic"
+	},
+	{
+		"word" : "pupil",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "optic"
+	},
+	{
+		"word" : "retina",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "optic"
+	},
+	{
+		"word" : "cornea",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "optic"
+	},
+	{
+		"word" : "ear",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "ear"
+	},
+	{
+		"word" : "eardrum",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "ear"
+	},
+	{
+		"word" : "earlobe",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "ear"
+	},
+	{
+		"word" : "nose",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "nose"
+	},
+	{
+		"word" : "nasal",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "nose"
+	},
+	{
+		"word" : "nostril",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "nose"
+	},
+	{
+		"word" : "sinus",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "nose"
+	},
+	{
+		"word" : "muscle",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "muscle"
+	},
+	{
+		"word" : "biceps",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "muscle"
+	},
+	{
+		"word" : "triceps",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "muscle"
+	},
+	{
+		"word" : "brawn",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "muscle"
+	},
+	{
+		"word" : "brawny",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "muscle"
+	},
+	{
+		"word" : "flab",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "muscle"
+	},
+	{
+		"word" : "flabby",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "muscle"
+	},
+	{
+		"word" : "ligament",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "ligament"
+	},
+	{
+		"word" : "tendon",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "ligament"
+	},
+	{
+		"word" : "hamstring",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "ligament"
+	},
+	{
+		"word" : "sinew",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "ligament"
+	},
+	{
+		"word" : "diaphragm",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "ligament"
+	},
+	{
+		"word" : "nerve",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "nerve"
+	},
+	{
+		"word" : "neural",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "nerve"
+	},
+	{
+		"word" : "neurology",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "nerve"
+	},
+	{
+		"word" : "bone",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "bone"
+	},
+	{
+		"word" : "rib",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "bone"
+	},
+	{
+		"word" : "spine",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "bone"
+	},
+	{
+		"word" : "vertebra",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "bone"
+	},
+	{
+		"word" : "skeleton",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "bone"
+	},
+	{
+		"word" : "skull",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "bone"
+	},
+	{
+		"word" : "marrow",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "bone"
+	},
+	{
+		"word" : "shank",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "shin"
+	},
+	{
+		"word" : "shin",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "shin"
+	},
+	{
+		"word" : "tibia",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "shin"
+	},
+	{
+		"word" : "femur",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "shin"
+	},
+	{
+		"word" : "pelvis",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "shin"
+	},
+	{
+		"word" : "clavicle",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "clavicle"
+	},
+	{
+		"word" : "collarbone",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "clavicle"
+	},
+	{
+		"word" : "scapula",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "clavicle"
+	},
+	{
+		"word" : "sternum",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "clavicle"
+	},
+	{
+		"word" : "joint",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "joint"
+	},
+	{
+		"word" : "cartilage",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "joint"
+	},
+	{
+		"word" : "skin",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "skin"
+	},
+	{
+		"word" : "dermis",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "skin"
+	},
+	{
+		"word" : "epidermis",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "skin"
+	},
+	{
+		"word" : "pore",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "skin"
+	},
+	{
+		"word" : "graft",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "skin"
+	},
+	{
+		"word" : "tissue",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "skin"
+	},
+	{
+		"word" : "transplantation",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "skin"
+	},
+	{
+		"word" : "cell",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "cell"
+	},
+	{
+		"word" : "cellular",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cell"
+	},
+	{
+		"word" : "cholesterol",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cell"
+	},
+	{
+		"word" : "bump",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "bump"
+	},
+	{
+		"word" : "goose bump",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "bump"
+	},
+	{
+		"word" : "swelling",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "bump"
+	},
+	{
+		"word" : "hump",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "bump"
+	},
+	{
+		"word" : "wen",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "bump"
+	},
+	{
+		"word" : "wart",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "wart"
+	},
+	{
+		"word" : "mole",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "wart"
+	},
+	{
+		"word" : "corn",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "wart"
+	},
+	{
+		"word" : "sty",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "wart"
+	},
+	{
+		"word" : "scab",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "wart"
+	},
+	{
+		"word" : "beard",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "beard"
+	},
+	{
+		"word" : "moustache",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "beard"
+	},
+	{
+		"word" : "whisker",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "beard"
+	},
+	{
+		"word" : "goatee",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "beard"
+	},
+	{
+		"word" : "stubble",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "beard"
+	},
+	{
+		"word" : "hair",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "beard"
+	},
+	{
+		"word" : "fuzz",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "beard"
+	},
+	{
+		"word" : "fuzzy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "beard"
+	},
+	{
+		"word" : "organ",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "organ"
+	},
+	{
+		"word" : "heart",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "organ"
+	},
+	{
+		"word" : "cardiac",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "organ"
+	},
+	{
+		"word" : "stomach",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "organ"
+	},
+	{
+		"word" : "gastric",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "organ"
+	},
+	{
+		"word" : "kidney",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "organ"
+	},
+	{
+		"word" : "liver",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "organ"
+	},
+	{
+		"word" : "lung",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "organ"
+	},
+	{
+		"word" : "pancreas",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "organ"
+	},
+	{
+		"word" : "spleen",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "organ"
+	},
+	{
+		"word" : "donor",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "organ"
+	},
+	{
+		"word" : "esophagus",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "gullet"
+	},
+	{
+		"word" : "gullet",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "gullet"
+	},
+	{
+		"word" : "alimentary",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "gullet"
+	},
+	{
+		"word" : "bronchial",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "gullet"
+	},
+	{
+		"word" : "tract",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "gullet"
+	},
+	{
+		"word" : "bowels",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "bowels"
+	},
+	{
+		"word" : "intestines",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "bowels"
+	},
+	{
+		"word" : "gut",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "bowels"
+	},
+	{
+		"word" : "appendix",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "bowels"
+	},
+	{
+		"word" : "rectum",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "bowels"
+	},
+	{
+		"word" : "colon",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "bowels"
+	},
+	{
+		"word" : "hemorrhoids",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "bowels"
+	},
+	{
+		"word" : "disembowel",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "bowels"
+	},
+	{
+		"word" : "entrails",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "bowels"
+	},
+	{
+		"word" : "blood",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "blood"
+	},
+	{
+		"word" : "bloody",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "blood"
+	},
+	{
+		"word" : "bleed",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "blood"
+	},
+	{
+		"word" : "hemoglobin",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "blood"
+	},
+	{
+		"word" : "plasma",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "blood"
+	},
+	{
+		"word" : "platelet",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "blood"
+	},
+	{
+		"word" : "serum",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "blood"
+	},
+	{
+		"word" : "clot",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "blood"
+	},
+	{
+		"word" : "stanch",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "blood"
+	},
+	{
+		"word" : "blood vessel",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "vessel"
+	},
+	{
+		"word" : "vessel",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "vessel"
+	},
+	{
+		"word" : "vascular",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "vessel"
+	},
+	{
+		"word" : "cardiovascular",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "vessel"
+	},
+	{
+		"word" : "artery",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "vessel"
+	},
+	{
+		"word" : "vein",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "vessel"
+	},
+	{
+		"word" : "aorta",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "vessel"
+	},
+	{
+		"word" : "jugular",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "vessel"
+	},
+	{
+		"word" : "coronary",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "vessel"
+	},
+	{
+		"word" : "capillary",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "vessel"
+	},
+	{
+		"word" : "genital",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "genital"
+	},
+	{
+		"word" : "reproduce",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "genital"
+	},
+	{
+		"word" : "reproduction",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "genital"
+	},
+	{
+		"word" : "reproductive",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "genital"
+	},
+	{
+		"word" : "penis",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "penis"
+	},
+	{
+		"word" : "cock",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "penis"
+	},
+	{
+		"word" : "dick",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "penis"
+	},
+	{
+		"word" : "testicle",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "penis"
+	},
+	{
+		"word" : "scrotum",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "penis"
+	},
+	{
+		"word" : "sperm",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "penis"
+	},
+	{
+		"word" : "semen",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "penis"
+	},
+	{
+		"word" : "bladder",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "penis"
+	},
+	{
+		"word" : "prostate",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "penis"
+	},
+	{
+		"word" : "vagina",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "vagina"
+	},
+	{
+		"word" : "womb",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "vagina"
+	},
+	{
+		"word" : "vulva",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "vagina"
+	},
+	{
+		"word" : "pussy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "vagina"
+	},
+	{
+		"word" : "cervical",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "vagina"
+	},
+	{
+		"word" : "cervix",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "vagina"
+	},
+	{
+		"word" : "uterus",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "vagina"
+	},
+	{
+		"word" : "ovarian",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "vagina"
+	},
+	{
+		"word" : "ovary",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "vagina"
+	},
+	{
+		"word" : "cunt",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "vagina"
+	},
+	{
+		"word" : "hormone",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "hormone"
+	},
+	{
+		"word" : "adrenaline",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "hormone"
+	},
+	{
+		"word" : "estrogen",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "hormone"
+	},
+	{
+		"word" : "bile",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "hormone"
+	},
+	{
+		"word" : "gall",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "hormone"
+	},
+	{
+		"word" : "gland",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "hormone"
+	},
+	{
+		"word" : "secrete",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "secrete"
+	},
+	{
+		"word" : "secretion",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "secrete"
+	},
+	{
+		"word" : "excrete",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "secrete"
+	},
+	{
+		"word" : "excretion",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "secrete"
+	},
+	{
+		"word" : "disease",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "disease"
+	},
+	{
+		"word" : "diseased",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "disease"
+	},
+	{
+		"word" : "ill",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "disease"
+	},
+	{
+		"word" : "illness",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "disease"
+	},
+	{
+		"word" : "sick",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "disease"
+	},
+	{
+		"word" : "sickness",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "disease"
+	},
+	{
+		"word" : "ailment",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "disease"
+	},
+	{
+		"word" : "indisposed",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "disease"
+	},
+	{
+		"word" : "indisposition",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "disease"
+	},
+	{
+		"word" : "infirm",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "disease"
+	},
+	{
+		"word" : "infirmity",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "disease"
+	},
+	{
+		"word" : "malady",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "disease"
+	},
+	{
+		"word" : "malaise",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "disease"
+	},
+	{
+		"word" : "chronic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "chronic"
+	},
+	{
+		"word" : "benign",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "chronic"
+	},
+	{
+		"word" : "malign",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "chronic"
+	},
+	{
+		"word" : "malignant",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "chronic"
+	},
+	{
+		"word" : "malignancy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "chronic"
+	},
+	{
+		"word" : "lethal",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "chronic"
+	},
+	{
+		"word" : "terminal",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "chronic"
+	},
+	{
+		"word" : "contagious",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "infect"
+	},
+	{
+		"word" : "contagion",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "infect"
+	},
+	{
+		"word" : "infect",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "infect"
+	},
+	{
+		"word" : "infectious",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "infect"
+	},
+	{
+		"word" : "infection",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "infect"
+	},
+	{
+		"word" : "contract",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "infect"
+	},
+	{
+		"word" : "endemic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "infect"
+	},
+	{
+		"word" : "epidemic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "infect"
+	},
+	{
+		"word" : "pandemic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "infect"
+	},
+	{
+		"word" : "cholera",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "cholera"
+	},
+	{
+		"word" : "typhoid",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cholera"
+	},
+	{
+		"word" : "typhus",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cholera"
+	},
+	{
+		"word" : "malaria",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cholera"
+	},
+	{
+		"word" : "chickenpox",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "cholera"
+	},
+	{
+		"word" : "dysentery",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cholera"
+	},
+	{
+		"word" : "hepatitis",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cholera"
+	},
+	{
+		"word" : "measles",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "cholera"
+	},
+	{
+		"word" : "mumps",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cholera"
+	},
+	{
+		"word" : "anthrax",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cholera"
+	},
+	{
+		"word" : "rabies",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cholera"
+	},
+	{
+		"word" : "pest",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "cholera"
+	},
+	{
+		"word" : "plague",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cholera"
+	},
+	{
+		"word" : "psyche",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "psyche"
+	},
+	{
+		"word" : "psychic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "psyche"
+	},
+	{
+		"word" : "psychiatric",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "psyche"
+	},
+	{
+		"word" : "psychiatrist",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "psyche"
+	},
+	{
+		"word" : "psychiatry",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "psyche"
+	},
+	{
+		"word" : "psycho",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "psyche"
+	},
+	{
+		"word" : "psychosis",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "psyche"
+	},
+	{
+		"word" : "psychology",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "psyche"
+	},
+	{
+		"word" : "psychopath",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "psyche"
+	},
+	{
+		"word" : "psychopathic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "psyche"
+	},
+	{
+		"word" : "sociopath",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "psyche"
+	},
+	{
+		"word" : "schizophrenia",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "psyche"
+	},
+	{
+		"word" : "claustrophobia",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "psyche"
+	},
+	{
+		"word" : "hypochondria",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "psyche"
+	},
+	{
+		"word" : "kleptomania",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "psyche"
+	},
+	{
+		"word" : "panic disorder",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "psyche"
+	},
+	{
+		"word" : "megalomania",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "psyche"
+	},
+	{
+		"word" : "neurosis",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "neurosis"
+	},
+	{
+		"word" : "neurotic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "neurosis"
+	},
+	{
+		"word" : "paranoia",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "neurosis"
+	},
+	{
+		"word" : "paranoid",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "neurosis"
+	},
+	{
+		"word" : "anaphylactic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "neurosis"
+	},
+	{
+		"word" : "anaphylaxis",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "neurosis"
+	},
+	{
+		"word" : "hysteria",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "neurosis"
+	},
+	{
+		"word" : "hysteric",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "neurosis"
+	},
+	{
+		"word" : "hysterical",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "neurosis"
+	},
+	{
+		"word" : "hysterics",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "neurosis"
+	},
+	{
+		"word" : "insomnia",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "neurosis"
+	},
+	{
+		"word" : "arthritis",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "arthritis"
+	},
+	{
+		"word" : "osteoporosis",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "arthritis"
+	},
+	{
+		"word" : "rheumatism",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "arthritis"
+	},
+	{
+		"word" : "cancer",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "cancer"
+	},
+	{
+		"word" : "leukemia",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cancer"
+	},
+	{
+		"word" : "emphysema",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cancer"
+	},
+	{
+		"word" : "melanoma",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cancer"
+	},
+	{
+		"word" : "metastasis",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cancer"
+	},
+	{
+		"word" : "diabetic",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "cancer"
+	},
+	{
+		"word" : "diabetes",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cancer"
+	},
+	{
+		"word" : "heart attack",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "cancer"
+	},
+	{
+		"word" : "cerebral palsy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "stroke"
+	},
+	{
+		"word" : "epilepsy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "stroke"
+	},
+	{
+		"word" : "epileptic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "stroke"
+	},
+	{
+		"word" : "meningitis",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "stroke"
+	},
+	{
+		"word" : "stroke",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "stroke"
+	},
+	{
+		"word" : "polio",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "stroke"
+	},
+	{
+		"word" : "alzheimer",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "stroke"
+	},
+	{
+		"word" : "dementia",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "stroke"
+	},
+	{
+		"word" : "absent-minded",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "stroke"
+	},
+	{
+		"word" : "amnesia",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "stroke"
+	},
+	{
+		"word" : "autism",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "stroke"
+	},
+	{
+		"word" : "autistic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "stroke"
+	},
+	{
+		"word" : "cold",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "flu"
+	},
+	{
+		"word" : "flu",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "flu"
+	},
+	{
+		"word" : "asthma",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "flu"
+	},
+	{
+		"word" : "tuberculosis",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "flu"
+	},
+	{
+		"word" : "pneumonia",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "flu"
+	},
+	{
+		"word" : "bronchitis",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "flu"
+	},
+	{
+		"word" : "tonsillitis",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "flu"
+	},
+	{
+		"word" : "angina",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "flu"
+	},
+	{
+		"word" : "indigestion",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "indigestion"
+	},
+	{
+		"word" : "dyspepsia",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "indigestion"
+	},
+	{
+		"word" : "food-poisoning",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "indigestion"
+	},
+	{
+		"word" : "anorexia",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "indigestion"
+	},
+	{
+		"word" : "frostbite",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "acne"
+	},
+	{
+		"word" : "acne",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "acne"
+	},
+	{
+		"word" : "pimple",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "acne"
+	},
+	{
+		"word" : "blister",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "acne"
+	},
+	{
+		"word" : "rash",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "acne"
+	},
+	{
+		"word" : "athlete's foot",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "acne"
+	},
+	{
+		"word" : "eczema",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "acne"
+	},
+	{
+		"word" : "gangrene",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "leprosy"
+	},
+	{
+		"word" : "tetanus",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "leprosy"
+	},
+	{
+		"word" : "psoriasis",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "leprosy"
+	},
+	{
+		"word" : "ringworm",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "leprosy"
+	},
+	{
+		"word" : "scabies",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "leprosy"
+	},
+	{
+		"word" : "mange",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "leprosy"
+	},
+	{
+		"word" : "scurvy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "leprosy"
+	},
+	{
+		"word" : "leper",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "leprosy"
+	},
+	{
+		"word" : "leprosy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "leprosy"
+	},
+	{
+		"word" : "shingles",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "leprosy"
+	},
+	{
+		"word" : "venereal",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "venereal"
+	},
+	{
+		"word" : "gonorrhea",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "venereal"
+	},
+	{
+		"word" : "herpes",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "venereal"
+	},
+	{
+		"word" : "syphilis",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "venereal"
+	},
+	{
+		"word" : "thrush",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "venereal"
+	},
+	{
+		"word" : "cataract",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cataract"
+	},
+	{
+		"word" : "far sight",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cataract"
+	},
+	{
+		"word" : "long sight",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cataract"
+	},
+	{
+		"word" : "hyperopia",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cataract"
+	},
+	{
+		"word" : "short sight",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cataract"
+	},
+	{
+		"word" : "myopia",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cataract"
+	},
+	{
+		"word" : "myopic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cataract"
+	},
+	{
+		"word" : "pinkeye",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cataract"
+	},
+	{
+		"word" : "squint",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cataract"
+	},
+	{
+		"word" : "allergy",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "allergy"
+	},
+	{
+		"word" : "allergic",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "allergy"
+	},
+	{
+		"word" : "hay fever",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "allergy"
+	},
+	{
+		"word" : "medical ",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "medical "
+	},
+	{
+		"word" : "medicine",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "medical "
+	},
+	{
+		"word" : "cardiology",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "medical "
+	},
+	{
+		"word" : "genetics",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "medical "
+	},
+	{
+		"word" : "physiology",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "medical "
+	},
+	{
+		"word" : "gynecology",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "medical "
+	},
+	{
+		"word" : "obstetric",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "medical "
+	},
+	{
+		"word" : "oncology",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "medical "
+	},
+	{
+		"word" : "pathology",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "medical "
+	},
+	{
+		"word" : "pathological",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "medical "
+	},
+	{
+		"word" : "orthopedics",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "medical "
+	},
+	{
+		"word" : "pediatrics",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "medical "
+	},
+	{
+		"word" : "gerontology",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "medical "
+	},
+	{
+		"word" : "geriatrics",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "medical "
+	},
+	{
+		"word" : "stethoscope",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "syringe"
+	},
+	{
+		"word" : "syringe",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "syringe"
+	},
+	{
+		"word" : "scalpel",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "syringe"
+	},
+	{
+		"word" : "forceps",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "syringe"
+	},
+	{
+		"word" : "autoclave",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "syringe"
+	},
+	{
+		"word" : "clinic",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "clinic"
+	},
+	{
+		"word" : "clinical",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "clinic"
+	},
+	{
+		"word" : "hospital",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "clinic"
+	},
+	{
+		"word" : "hospice",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "clinic"
+	},
+	{
+		"word" : "ward",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "clinic"
+	},
+	{
+		"word" : "infirmary",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "clinic"
+	},
+	{
+		"word" : "doctor",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "doctor"
+	},
+	{
+		"word" : "GP",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "doctor"
+	},
+	{
+		"word" : "specialist",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "doctor"
+	},
+	{
+		"word" : "physician",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "doctor"
+	},
+	{
+		"word" : "surgeon",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "doctor"
+	},
+	{
+		"word" : "sawbones",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "doctor"
+	},
+	{
+		"word" : "nurse",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "nurse"
+	},
+	{
+		"word" : "matron",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "nurse"
+	},
+	{
+		"word" : "intern",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "nurse"
+	},
+	{
+		"word" : "resident",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "nurse"
+	},
+	{
+		"word" : "medic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "nurse"
+	},
+	{
+		"word" : "patient",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "patient"
+	},
+	{
+		"word" : "invalid",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "patient"
+	},
+	{
+		"word" : "malinger",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "patient"
+	},
+	{
+		"word" : "malingerer",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "patient"
+	},
+	{
+		"word" : "oculist",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "oculist"
+	},
+	{
+		"word" : "optician",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "oculist"
+	},
+	{
+		"word" : "optometrist",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "oculist"
+	},
+	{
+		"word" : "dentist",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "oculist"
+	},
+	{
+		"word" : "vet",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "oculist"
+	},
+	{
+		"word" : "veterinarian",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "oculist"
+	},
+	{
+		"word" : "veterinary",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "oculist"
+	},
+	{
+		"word" : "physio",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "physio"
+	},
+	{
+		"word" : "physiotherapist",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "physio"
+	},
+	{
+		"word" : "physiotherapy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "physio"
+	},
+	{
+		"word" : "chiropractic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "physio"
+	},
+	{
+		"word" : "chiropractor",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "physio"
+	},
+	{
+		"word" : "chiropodist",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "physio"
+	},
+	{
+		"word" : "podiatrist",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "physio"
+	},
+	{
+		"word" : "medicine",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "medicine"
+	},
+	{
+		"word" : "drug",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "medicine"
+	},
+	{
+		"word" : "medication",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "medicine"
+	},
+	{
+		"word" : "panacea",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "medicine"
+	},
+	{
+		"word" : "placebo",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "medicine"
+	},
+	{
+		"word" : "potion",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "medicine"
+	},
+	{
+		"word" : "elixir",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "medicine"
+	},
+	{
+		"word" : "capsule",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "pill"
+	},
+	{
+		"word" : "pill",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "pill"
+	},
+	{
+		"word" : "syrup",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "pill"
+	},
+	{
+		"word" : "tablet",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "pill"
+	},
+	{
+		"word" : "ointment",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "pill"
+	},
+	{
+		"word" : "salve",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "pill"
+	},
+	{
+		"word" : "balm",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "pill"
+	},
+	{
+		"word" : "suppository",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "pill"
+	},
+	{
+		"word" : "enema",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "pill"
+	},
+	{
+		"word" : "chemist",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "pharmacy"
+	},
+	{
+		"word" : "pharmacy",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "pharmacy"
+	},
+	{
+		"word" : "pharmacist",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "pharmacy"
+	},
+	{
+		"word" : "drugstore",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "pharmacy"
+	},
+	{
+		"word" : "apothecary",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "pharmacy"
+	},
+	{
+		"word" : "dispensary",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "pharmacy"
+	},
+	{
+		"word" : "dosage",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "pharmacy"
+	},
+	{
+		"word" : "dose",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "pharmacy"
+	},
+	{
+		"word" : "prescribe",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "pharmacy"
+	},
+	{
+		"word" : "prescription",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "pharmacy"
+	},
+	{
+		"word" : "aspirin",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "aspirin"
+	},
+	{
+		"word" : "morphine",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "aspirin"
+	},
+	{
+		"word" : "painkiller",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "aspirin"
+	},
+	{
+		"word" : "antibiotic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "aspirin"
+	},
+	{
+		"word" : "anesthetic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "aspirin"
+	},
+	{
+		"word" : "sedative",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "aspirin"
+	},
+	{
+		"word" : "preservative",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "preservative"
+	},
+	{
+		"word" : "repellent",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "preservative"
+	},
+	{
+		"word" : "tonic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "preservative"
+	},
+	{
+		"word" : "cocaine",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "cocaine"
+	},
+	{
+		"word" : "heroin",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "cocaine"
+	},
+	{
+		"word" : "opium",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cocaine"
+	},
+	{
+		"word" : "marijuana",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cocaine"
+	},
+	{
+		"word" : "narcotic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cocaine"
+	},
+	{
+		"word" : "cannabis",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cocaine"
+	},
+	{
+		"word" : "speed",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cocaine"
+	},
+	{
+		"word" : "dope",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cocaine"
+	},
+	{
+		"word" : "drug",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "cocaine"
+	},
+	{
+		"word" : "druggy",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "cocaine"
+	},
+	{
+		"word" : "junk",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "cocaine"
+	},
+	{
+		"word" : "junkie",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cocaine"
+	},
+	{
+		"word" : "addict",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "addict"
+	},
+	{
+		"word" : "addicted",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "addict"
+	},
+	{
+		"word" : "addiction",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "addict"
+	},
+	{
+		"word" : "addictive",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "addict"
+	},
+	{
+		"word" : "intoxicate",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "addict"
+	},
+	{
+		"word" : "intoxication",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "addict"
+	},
+	{
+		"word" : "zonk",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "addict"
+	},
+	{
+		"word" : "germ",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "germ"
+	},
+	{
+		"word" : "bug",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "germ"
+	},
+	{
+		"word" : "bacteria",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "germ"
+	},
+	{
+		"word" : "virus",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "germ"
+	},
+	{
+		"word" : "viral",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "germ"
+	},
+	{
+		"word" : "E-coli",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "germ"
+	},
+	{
+		"word" : "listeria",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "germ"
+	},
+	{
+		"word" : "salmonella",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "germ"
+	},
+	{
+		"word" : "staph",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "germ"
+	},
+	{
+		"word" : "microbe",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "germ"
+	},
+	{
+		"word" : "microbial",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "germ"
+	},
+	{
+		"word" : "pathogen",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "germ"
+	},
+	{
+		"word" : "immune",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "immune"
+	},
+	{
+		"word" : "immunity",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "immune"
+	},
+	{
+		"word" : "immunize",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "immune"
+	},
+	{
+		"word" : "immunization",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "immune"
+	},
+	{
+		"word" : "antibody",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "immune"
+	},
+	{
+		"word" : "antigen",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "immune"
+	},
+	{
+		"word" : "serum",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "immune"
+	},
+	{
+		"word" : "vaccine",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "vaccine"
+	},
+	{
+		"word" : "vaccinate",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "vaccine"
+	},
+	{
+		"word" : "vaccination",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "vaccine"
+	},
+	{
+		"word" : "inject",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "vaccine"
+	},
+	{
+		"word" : "injection",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "vaccine"
+	},
+	{
+		"word" : "inoculate",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "vaccine"
+	},
+	{
+		"word" : "inoculation",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "vaccine"
+	},
+	{
+		"word" : "ache",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "ache"
+	},
+	{
+		"word" : "headache",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "ache"
+	},
+	{
+		"word" : "migraine",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "ache"
+	},
+	{
+		"word" : "toothache",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "ache"
+	},
+	{
+		"word" : "stomachache",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "ache"
+	},
+	{
+		"word" : "hurt",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "ache"
+	},
+	{
+		"word" : "sore",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "ache"
+	},
+	{
+		"word" : "tender",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "ache"
+	},
+	{
+		"word" : "smart",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "ache"
+	},
+	{
+		"word" : "sting",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "ache"
+	},
+	{
+		"word" : "tingle",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "ache"
+	},
+	{
+		"word" : "pain",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "pain"
+	},
+	{
+		"word" : "painful",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "pain"
+	},
+	{
+		"word" : "anguish",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "pain"
+	},
+	{
+		"word" : "throe",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "pain"
+	},
+	{
+		"word" : "pang",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "pain"
+	},
+	{
+		"word" : "twinge",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "pain"
+	},
+	{
+		"word" : "wound",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "wound"
+	},
+	{
+		"word" : "injure",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "wound"
+	},
+	{
+		"word" : "injured",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "wound"
+	},
+	{
+		"word" : "injury",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "wound"
+	},
+	{
+		"word" : "casualty",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "wound"
+	},
+	{
+		"word" : "unscathed",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "wound"
+	},
+	{
+		"word" : "cut",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "scar"
+	},
+	{
+		"word" : "lacerate",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "scar"
+	},
+	{
+		"word" : "laceration",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "scar"
+	},
+	{
+		"word" : "gash",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "scar"
+	},
+	{
+		"word" : "scar",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "scar"
+	},
+	{
+		"word" : "bruise",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "bruise"
+	},
+	{
+		"word" : "black and blue",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "bruise"
+	},
+	{
+		"word" : "black eye",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "bruise"
+	},
+	{
+		"word" : "chafe",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "chafe"
+	},
+	{
+		"word" : "graze",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "chafe"
+	},
+	{
+		"word" : "chapped",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "chafe"
+	},
+	{
+		"word" : "excoriation",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "chafe"
+	},
+	{
+		"word" : "excoriate",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "chafe"
+	},
+	{
+		"word" : "fracture",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "fracture"
+	},
+	{
+		"word" : "dislocate",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "fracture"
+	},
+	{
+		"word" : "dislocation",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "fracture"
+	},
+	{
+		"word" : "sprain",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "fracture"
+	},
+	{
+		"word" : "maim",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "fracture"
+	},
+	{
+		"word" : "concussion",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "fracture"
+	},
+	{
+		"word" : "contusion",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "fracture"
+	},
+	{
+		"word" : "cure",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "cure"
+	},
+	{
+		"word" : "curable",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "cure"
+	},
+	{
+		"word" : "heal",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "cure"
+	},
+	{
+		"word" : "remedy",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "cure"
+	},
+	{
+		"word" : "remedial",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cure"
+	},
+	{
+		"word" : "treat",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "cure"
+	},
+	{
+		"word" : "treatment",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "cure"
+	},
+	{
+		"word" : "therapy",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "cure"
+	},
+	{
+		"word" : "therapist",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cure"
+	},
+	{
+		"word" : "therapeutic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cure"
+	},
+	{
+		"word" : "chemotherapy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cure"
+	},
+	{
+		"word" : "radiology",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cure"
+	},
+	{
+		"word" : "radiotherapy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cure"
+	},
+	{
+		"word" : "regimen",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "cure"
+	},
+	{
+		"word" : "physiotherapy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "physiotherapy"
+	},
+	{
+		"word" : "acupressure",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "physiotherapy"
+	},
+	{
+		"word" : "acupuncture",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "physiotherapy"
+	},
+	{
+		"word" : "massage",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "physiotherapy"
+	},
+	{
+		"word" : "masseur",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "physiotherapy"
+	},
+	{
+		"word" : "masseuse",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "physiotherapy"
+	},
+	{
+		"word" : "diagnose",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "diagnose"
+	},
+	{
+		"word" : "diagnosis",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "diagnose"
+	},
+	{
+		"word" : "prognosis",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "diagnose"
+	},
+	{
+		"word" : "biopsy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "diagnose"
+	},
+	{
+		"word" : "mammogram",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "diagnose"
+	},
+	{
+		"word" : "anatomy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "diagnose"
+	},
+	{
+		"word" : "autopsy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "diagnose"
+	},
+	{
+		"word" : "operation",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "operation"
+	},
+	{
+		"word" : "surgery",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "operation"
+	},
+	{
+		"word" : "surgical",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "operation"
+	},
+	{
+		"word" : "transfuse",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "operation"
+	},
+	{
+		"word" : "transfusion",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "operation"
+	},
+	{
+		"word" : "mastectomy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "operation"
+	},
+	{
+		"word" : "rhinoplasty",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "operation"
+	},
+	{
+		"word" : "vasectomy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "operation"
+	},
+	{
+		"word" : "circumcise",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "operation"
+	},
+	{
+		"word" : "circumcision",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "operation"
+	},
+	{
+		"word" : "implant",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "operation"
+	},
+	{
+		"word" : "graft",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "operation"
+	},
+	{
+		"word" : "transplant",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "operation"
+	},
+	{
+		"word" : "transplantation",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "operation"
+	},
+	{
+		"word" : "first aid",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "first aid"
+	},
+	{
+		"word" : "CPR",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "first aid"
+	},
+	{
+		"word" : "ambulance",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "first aid"
+	},
+	{
+		"word" : "paramedic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "first aid"
+	},
+	{
+		"word" : "stretcher",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "first aid"
+	},
+	{
+		"word" : "gurney",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "first aid"
+	},
+	{
+		"word" : "bandage",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "first aid"
+	},
+	{
+		"word" : "swathe",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "first aid"
+	},
+	{
+		"word" : "crutch",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "first aid"
+	},
+	{
+		"word" : "splint",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "first aid"
+	},
+	{
+		"word" : "tourniquet",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "first aid"
+	},
+	{
+		"word" : "stanch",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "first aid"
+	},
+	{
+		"word" : "disinfect",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "disinfect"
+	},
+	{
+		"word" : "disinfection",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "disinfect"
+	},
+	{
+		"word" : "disinfectant",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "disinfect"
+	},
+	{
+		"word" : "antiseptic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "disinfect"
+	},
+	{
+		"word" : "sterile",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "disinfect"
+	},
+	{
+		"word" : "sterilize",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "disinfect"
+	},
+	{
+		"word" : "fumigate",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "disinfect"
+	},
+	{
+		"word" : "cauterize",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "disinfect"
+	},
+	{
+		"word" : "symptom",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "symptom"
+	},
+	{
+		"word" : "cough",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "symptom"
+	},
+	{
+		"word" : "fever",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "symptom"
+	},
+	{
+		"word" : "sick",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "symptom"
+	},
+	{
+		"word" : "queasy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "symptom"
+	},
+	{
+		"word" : "nausea",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "symptom"
+	},
+	{
+		"word" : "diarrhea",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "symptom"
+	},
+	{
+		"word" : "heartburn",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "symptom"
+	},
+	{
+		"word" : "constipation",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "symptom"
+	},
+	{
+		"word" : "incontinent",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "symptom"
+	},
+	{
+		"word" : "incontinence",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "symptom"
+	},
+	{
+		"word" : "congestion",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "symptom"
+	},
+	{
+		"word" : "dehydration",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "symptom"
+	},
+	{
+		"word" : "hemorrhage",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "symptom"
+	},
+	{
+		"word" : "light-headed",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "dizzy"
+	},
+	{
+		"word" : "anemic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "dizzy"
+	},
+	{
+		"word" : "anemia",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "dizzy"
+	},
+	{
+		"word" : "dizzy",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "dizzy"
+	},
+	{
+		"word" : "dizziness",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "dizzy"
+	},
+	{
+		"word" : "giddy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "dizzy"
+	},
+	{
+		"word" : "vertigo",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "dizzy"
+	},
+	{
+		"word" : "coma",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "dizzy"
+	},
+	{
+		"word" : "comatose",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "dizzy"
+	},
+	{
+		"word" : "woozy",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "dizzy"
+	},
+	{
+		"word" : "inflame",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "inflame"
+	},
+	{
+		"word" : "inflammation",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "inflame"
+	},
+	{
+		"word" : "inflammatory",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "inflame"
+	},
+	{
+		"word" : "fester",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "inflame"
+	},
+	{
+		"word" : "abscess",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "inflame"
+	},
+	{
+		"word" : "tumor",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "inflame"
+	},
+	{
+		"word" : "ulcer",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "inflame"
+	},
+	{
+		"word" : "numb",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "numb"
+	},
+	{
+		"word" : "paralyze",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "numb"
+	},
+	{
+		"word" : "paralysis",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "numb"
+	},
+	{
+		"word" : "paralytic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "numb"
+	},
+	{
+		"word" : "paraplegic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "numb"
+	},
+	{
+		"word" : "paraplegia",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "numb"
+	},
+	{
+		"word" : "quadriplegic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "numb"
+	},
+	{
+		"word" : "sclerosis",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "numb"
+	},
+	{
+		"word" : "itch",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "itch"
+	},
+	{
+		"word" : "itchy",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "itch"
+	},
+	{
+		"word" : "pins and needles",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "itch"
+	},
+	{
+		"word" : "convulse",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "convulse"
+	},
+	{
+		"word" : "convulsion",
+		"depth" : 4,
+		"bold" : "Y",
+		"p_word" : "convulse"
+	},
+	{
+		"word" : "convulsive",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "convulse"
+	},
+	{
+		"word" : "spasm",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "convulse"
+	},
+	{
+		"word" : "spastic",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "convulse"
+	},
+	{
+		"word" : "fit",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "convulse"
+	},
+	{
+		"word" : "fitful",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "convulse"
+	},
+	{
+		"word" : "crick",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "convulse"
+	},
+	{
+		"word" : "cramp",
+		"depth" : 4,
+		"bold" : "",
+		"p_word" : "convulse"
+	}
+]

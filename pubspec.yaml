@@ -23,6 +23,9 @@ dependencies:
   bounce_tapper: ^1.1.4 # 터치 효과
   gap: ^3.0.1 # 간격 위젯
 
+  # DI
+  get_it: ^7.2.0
+
   # 상태관리
   provider: ^6.0.5
   hooks_riverpod: "2.4.0"
@@ -46,6 +49,8 @@ dependencies:
   json_serializable: ^6.7.1
   json_annotation: ^4.8.1
 
+  #데이터베이스
+  floor: ^1.5.0
 
 dev_dependencies:
   flutter_test:
@@ -60,6 +65,7 @@ dev_dependencies:
   freezed: ^2.4.3
   custom_lint: ^0.5.3
   analyzer: "6.4.1"
+  floor_generator: ^1.5.0
 
 
 flutter:
@@ -68,6 +74,8 @@ flutter:
     - assets/
     - assets/images/
     - assets/fonts/
+    - assets/raw/
+    - assets/icons/
 
   fonts:
     - family: pretendard

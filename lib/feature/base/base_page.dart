@@ -8,12 +8,14 @@ abstract class BasePage extends HookConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    // 페이지 초기화 및 해제
-    useEffect(() {
-      onInit(ref);
-      return () => onDispose(ref);
-    }, []);
-
+    /// 페이지의 초기화 및 해제를 처리
+    useEffect(
+          () {
+        onInit(ref);
+        return () => onDispose(ref);
+      },
+      [],
+    );
     return PopScope(
       canPop: canPop,
       onPopInvokedWithResult: (didPop, result) async {

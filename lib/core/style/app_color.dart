@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 
 class AppColor extends ThemeExtension<AppColor> {
+
+  static const depthNormal= Color(0xFF87919D);
+  static const depthBold = Color(0xFF171F29);
+
+
   static final AppColor _light = AppColor._(
     white: const Color(0xFFFFFFFF),
     black: const Color(0xFF09090B),

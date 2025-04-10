@@ -1,3 +1,4 @@
+import 'package:englishword/core/di/app_modules.dart';
 import 'package:englishword/core/router/router.dart';
 import 'package:englishword/core/style/app_color.dart';
 import 'package:englishword/core/style/app_size.dart';
@@ -7,7 +8,9 @@ import 'package:flutter/services.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await AppModules.init();
   runApp(
     ProviderScope(
       parent: globalContainer,
@@ -21,7 +24,6 @@ class App extends StatelessWidget {
   App({super.key}) {
     _initLoadingIndicator();
   }
-
 
   static void _initLoadingIndicator() {
     EasyLoading.instance
@@ -38,7 +40,6 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     SystemChrome.setPreferredOrientations([
       DeviceOrientation.portraitDown,
       DeviceOrientation.portraitUp,
@@ -46,7 +47,6 @@ class App extends StatelessWidget {
 
     return Consumer(
       builder: (context, ref, child) {
-
         final router = appRouter(ref);
 
         return MaterialApp.router(
@@ -60,27 +60,30 @@ class App extends StatelessWidget {
             builder: (context, child) {
               AppColor.init(context);
               AppSize.init(context);
-              return LayoutBuilder(builder: (context,constraints) {
-                if (constraints.maxWidth > 600 && AppSize.originScreenWidth > 600) {
-                  // 태블릿 디바이스일 경우
-                  return Stack(
-                    clipBehavior: Clip.none,
-                    children: [
-                      Container(
-                        color: Colors.black, // 검정색 배경
-                      ),
-                      Center(
-                        child: SizedBox(
-                          width: 375, // 가운데 화면의 너비
-                          height: 812, // 가운데 화면의 높이
-                          child: child,
+              return LayoutBuilder(
+                builder: (context, constraints) {
+                  if (constraints.maxWidth > 600 &&
+                      AppSize.originScreenWidth > 600) {
+                    // 태블릿 디바이스일 경우
+                    return Stack(
+                      clipBehavior: Clip.none,
+                      children: [
+                        Container(
+                          color: Colors.black, // 검정색 배경
                         ),
-                      ),
-                    ],
-                  );
-                }
-                return child!;
-              });
+                        Center(
+                          child: SizedBox(
+                            width: 375, // 가운데 화면의 너비
+                            height: 812, // 가운데 화면의 높이
+                            child: child,
+                          ),
+                        ),
+                      ],
+                    );
+                  }
+                  return child!;
+                },
+              );
             },
           ),
         );

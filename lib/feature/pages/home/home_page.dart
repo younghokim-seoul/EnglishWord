@@ -18,7 +18,6 @@ class HomePage extends BasePage {
 
   @override
   Widget buildPage(BuildContext context, WidgetRef ref) {
-
     return DefaultTabController(
       length: WordBoardTabType.values.length,
       child: Column(
