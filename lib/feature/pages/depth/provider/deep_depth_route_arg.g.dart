@@ -1,27 +1,27 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'selected_depth_word_provider.dart';
+part of 'deep_depth_route_arg.dart';
 
 // **************************************************************************
 // RiverpodGenerator
 // **************************************************************************
 
-String _$selectedDepthWordProviderHash() =>
-    r'986dba4df91656f88a5e944c75d35f0a39108dd1';
+String _$deepDepthRouteArgHash() => r'd95b3dd8943e2c1c08a01c8fd30e94a7430daae3';
 
-/// See also [SelectedDepthWordProvider].
-@ProviderFor(SelectedDepthWordProvider)
-final selectedDepthWordProviderProvider =
-    NotifierProvider<SelectedDepthWordProvider, List<String>>.internal(
-  SelectedDepthWordProvider.new,
-  name: r'selectedDepthWordProviderProvider',
+/// See also [deepDepthRouteArg].
+@ProviderFor(deepDepthRouteArg)
+final deepDepthRouteArgProvider = AutoDisposeProvider<
+    ({String depth2, String depth3, WordWithWords model})>.internal(
+  deepDepthRouteArg,
+  name: r'deepDepthRouteArgProvider',
   debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
       ? null
-      : _$selectedDepthWordProviderHash,
+      : _$deepDepthRouteArgHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
 
-typedef _$SelectedDepthWordProvider = Notifier<List<String>>;
+typedef DeepDepthRouteArgRef = AutoDisposeProviderRef<
+    ({String depth2, String depth3, WordWithWords model})>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member

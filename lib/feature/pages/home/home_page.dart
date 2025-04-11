@@ -1,6 +1,7 @@
 import 'package:bounce_tapper/bounce_tapper.dart';
 import 'package:englishword/core/constants/assets.dart';
 import 'package:englishword/core/constants/word_board_tab_type.dart';
+import 'package:englishword/core/logger/app_logger.dart';
 import 'package:englishword/core/style/app_color.dart';
 import 'package:englishword/core/style/app_size.dart';
 import 'package:englishword/core/style/app_text_style.dart';
@@ -18,6 +19,7 @@ class HomePage extends BasePage {
 
   @override
   Widget buildPage(BuildContext context, WidgetRef ref) {
+    logger.d("HomePage create...");
     return DefaultTabController(
       length: WordBoardTabType.values.length,
       child: Column(

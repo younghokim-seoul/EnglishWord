@@ -42,7 +42,7 @@ class DepthStepBar extends ConsumerWidget with DepthState {
         TextSpan(
           text: element,
           style:
-              index == depths.length - 2
+              index != depths.length -1
                   ? AppTextStyle.body3.copyWith(color: AppColor.depthNormal)
                   : AppTextStyle.title1.copyWith(color: AppColor.depthBold),
         ),
@@ -51,7 +51,7 @@ class DepthStepBar extends ConsumerWidget with DepthState {
       if (index != depths.length - 1) {
         spans.add(
           TextSpan(
-            text: ' > ',
+            text: '  >  ',
             style:
                 index == depths.length - 2
                     ? AppTextStyle.title1.copyWith(color: AppColor.depthBold)

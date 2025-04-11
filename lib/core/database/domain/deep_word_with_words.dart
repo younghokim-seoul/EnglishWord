@@ -42,13 +42,13 @@ class DeepWordWithWords {
     return 'DeepWordWithWords{word: $word, words: $words}';
   }
 
-  List<Map<String, dynamic>> get parsedWordList {
+  List<DeepWordInfo> get parsedWordList {
     try {
       final decoded = jsonDecode(words);
       if (decoded is List) {
         return decoded
             .whereType<Map>()
-            .cast<Map<String, dynamic>>()
+            .map((map) => DeepWordInfo.fromMap(map.cast<String, dynamic>()))
             .toList();
       }
     } catch (e) {
@@ -56,4 +56,62 @@ class DeepWordWithWords {
     }
     return [];
   }
+}
+
+class DeepWordInfo {
+  final String word;
+  final String bold;
+  final String chk;
+
+  //<editor-fold desc="Data Methods">
+  const DeepWordInfo({
+    required this.word,
+    required this.bold,
+    required this.chk,
+  });
+
+  bool get isFavorite => chk == 'Y';
+  bool get isBold => bold == 'Y';
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is DeepWordInfo &&
+          runtimeType == other.runtimeType &&
+          word == other.word &&
+          bold == other.bold &&
+          chk == other.chk);
+
+  @override
+  int get hashCode => word.hashCode ^ bold.hashCode ^ chk.hashCode;
+
+  @override
+  String toString() {
+    return 'DeepWordInfo{' +
+        ' word: $word,' +
+        ' bold: $bold,' +
+        ' chk: $chk,' +
+        '}';
+  }
+
+  DeepWordInfo copyWith({String? word, String? bold, String? chk}) {
+    return DeepWordInfo(
+      word: word ?? this.word,
+      bold: bold ?? this.bold,
+      chk: chk ?? this.chk,
+    );
+  }
+
+  Map<String, dynamic> toMap() {
+    return {'word': this.word, 'bold': this.bold, 'chk': this.chk};
+  }
+
+  factory DeepWordInfo.fromMap(Map<String, dynamic> map) {
+    return DeepWordInfo(
+      word: map['word'] as String,
+      bold: map['bold'] as String,
+      chk: map['chk'] as String,
+    );
+  }
+  //</editor-fold>
 }

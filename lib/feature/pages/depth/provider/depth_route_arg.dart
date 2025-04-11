@@ -8,4 +8,4 @@ DepthRouteArg depthRouteArg(DepthRouteArgRef ref) {
   return DepthRoute.arg;
 }
 
-typedef DepthRouteArg = ({WordWithWords model});
+typedef DepthRouteArg = ({WordWithWords model,String depth2});

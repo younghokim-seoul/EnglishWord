@@ -1,6 +1,7 @@
 import 'package:englishword/core/database/domain/word_with_words.dart';
 import 'package:englishword/feature/pages/depth/deep/deep_depth_page.dart';
 import 'package:englishword/feature/pages/depth/depth_page.dart';
+import 'package:englishword/feature/pages/depth/provider/deep_depth_route_arg.dart';
 import 'package:englishword/feature/pages/depth/provider/depth_route_arg.dart';
 import 'package:englishword/feature/pages/home/home_page.dart';
 import 'package:englishword/feature/pages/splash/splash_page.dart';
@@ -45,7 +46,10 @@ class SplashRoute extends GoRouteData {
   name: HomeRoute.name,
   routes: [
     TypedGoRoute<DepthRoute>(path: DepthRoute.path, name: DepthRoute.name),
-    TypedGoRoute<DeepDepthRoute>(path: DeepDepthRoute.path, name: DeepDepthRoute.name),
+    TypedGoRoute<DeepDepthRoute>(
+      path: DeepDepthRoute.path,
+      name: DeepDepthRoute.name,
+    ),
   ],
 )
 class HomeRoute extends GoRouteData {
@@ -80,7 +84,6 @@ class DepthRoute extends GoRouteData {
   @override
   Page<void> buildPage(BuildContext context, GoRouterState state) {
     return CustomTransitionPage(
-      fullscreenDialog: true,
       transitionsBuilder: (_, animation, __, child) {
         var begin = const Offset(1.0, 0);
         var end = Offset.zero;
@@ -97,8 +100,8 @@ class DepthRoute extends GoRouteData {
     );
   }
 
-  void updateArg({required WordWithWords model}) {
-    arg = (model: model);
+  void updateArg({required WordWithWords model,required String depth2}) {
+    arg = (model: model,depth2 : depth2);
   }
 }
 
@@ -108,10 +111,11 @@ class DeepDepthRoute extends GoRouteData {
   static const String path = 'deep_depth';
   static const String name = 'deep_depth';
 
+  static late DeepDepthRouteArg arg;
+
   @override
   Page<void> buildPage(BuildContext context, GoRouterState state) {
     return CustomTransitionPage(
-      fullscreenDialog: true,
       transitionsBuilder: (_, animation, __, child) {
         var begin = const Offset(1.0, 0);
         var end = Offset.zero;
@@ -126,5 +130,9 @@ class DeepDepthRoute extends GoRouteData {
       },
       child: const DeepDepthPage(),
     );
+  }
+
+  void updateArg({required WordWithWords model,required String depth2,required String depth3}) {
+    arg = (model: model, depth2: depth2,depth3: depth3);
   }
 }

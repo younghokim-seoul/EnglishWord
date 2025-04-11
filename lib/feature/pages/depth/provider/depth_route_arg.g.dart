@@ -11,7 +11,7 @@ String _$depthRouteArgHash() => r'c4fa6233d264ed857ee959921ee4d92ce92cdf6b';
 /// See also [depthRouteArg].
 @ProviderFor(depthRouteArg)
 final depthRouteArgProvider =
-    AutoDisposeProvider<({WordWithWords model})>.internal(
+    AutoDisposeProvider<({String depth2, WordWithWords model})>.internal(
   depthRouteArg,
   name: r'depthRouteArgProvider',
   debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
@@ -21,6 +21,7 @@ final depthRouteArgProvider =
   allTransitiveDependencies: null,
 );
 
-typedef DepthRouteArgRef = AutoDisposeProviderRef<({WordWithWords model})>;
+typedef DepthRouteArgRef
+    = AutoDisposeProviderRef<({String depth2, WordWithWords model})>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member
