@@ -79,9 +79,6 @@ class DeepDepthPage extends BasePage with DeepDepthState {
                                       .watch(blurProviderProvider)
                                       .contains(item);
 
-                                  logger.i(
-                                      "asdasdasdasdasda " + isBlur.toString() + " ${item.word}");
-
                                   return BounceTapper(
                                     onTap: () {
                                       ref.read(blurProviderProvider.notifier).toggleBlur(item);
@@ -90,7 +87,7 @@ class DeepDepthPage extends BasePage with DeepDepthState {
                                       width: double.infinity,
                                       padding: const EdgeInsets.all(8),
                                       decoration: BoxDecoration(
-                                        color: AppColor.of.brand5,
+                                        color: isBlur ? AppColor.of.brand5 : AppColor.of.yellow2,
                                         borderRadius: BorderRadius.circular(4),
                                       ),
                                       child: AnimatedOpacity(
@@ -105,7 +102,7 @@ class DeepDepthPage extends BasePage with DeepDepthState {
                                             sigmaY: 8,
                                           ),
                                           child: Text(
-                                            item.word,
+                                            item.means.first.mean,
                                             style: AppTextStyle.body3.copyWith(
                                               color:
                                               isBlur

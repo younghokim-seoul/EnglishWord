@@ -136,3 +136,35 @@ class DeepDepthRoute extends GoRouteData {
     arg = (model: model, depth2: depth2,depth3: depth3);
   }
 }
+
+class ExampleDepthRoute extends GoRouteData {
+  const ExampleDepthRoute();
+
+  static const String path = 'example_depth';
+  static const String name = 'example_depth';
+
+  static late DeepDepthRouteArg arg;
+
+  @override
+  Page<void> buildPage(BuildContext context, GoRouterState state) {
+    return CustomTransitionPage(
+      transitionsBuilder: (_, animation, __, child) {
+        var begin = const Offset(1.0, 0);
+        var end = Offset.zero;
+        var curve = Curves.ease;
+
+        var tween = Tween(
+          begin: begin,
+          end: end,
+        ).chain(CurveTween(curve: curve));
+
+        return SlideTransition(position: animation.drive(tween), child: child);
+      },
+      child: const DeepDepthPage(),
+    );
+  }
+
+  void updateArg({required WordWithWords model,required String depth2,required String depth3}) {
+    arg = (model: model, depth2: depth2,depth3: depth3);
+  }
+}

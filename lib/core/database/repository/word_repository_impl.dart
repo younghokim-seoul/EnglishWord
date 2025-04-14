@@ -6,6 +6,7 @@ import 'package:englishword/core/database/entity/word_info_entity.dart';
 import 'package:englishword/core/database/entity/word_mean_entity.dart';
 import 'package:englishword/core/database/repository/word_repository.dart';
 import 'package:englishword/core/database/word_dao.dart';
+import 'package:englishword/core/logger/app_logger.dart';
 
 class WordRepositoryImpl implements WordRepository {
   final WordDAO wordDAO;
@@ -21,8 +22,9 @@ class WordRepositoryImpl implements WordRepository {
       wordDAO.insertWordExamples(wordExampleList);
 
   @override
-  Future<void> insertWordInfos(List<WordInfoEntity> wordInfoList) =>
-      wordDAO.insertWordInfos(wordInfoList);
+  Future<void> insertWordInfos(List<WordInfoEntity> wordInfoList) {
+    return wordDAO.insertWordInfos(wordInfoList);
+  }
 
   @override
   Future<void> insertWordMeans(List<WordMeanEntity> wordMeanList) =>
@@ -41,9 +43,11 @@ class WordRepositoryImpl implements WordRepository {
   Future<List<WordWithWords>> getGroupedWords() => wordDAO.getGroupedWords();
 
   @override
-  Future<SubWordWithWords?> getSubWordsByWord(String word) =>  wordDAO.getSubWordsByWord(word);
+  Future<SubWordWithWords?> getSubWordsByWord(String word) =>
+      wordDAO.getSubWordsByWord(word);
 
   @override
-  Future<DeepWordWithWords?> getDeepWordsByWord(String word) => wordDAO.getDeepWordsByWord(word);
+  Future<DeepWordWithWords?> getDeepWordsByWord(String word) =>
+      wordDAO.getDeepWordsByWord(word);
 
 }

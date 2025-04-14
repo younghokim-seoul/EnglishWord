@@ -78,7 +78,7 @@ class WordInfoEntity {
 
   factory WordInfoEntity.fromMap(Map<String, dynamic> map) {
     return WordInfoEntity(
-      id: map.containsKey('id') ? map['id'] as int : null,
+      id: null,
       depth: map['depth'] as int,
       word: map['word'] as String,
       bold: map['bold'] as String,

@@ -22,7 +22,7 @@ final favoriteProviderProvider =
 );
 
 typedef _$FavoriteProvider = AutoDisposeNotifier<List<DeepWordInfo>>;
-String _$blurProviderHash() => r'27b86602b3ceeea045e10db147717a4f930366da';
+String _$blurProviderHash() => r'cf98efd02dcf2c4f05862007253b94fad2cba0ed';
 
 /// See also [BlurProvider].
 @ProviderFor(BlurProvider)

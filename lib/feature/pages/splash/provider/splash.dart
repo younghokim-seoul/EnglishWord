@@ -19,6 +19,17 @@ class ReadyWords extends _$ReadyWords {
   FutureOr<void> build() async {
 
 
+      final jsonWordInfo =
+          json.decode(await rootBundle.loadString(Assets.jsonWordInfo))
+              as List<dynamic>;
+
+      final wordInfoList =
+          jsonWordInfo.map((e) => WordInfoEntity.fromMap(e)).toList();
+
+      logger.d("wordInfoList.. " + wordInfoList.length.toString());
+
+      logger.d("wordInfoList.. last " + wordInfoList.last.toString());
+
     final repository = getIt<WordRepository>();
 
     bool didInsert = false;
@@ -70,4 +81,6 @@ class ReadyWords extends _$ReadyWords {
     }
 
   }
+
+
 }

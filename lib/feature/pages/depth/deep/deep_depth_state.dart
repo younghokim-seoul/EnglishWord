@@ -17,4 +17,5 @@ mixin class DeepDepthState {
   AsyncValue<DeepWordWithWords?> getDeepWordWithWords(WidgetRef ref) {
     return ref.watch(deepWordProviderProvider(arg(ref).depth3));
   }
+
 }
