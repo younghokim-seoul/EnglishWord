@@ -1,4 +1,5 @@
 import 'package:englishword/core/database/domain/deep_word_with_words.dart';
+import 'package:englishword/core/logger/app_logger.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'favorite_provider.g.dart';
@@ -25,10 +26,11 @@ class FavoriteProvider extends _$FavoriteProvider {
 }
 
 
-@riverpod
+@Riverpod(keepAlive: true)
 class BlurProvider extends _$BlurProvider {
   @override
   List<DeepWordInfo> build() {
+    logger.d("build BlurProvider");
     return [];
   }
   void toggleBlur(DeepWordInfo targetModel) {
