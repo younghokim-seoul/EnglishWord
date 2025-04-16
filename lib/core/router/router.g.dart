@@ -43,11 +43,20 @@ RouteBase get $homeRoute => GoRouteData.$route(
           path: 'depth',
           name: 'depth',
           factory: $DepthRouteExtension._fromState,
-        ),
-        GoRouteData.$route(
-          path: 'deep_depth',
-          name: 'deep_depth',
-          factory: $DeepDepthRouteExtension._fromState,
+          routes: [
+            GoRouteData.$route(
+              path: 'deep_depth',
+              name: 'deep_depth',
+              factory: $DeepDepthRouteExtension._fromState,
+              routes: [
+                GoRouteData.$route(
+                  path: 'example_depth',
+                  name: 'example_depth',
+                  factory: $ExampleDepthRouteExtension._fromState,
+                ),
+              ],
+            ),
+          ],
         ),
       ],
     );
@@ -91,7 +100,25 @@ extension $DeepDepthRouteExtension on DeepDepthRoute {
       const DeepDepthRoute();
 
   String get location => GoRouteData.$location(
-        '/deep_depth',
+        '/depth/deep_depth',
+      );
+
+  void go(BuildContext context) => context.go(location);
+
+  Future<T?> push<T>(BuildContext context) => context.push<T>(location);
+
+  void pushReplacement(BuildContext context) =>
+      context.pushReplacement(location);
+
+  void replace(BuildContext context) => context.replace(location);
+}
+
+extension $ExampleDepthRouteExtension on ExampleDepthRoute {
+  static ExampleDepthRoute _fromState(GoRouterState state) =>
+      const ExampleDepthRoute();
+
+  String get location => GoRouteData.$location(
+        '/depth/deep_depth/example_depth',
       );
 
   void go(BuildContext context) => context.go(location);

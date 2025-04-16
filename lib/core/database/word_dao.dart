@@ -1,5 +1,6 @@
 import 'package:englishword/core/database/domain/deep_word_with_words.dart';
 import 'package:englishword/core/database/domain/sub_word_with_words.dart';
+import 'package:englishword/core/database/domain/word_example_view.dart';
 import 'package:englishword/core/database/domain/word_mean_with_info.dart';
 import 'package:englishword/core/database/domain/word_with_words.dart';
 import 'package:englishword/core/database/entity/word_example_detail.dart';
@@ -73,16 +74,6 @@ abstract class WordDAO {
   Future<WordMeanWithInfo?> getWordMean(String word);
 
 
-  @Query('''
-  SELECT we.word,
-         we.example,
-         we.transfer
-  FROM word_info wi
-  INNER JOIN word_mean wm ON wm.word = wi.word
-  INNER JOIN word_example we ON we.word = wm.word AND we.seq = wm.seq
-  WHERE wi."depth" = 4
-    AND we.word = :word
-    AND we.seq = :seq
-''')
-  Future<List<WordExampleDetail>> getExamples(String word, int seq);
+  @Query('SELECT * FROM WordExampleView WHERE word = :word AND seq = :seq')
+  Future<List<WordExampleView>> getExamples(String word, int seq);
 }

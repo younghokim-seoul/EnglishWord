@@ -103,8 +103,6 @@ class _$WordDatabase extends WordDatabase {
             'CREATE TABLE IF NOT EXISTS `my_word` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `depth_word_1` TEXT NOT NULL, `depth_word_2` TEXT NOT NULL, `depth_word_3` TEXT NOT NULL, `depth_word_4` TEXT NOT NULL, `mean` TEXT NOT NULL)');
         await database.execute(
             'CREATE TABLE IF NOT EXISTS `word_info` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `depth` INTEGER NOT NULL, `word` TEXT NOT NULL, `bold` TEXT NOT NULL, `p_word` TEXT NOT NULL)');
-        await database.execute(
-            'CREATE TABLE IF NOT EXISTS `word_example` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `seq` INTEGER NOT NULL, `word` TEXT NOT NULL, `example` TEXT NOT NULL, `transfer` TEXT NOT NULL)');
 
         await database.execute(
             'CREATE VIEW IF NOT EXISTS `WordWithWords` AS   SELECT \n    t1.word AS word,\n    \'[\' || GROUP_CONCAT(\'\"\' || t2.word || \'\"\') || \']\' AS words\n  FROM (\n    SELECT word \n    FROM word_info \n    WHERE depth = 1\n  ) AS t1\n  INNER JOIN (\n    SELECT word, bold, p_word \n    FROM word_info \n    WHERE depth = 2\n  ) AS t2 \n    ON t2.p_word = t1.word\n  GROUP BY t1.word\n');
@@ -114,6 +112,8 @@ class _$WordDatabase extends WordDatabase {
             'CREATE VIEW IF NOT EXISTS `DeepWordWithWords` AS   SELECT t1.word,\n         \'[\' || GROUP_CONCAT(\n           \'{\"word\":\"\'||t2.word||\n           \'\",\"bold\":\"\'||t2.bold||\n           \'\",\"chk\":\"\'||t2.chk||\n           \'\",\"means\":\'||t2.means||\n           \'}\'\n         ) || \']\' AS words\n  FROM (\n    SELECT word \n    FROM word_info \n    WHERE depth = 3\n  ) AS t1\n  INNER JOIN (\n    SELECT wi.word,\n           wi.bold,\n           wi.p_word,\n           CASE \n             WHEN mw.depth_word_4 IS NOT NULL THEN \'Y\'\n             ELSE \'N\'\n           END AS chk,\n           wm.means\n    FROM word_info wi\n    INNER JOIN (\n      SELECT wm.word,\n             \'[\' || GROUP_CONCAT(\n               \'{\"seq\":\"\' || wm.seq ||\n               \'\",\"mean\":\"\' || wm.mean ||\n               \'\",\"bold\":\"\' || wm.bold || \'\"}\'\n             ) || \']\' AS means\n      FROM word_info wi\n      INNER JOIN word_mean wm ON wm.word = wi.word\n      WHERE wi.depth = 4\n      GROUP BY wm.word\n    ) wm ON wm.word = wi.word\n    LEFT OUTER JOIN my_word mw ON mw.depth_word_4 = wi.word\n    WHERE wi.depth = 4\n  ) AS t2 ON t2.p_word = t1.word\n  GROUP BY t1.word\n');
         await database.execute(
             'CREATE VIEW IF NOT EXISTS `WordMeanWithInfo` AS   SELECT wm.word, \n         \'[\' || GROUP_CONCAT(\n           \'{\"seq\":\"\'||wm.seq||\n           \'\",\"mean\":\"\'||wm.mean||\n           \'\",\"bold\":\"\'||wm.bold||\'\"}\'\n         ) || \']\' AS means\n  FROM word_info wi\n  INNER JOIN word_mean wm ON wm.word = wi.word\n  WHERE wi.depth = 4\n  GROUP BY wm.word\n');
+        await database.execute(
+            'CREATE VIEW IF NOT EXISTS `WordExampleView` AS   SELECT we.word,\n         we.seq,               -- ✅ 반드시 포함해야 함!\n         we.example,\n         we.transfer\n  FROM word_info wi \n  INNER JOIN word_mean wm ON wm.word = wi.word\n  INNER JOIN word_example we ON we.word = wm.word AND we.seq = wm.seq\n  WHERE wi.\"depth\" = 4\n');
 
         await callback?.onCreate?.call(database, version);
       },
@@ -233,13 +233,17 @@ class _$WordDAO extends WordDAO {
   }
 
   @override
-  Future<List<WordExampleDetail>> getExamples(
+  Future<List<WordExampleView>> getExamples(
     String word,
     int seq,
   ) async {
     return _queryAdapter.queryList(
-        'SELECT we.word,          we.example,          we.transfer   FROM word_info wi   INNER JOIN word_mean wm ON wm.word = wi.word   INNER JOIN word_example we ON we.word = wm.word AND we.seq = wm.seq   WHERE wi.\"depth\" = 4     AND we.word = ?1     AND we.seq = ?2',
-        mapper: (Map<String, Object?> row) => WordExampleDetail(id: row['id'] as int?, seq: row['seq'] as int, word: row['word'] as String, example: row['example'] as String, transfer: row['transfer'] as String),
+        'SELECT * FROM WordExampleView WHERE word = ?1 AND seq = ?2',
+        mapper: (Map<String, Object?> row) => WordExampleView(
+            row['word'] as String,
+            row['seq'] as int,
+            row['example'] as String,
+            row['transfer'] as String),
         arguments: [word, seq]);
   }
 

@@ -5,6 +5,7 @@ import 'package:englishword/core/logger/app_logger.dart';
 import 'package:englishword/core/style/app_color.dart';
 import 'package:englishword/core/style/app_text_style.dart';
 import 'package:englishword/feature/base/base_page.dart';
+import 'package:englishword/feature/pages/depth/deep/deep_depth_event.dart';
 import 'package:englishword/feature/pages/depth/deep/deep_depth_state.dart';
 import 'package:englishword/feature/pages/depth/provider/favorite_provider.dart';
 import 'package:englishword/feature/pages/depth/widget/depth_step_bar.dart';
@@ -14,7 +15,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-class DeepDepthPage extends BasePage with DeepDepthState {
+class DeepDepthPage extends BasePage with DeepDepthState, DeepDepthEvent {
   const DeepDepthPage({super.key});
 
   @override
@@ -51,43 +52,58 @@ class DeepDepthPage extends BasePage with DeepDepthState {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Container(
-                                width: double.infinity,
-                                padding: const EdgeInsets.all(8),
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  border: Border.all(
-                                    width: item.isBold ? 2 : 1,
-                                    color:
-                                    item.isBold
-                                        ? AppColor.borderImportant
-                                        : AppColor.borderNormal,
+                              BounceTapper(
+                                onTap: () {
+                                  routeToExampleDepth(
+                                    ref,
+                                    item.word,
+                                    int.parse(item.means.first.seq),
+                                  );
+                                },
+                                child: Container(
+                                  width: double.infinity,
+                                  padding: const EdgeInsets.all(8),
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    border: Border.all(
+                                      width: item.isBold ? 2 : 1,
+                                      color:
+                                          item.isBold
+                                              ? AppColor.borderImportant
+                                              : AppColor.borderNormal,
+                                    ),
+                                    borderRadius: BorderRadius.circular(4),
                                   ),
-                                  borderRadius: BorderRadius.circular(4),
-                                ),
-                                child: Text(
-                                  item.word,
-                                  style: AppTextStyle.body3.copyWith(
-                                    color: AppColor.depthBold,
+                                  child: Text(
+                                    item.word,
+                                    style: AppTextStyle.body3.copyWith(
+                                      color: AppColor.depthBold,
+                                    ),
                                   ),
                                 ),
                               ),
                               const Gap(1),
                               Consumer(
                                 builder: (context, ref, child) {
-                                  final isBlur = !ref
-                                      .watch(blurProviderProvider)
-                                      .contains(item);
+                                  final isBlur =
+                                      !ref
+                                          .watch(blurProviderProvider)
+                                          .contains(item);
 
                                   return BounceTapper(
                                     onTap: () {
-                                      ref.read(blurProviderProvider.notifier).toggleBlur(item);
+                                      ref
+                                          .read(blurProviderProvider.notifier)
+                                          .toggleBlur(item);
                                     },
                                     child: Container(
                                       width: double.infinity,
                                       padding: const EdgeInsets.all(8),
                                       decoration: BoxDecoration(
-                                        color: isBlur ? AppColor.of.brand5 : AppColor.of.yellow2,
+                                        color:
+                                            isBlur
+                                                ? AppColor.of.brand5
+                                                : AppColor.of.yellow2,
                                         borderRadius: BorderRadius.circular(4),
                                       ),
                                       child: AnimatedOpacity(
@@ -105,9 +121,9 @@ class DeepDepthPage extends BasePage with DeepDepthState {
                                             item.means.first.mean,
                                             style: AppTextStyle.body3.copyWith(
                                               color:
-                                              isBlur
-                                                  ? AppColor.of.gray1
-                                                  : AppColor.of.black,
+                                                  isBlur
+                                                      ? AppColor.of.gray1
+                                                      : AppColor.of.black,
                                             ),
                                           ),
                                         ),

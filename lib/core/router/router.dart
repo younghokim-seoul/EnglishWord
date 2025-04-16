@@ -1,8 +1,10 @@
 import 'package:englishword/core/database/domain/word_with_words.dart';
 import 'package:englishword/feature/pages/depth/deep/deep_depth_page.dart';
 import 'package:englishword/feature/pages/depth/depth_page.dart';
+import 'package:englishword/feature/pages/depth/example/example_depth_page.dart';
 import 'package:englishword/feature/pages/depth/provider/deep_depth_route_arg.dart';
 import 'package:englishword/feature/pages/depth/provider/depth_route_arg.dart';
+import 'package:englishword/feature/pages/depth/provider/example_depth_route_arg.dart';
 import 'package:englishword/feature/pages/home/home_page.dart';
 import 'package:englishword/feature/pages/splash/splash_page.dart';
 import 'package:flutter/material.dart';
@@ -45,10 +47,21 @@ class SplashRoute extends GoRouteData {
   path: HomeRoute.path,
   name: HomeRoute.name,
   routes: [
-    TypedGoRoute<DepthRoute>(path: DepthRoute.path, name: DepthRoute.name),
-    TypedGoRoute<DeepDepthRoute>(
-      path: DeepDepthRoute.path,
-      name: DeepDepthRoute.name,
+    TypedGoRoute<DepthRoute>(
+      path: DepthRoute.path,
+      name: DepthRoute.name,
+      routes: [
+        TypedGoRoute<DeepDepthRoute>(
+          path: DeepDepthRoute.path,
+          name: DeepDepthRoute.name,
+          routes: [
+            TypedGoRoute<ExampleDepthRoute>(
+              path: ExampleDepthRoute.path,
+              name: ExampleDepthRoute.name,
+            ),
+          ],
+        ),
+      ],
     ),
   ],
 )
@@ -100,8 +113,8 @@ class DepthRoute extends GoRouteData {
     );
   }
 
-  void updateArg({required WordWithWords model,required String depth2}) {
-    arg = (model: model,depth2 : depth2);
+  void updateArg({required WordWithWords model, required String depth2}) {
+    arg = (model: model, depth2: depth2);
   }
 }
 
@@ -132,8 +145,12 @@ class DeepDepthRoute extends GoRouteData {
     );
   }
 
-  void updateArg({required WordWithWords model,required String depth2,required String depth3}) {
-    arg = (model: model, depth2: depth2,depth3: depth3);
+  void updateArg({
+    required WordWithWords model,
+    required String depth2,
+    required String depth3,
+  }) {
+    arg = (model: model, depth2: depth2, depth3: depth3);
   }
 }
 
@@ -143,7 +160,7 @@ class ExampleDepthRoute extends GoRouteData {
   static const String path = 'example_depth';
   static const String name = 'example_depth';
 
-  static late DeepDepthRouteArg arg;
+  static late ExampleDepthRouteArg arg;
 
   @override
   Page<void> buildPage(BuildContext context, GoRouterState state) {
@@ -160,11 +177,11 @@ class ExampleDepthRoute extends GoRouteData {
 
         return SlideTransition(position: animation.drive(tween), child: child);
       },
-      child: const DeepDepthPage(),
+      child: const ExampleDepthPage(),
     );
   }
 
-  void updateArg({required WordWithWords model,required String depth2,required String depth3}) {
-    arg = (model: model, depth2: depth2,depth3: depth3);
+  void updateArg({required String exampleWord, required int exampleSeq}) {
+    arg = (exampleWord: exampleWord, exampleSeq: exampleSeq);
   }
 }
