@@ -9,6 +9,8 @@ class AppColor extends ThemeExtension<AppColor> {
 
   static const borderNormal = Color(0xFFEAEAEA);
   static const borderImportant = Color(0xFF80A477);
+  static const wordImportant = Color(0xFF02343F);
+
 
 
   static final AppColor _light = AppColor._(

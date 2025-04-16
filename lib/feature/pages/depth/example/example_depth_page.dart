@@ -31,12 +31,51 @@ class ExampleDepthPage extends BasePage with ExampleDepthState {
           itemBuilder: (context, index) {
             final item = model[index];
 
-
             return Container(
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
-              child: Row(
+              child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [],
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  BounceTapper(
+                    onTap: () {},
+                    child: Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        border: Border.all(color: AppColor.borderNormal),
+                        borderRadius: BorderRadius.circular(4),
+                      ),
+                      child: Text(
+                        item.word,
+                        style: AppTextStyle.body3.copyWith(
+                          color: AppColor.depthBold,
+                        ),
+                      ),
+                    ),
+                  ),
+                  const Gap(9),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 8),
+                    child: Text(
+                      item.example,
+                      style: AppTextStyle.title1.copyWith(
+                        color: AppColor.wordImportant,
+                      ),
+                    ),
+                  ),
+                  const Gap(9),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 8),
+                    child: Text(
+                      item.transfer,
+                      style: AppTextStyle.headline3.copyWith(
+                        color: AppColor.depthBold,
+                      ),
+                    ),
+                  ),
+                ],
               ),
             );
           },

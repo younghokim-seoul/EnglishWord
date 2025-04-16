@@ -26,8 +26,6 @@ class DeepDepthPage extends BasePage with DeepDepthState, DeepDepthEvent {
         Expanded(
           child: getDeepWordWithWords(ref).when(
             data: (model) {
-              logger.d("model... $model");
-
               return ListView.builder(
                 shrinkWrap: true,
                 padding: EdgeInsets.zero,

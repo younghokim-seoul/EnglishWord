@@ -53,10 +53,6 @@ class WordRepositoryImpl implements WordRepository {
       wordDAO.getDeepWordsByWord(word);
 
   @override
-  Future<List<WordExampleView>> getExamples(String word, int seq) async {
-    logger.i("getExamples => $word, $seq");
-    final asd = await wordDAO.getExamples(word, seq);
-    logger.d("asd => $asd");
-    return asd;
-  }
+  Future<List<WordExampleView>> getExamples(String word, int seq) =>
+      wordDAO.getExamples(word, seq);
 }

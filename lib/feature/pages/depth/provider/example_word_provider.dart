@@ -18,10 +18,7 @@ class ExampleWordProvider extends _$ExampleWordProvider {
   @override
   FutureOr<List<WordExampleView>> build(String word, int seq) async {
     final repository = getIt<WordRepository>();
-    logger.d("befre " + word + " " + seq.toString());
     final list = await repository.getExamples(word, seq);
-
-
     logger.d("list => $list");
     return list;
   }
