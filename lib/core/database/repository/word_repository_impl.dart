@@ -1,6 +1,7 @@
 import 'package:englishword/core/database/domain/deep_word_with_words.dart';
 import 'package:englishword/core/database/domain/sub_word_with_words.dart';
 import 'package:englishword/core/database/domain/word_with_words.dart';
+import 'package:englishword/core/database/entity/word_example_detail.dart';
 import 'package:englishword/core/database/entity/word_example_entity.dart';
 import 'package:englishword/core/database/entity/word_info_entity.dart';
 import 'package:englishword/core/database/entity/word_mean_entity.dart';
@@ -50,4 +51,6 @@ class WordRepositoryImpl implements WordRepository {
   Future<DeepWordWithWords?> getDeepWordsByWord(String word) =>
       wordDAO.getDeepWordsByWord(word);
 
+  @override
+  Future<List<WordExampleDetail>> getExamples(String word, int seq) => wordDAO.getExamples(word, seq);
 }

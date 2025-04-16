@@ -1,6 +1,7 @@
 import 'package:englishword/core/database/domain/deep_word_with_words.dart';
 import 'package:englishword/core/database/domain/sub_word_with_words.dart';
 import 'package:englishword/core/database/domain/word_with_words.dart';
+import 'package:englishword/core/database/entity/word_example_detail.dart';
 import 'package:englishword/core/database/entity/word_example_entity.dart';
 import 'package:englishword/core/database/entity/word_info_entity.dart';
 import 'package:englishword/core/database/entity/word_mean_entity.dart';
@@ -26,4 +27,6 @@ abstract interface class WordRepository {
   Future<SubWordWithWords?> getSubWordsByWord(String word);
 
   Future<DeepWordWithWords?> getDeepWordsByWord(String word);
+
+  Future<List<WordExampleDetail>> getExamples(String word, int seq);
 }
