@@ -100,7 +100,7 @@ class _$WordDatabase extends WordDatabase {
         await database.execute(
             'CREATE TABLE IF NOT EXISTS `word_example` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `seq` INTEGER NOT NULL, `word` TEXT NOT NULL, `example` TEXT NOT NULL, `transfer` TEXT NOT NULL)');
         await database.execute(
-            'CREATE TABLE IF NOT EXISTS `my_word` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `depth_word_1` TEXT NOT NULL, `depth_word_2` TEXT NOT NULL, `depth_word_3` TEXT NOT NULL, `depth_word_4` TEXT NOT NULL, `mean` TEXT NOT NULL)');
+            'CREATE TABLE IF NOT EXISTS `my_word` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `depth_word_1` TEXT NOT NULL, `depth_word_2` TEXT NOT NULL, `depth_word_3` TEXT NOT NULL, `depth_word_4` TEXT NOT NULL, `means` TEXT NOT NULL)');
         await database.execute(
             'CREATE TABLE IF NOT EXISTS `word_info` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `depth` INTEGER NOT NULL, `word` TEXT NOT NULL, `bold` TEXT NOT NULL, `p_word` TEXT NOT NULL)');
 
@@ -114,6 +114,8 @@ class _$WordDatabase extends WordDatabase {
             'CREATE VIEW IF NOT EXISTS `WordMeanWithInfo` AS   SELECT wm.word, \n         \'[\' || GROUP_CONCAT(\n           \'{\"seq\":\"\'||wm.seq||\n           \'\",\"mean\":\"\'||wm.mean||\n           \'\",\"bold\":\"\'||wm.bold||\'\"}\'\n         ) || \']\' AS means\n  FROM word_info wi\n  INNER JOIN word_mean wm ON wm.word = wi.word\n  WHERE wi.depth = 4\n  GROUP BY wm.word\n');
         await database.execute(
             'CREATE VIEW IF NOT EXISTS `WordExampleView` AS   SELECT we.word,\n         we.seq,               -- ✅ 반드시 포함해야 함!\n         we.example,\n         we.transfer\n  FROM word_info wi \n  INNER JOIN word_mean wm ON wm.word = wi.word\n  INNER JOIN word_example we ON we.word = wm.word AND we.seq = wm.seq\n  WHERE wi.\"depth\" = 4\n');
+        await database.execute(
+            'CREATE VIEW IF NOT EXISTS `MyWordInsertView` AS   SELECT w1.word AS depth_word_1,\n         w2.word AS depth_word_2,\n         w3.word AS depth_word_3,\n         w4.word AS depth_word_4,\n         wm.means AS means\n  FROM word_info w1\n  INNER JOIN word_info w2 ON w2.p_word = w1.word AND w2.depth = 2\n  INNER JOIN word_info w3 ON w3.p_word = w2.word AND w3.depth = 3\n  INNER JOIN word_info w4 ON w4.p_word = w3.word AND w4.depth = 4\n  INNER JOIN (\n    SELECT wm.word,\n           \'[\' || GROUP_CONCAT(\n             \'{\"seq\":\"\' || wm.seq || \'\",\"mean\":\"\' || wm.mean || \'\",\"bold\":\"\' || wm.bold || \'\"}\'\n           ) || \']\' AS means\n    FROM word_info wi\n    INNER JOIN word_mean wm ON wm.word = wi.word\n    WHERE wi.depth = 4\n    GROUP BY wm.word\n  ) wm ON wm.word = w4.word\n  WHERE w1.depth = 1\n');
 
         await callback?.onCreate?.call(database, version);
       },
@@ -131,7 +133,7 @@ class _$WordDAO extends WordDAO {
   _$WordDAO(
     this.database,
     this.changeListener,
-  )   : _queryAdapter = QueryAdapter(database),
+  )   : _queryAdapter = QueryAdapter(database, changeListener),
         _wordInfoEntityInsertionAdapter = InsertionAdapter(
             database,
             'word_info',
@@ -141,7 +143,8 @@ class _$WordDAO extends WordDAO {
                   'word': item.word,
                   'bold': item.bold,
                   'p_word': item.p_word
-                }),
+                },
+            changeListener),
         _wordExampleEntityInsertionAdapter = InsertionAdapter(
             database,
             'word_example',
@@ -151,7 +154,8 @@ class _$WordDAO extends WordDAO {
                   'word': item.word,
                   'example': item.example,
                   'transfer': item.transfer
-                }),
+                },
+            changeListener),
         _wordMeanEntityInsertionAdapter = InsertionAdapter(
             database,
             'word_mean',
@@ -161,7 +165,8 @@ class _$WordDAO extends WordDAO {
                   'word': item.word,
                   'mean': item.mean,
                   'bold': item.bold
-                });
+                },
+            changeListener);
 
   final sqflite.DatabaseExecutor database;
 
@@ -194,13 +199,6 @@ class _$WordDAO extends WordDAO {
   }
 
   @override
-  Future<void> insertMyWord(String targetWord) async {
-    await _queryAdapter.queryNoReturn(
-        'INSERT INTO my_word     SELECT w1.word,            w2.word,            w3.word,            w4.word,            wm.means     FROM   word_info w1     INNER JOIN word_info w2              ON w2.p_word = w1.word            AND w2.\"depth\" = 2     INNER JOIN word_info w3              ON w3.p_word = w2.word            AND w3.\"depth\" = 3     INNER JOIN word_info w4              ON w4.p_word = w3.word            AND w4.\"depth\" = 4     INNER JOIN (         SELECT wm.word,                 \'[\' || group_concat(\'{\"seq\":\"\' || wm.seq || \'\",\"mean\":\"\'                 || wm.mean || \'\",\"bold\":\"\' || wm.bold || \'\"}\') || \']\' AS means          FROM   word_info wi         INNER JOIN word_mean wm ON wm.word = wi.word         WHERE  wi.\"depth\" = 4         GROUP BY wm.word     ) wm ON wm.word = w4.word     WHERE  w1.\"depth\" = 1       AND  w4.word = ?1',
-        arguments: [targetWord]);
-  }
-
-  @override
   Future<List<WordWithWords>> getGroupedWords() async {
     return _queryAdapter.queryList('SELECT * FROM WordWithWords',
         mapper: (Map<String, Object?> row) =>
@@ -216,12 +214,14 @@ class _$WordDAO extends WordDAO {
   }
 
   @override
-  Future<DeepWordWithWords?> getDeepWordsByWord(String word) async {
-    return _queryAdapter.query(
+  Stream<DeepWordWithWords?> getDeepWordsByWord(String word) {
+    return _queryAdapter.queryStream(
         'SELECT * FROM DeepWordWithWords WHERE word = ?1',
         mapper: (Map<String, Object?> row) =>
             DeepWordWithWords(row['word'] as String, row['words'] as String),
-        arguments: [word]);
+        arguments: [word],
+        queryableName: 'DeepWordWithWords',
+        isView: true);
   }
 
   @override
@@ -245,6 +245,20 @@ class _$WordDAO extends WordDAO {
             row['example'] as String,
             row['transfer'] as String),
         arguments: [word, seq]);
+  }
+
+  @override
+  Future<void> insertMyWord(String word) async {
+    await _queryAdapter.queryNoReturn(
+        'INSERT INTO my_word (depth_word_1, depth_word_2, depth_word_3, depth_word_4, means)   SELECT * FROM MyWordInsertView   WHERE depth_word_4 = ?1',
+        arguments: [word]);
+  }
+
+  @override
+  Future<void> deleteMyWord(String word) async {
+    await _queryAdapter.queryNoReturn(
+        'DELETE FROM my_word   WHERE depth_word_4 = ?1',
+        arguments: [word]);
   }
 
   @override

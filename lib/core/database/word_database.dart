@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:englishword/core/database/domain/deep_word_with_words.dart';
+import 'package:englishword/core/database/domain/my_word_insert.dart';
 import 'package:englishword/core/database/domain/sub_word_with_words.dart';
 import 'package:englishword/core/database/domain/word_example_view.dart';
 import 'package:englishword/core/database/domain/word_mean_with_info.dart';
@@ -25,6 +26,7 @@ part 'word_database.g.dart';
     DeepWordWithWords,
     WordMeanWithInfo,
     WordExampleView,
+    MyWordInsertView,
   ],
 )
 abstract class WordDatabase extends FloorDatabase {

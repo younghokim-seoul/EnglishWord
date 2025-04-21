@@ -29,38 +29,6 @@ abstract class WordDAO {
   @Query('SELECT COUNT(*) FROM word_mean')
   Future<int?> countWordMean();
 
-  @Query('''
-    INSERT INTO my_word
-    SELECT w1.word,
-           w2.word,
-           w3.word,
-           w4.word,
-           wm.means
-    FROM   word_info w1
-    INNER JOIN word_info w2 
-            ON w2.p_word = w1.word
-           AND w2."depth" = 2
-    INNER JOIN word_info w3 
-            ON w3.p_word = w2.word
-           AND w3."depth" = 3
-    INNER JOIN word_info w4 
-            ON w4.p_word = w3.word
-           AND w4."depth" = 4
-    INNER JOIN (
-        SELECT wm.word, 
-               '[' || group_concat('{"seq":"' || wm.seq || '","mean":"'
-                || wm.mean || '","bold":"' || wm.bold || '"}') || ']' AS means 
-        FROM   word_info wi
-        INNER JOIN word_mean wm ON wm.word = wi.word
-        WHERE  wi."depth" = 4
-        GROUP BY wm.word
-    ) wm ON wm.word = w4.word
-    WHERE  w1."depth" = 1
-      AND  w4.word = :targetWord
-  ''')
-  Future<void> insertMyWord(String targetWord);
-
-  //뎁스 1 단어 불러오기
   @Query('SELECT * FROM WordWithWords')
   Future<List<WordWithWords>> getGroupedWords();
 
@@ -68,12 +36,24 @@ abstract class WordDAO {
   Future<SubWordWithWords?> getSubWordsByWord(String word);
 
   @Query('SELECT * FROM DeepWordWithWords WHERE word = :word')
-  Future<DeepWordWithWords?> getDeepWordsByWord(String word);
+  Stream<DeepWordWithWords?> getDeepWordsByWord(String word);
 
   @Query('SELECT * FROM WordMeanWithInfo WHERE word = :word')
   Future<WordMeanWithInfo?> getWordMean(String word);
 
-
   @Query('SELECT * FROM WordExampleView WHERE word = :word AND seq = :seq')
   Future<List<WordExampleView>> getExamples(String word, int seq);
+
+  @Query('''
+  INSERT INTO my_word (depth_word_1, depth_word_2, depth_word_3, depth_word_4, means)
+  SELECT * FROM MyWordInsertView
+  WHERE depth_word_4 = :word
+''')
+  Future<void> insertMyWord(String word);
+
+  @Query('''
+  DELETE FROM my_word
+  WHERE depth_word_4 = :word
+''')
+  Future<void> deleteMyWord(String word);
 }

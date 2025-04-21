@@ -6,7 +6,7 @@ part of 'deep_word_provider.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$deepWordProviderHash() => r'faa86166f5f0bf413f6bc4459eb87708c2c890e0';
+String _$deepWordProviderHash() => r'd872e3de6490046f4ae2cde77a66cbbaef407ff4';
 
 /// Copied from Dart SDK
 class _SystemHash {
@@ -30,10 +30,10 @@ class _SystemHash {
 }
 
 abstract class _$DeepWordProvider
-    extends BuildlessAutoDisposeAsyncNotifier<DeepWordWithWords?> {
+    extends BuildlessAutoDisposeStreamNotifier<DeepWordWithWords> {
   late final String word;
 
-  FutureOr<DeepWordWithWords?> build(
+  Stream<DeepWordWithWords> build(
     String word,
   );
 }
@@ -43,7 +43,7 @@ abstract class _$DeepWordProvider
 const deepWordProviderProvider = DeepWordProviderFamily();
 
 /// See also [DeepWordProvider].
-class DeepWordProviderFamily extends Family<AsyncValue<DeepWordWithWords?>> {
+class DeepWordProviderFamily extends Family<AsyncValue<DeepWordWithWords>> {
   /// See also [DeepWordProvider].
   const DeepWordProviderFamily();
 
@@ -81,8 +81,8 @@ class DeepWordProviderFamily extends Family<AsyncValue<DeepWordWithWords?>> {
 }
 
 /// See also [DeepWordProvider].
-class DeepWordProviderProvider extends AutoDisposeAsyncNotifierProviderImpl<
-    DeepWordProvider, DeepWordWithWords?> {
+class DeepWordProviderProvider extends AutoDisposeStreamNotifierProviderImpl<
+    DeepWordProvider, DeepWordWithWords> {
   /// See also [DeepWordProvider].
   DeepWordProviderProvider(
     String word,
@@ -113,7 +113,7 @@ class DeepWordProviderProvider extends AutoDisposeAsyncNotifierProviderImpl<
   final String word;
 
   @override
-  FutureOr<DeepWordWithWords?> runNotifierBuild(
+  Stream<DeepWordWithWords> runNotifierBuild(
     covariant DeepWordProvider notifier,
   ) {
     return notifier.build(
@@ -138,7 +138,7 @@ class DeepWordProviderProvider extends AutoDisposeAsyncNotifierProviderImpl<
   }
 
   @override
-  AutoDisposeAsyncNotifierProviderElement<DeepWordProvider, DeepWordWithWords?>
+  AutoDisposeStreamNotifierProviderElement<DeepWordProvider, DeepWordWithWords>
       createElement() {
     return _DeepWordProviderProviderElement(this);
   }
@@ -158,14 +158,14 @@ class DeepWordProviderProvider extends AutoDisposeAsyncNotifierProviderImpl<
 }
 
 mixin DeepWordProviderRef
-    on AutoDisposeAsyncNotifierProviderRef<DeepWordWithWords?> {
+    on AutoDisposeStreamNotifierProviderRef<DeepWordWithWords> {
   /// The parameter `word` of this provider.
   String get word;
 }
 
 class _DeepWordProviderProviderElement
-    extends AutoDisposeAsyncNotifierProviderElement<DeepWordProvider,
-        DeepWordWithWords?> with DeepWordProviderRef {
+    extends AutoDisposeStreamNotifierProviderElement<DeepWordProvider,
+        DeepWordWithWords> with DeepWordProviderRef {
   _DeepWordProviderProviderElement(super.provider);
 
   @override

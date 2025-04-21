@@ -7,7 +7,7 @@ part of 'example_word_provider.dart';
 // **************************************************************************
 
 String _$exampleWordProviderHash() =>
-    r'264294a929892171ac680dbc20d9591bcc702e7d';
+    r'25e1c8f88a3b78f2927528ca937f3a074397b3b9';
 
 /// Copied from Dart SDK
 class _SystemHash {

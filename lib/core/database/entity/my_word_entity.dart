@@ -8,7 +8,7 @@ class MyWordEntity {
   final String depth_word_2;
   final String depth_word_3;
   final String depth_word_4;
-  final String mean;
+  final String means;
 
   //<editor-fold desc="Data Methods">
   const MyWordEntity({
@@ -17,7 +17,7 @@ class MyWordEntity {
     required this.depth_word_2,
     required this.depth_word_3,
     required this.depth_word_4,
-    required this.mean,
+    required this.means,
   });
 
   @override
@@ -30,7 +30,7 @@ class MyWordEntity {
           depth_word_2 == other.depth_word_2 &&
           depth_word_3 == other.depth_word_3 &&
           depth_word_4 == other.depth_word_4 &&
-          mean == other.mean);
+          means == other.means);
 
   @override
   int get hashCode =>
@@ -39,7 +39,7 @@ class MyWordEntity {
       depth_word_2.hashCode ^
       depth_word_3.hashCode ^
       depth_word_4.hashCode ^
-      mean.hashCode;
+      means.hashCode;
 
   @override
   String toString() {
@@ -49,7 +49,7 @@ class MyWordEntity {
         ' depth_word_2: $depth_word_2,' +
         ' depth_word_3: $depth_word_3,' +
         ' depth_word_4: $depth_word_4,' +
-        ' mean: $mean,' +
+        ' means: $means,' +
         '}';
   }
 
@@ -59,7 +59,7 @@ class MyWordEntity {
     String? depth_word_2,
     String? depth_word_3,
     String? depth_word_4,
-    String? mean,
+    String? means,
   }) {
     return MyWordEntity(
       id: id ?? this.id,
@@ -67,7 +67,7 @@ class MyWordEntity {
       depth_word_2: depth_word_2 ?? this.depth_word_2,
       depth_word_3: depth_word_3 ?? this.depth_word_3,
       depth_word_4: depth_word_4 ?? this.depth_word_4,
-      mean: mean ?? this.mean,
+      means: means ?? this.means,
     );
   }
 
@@ -78,7 +78,7 @@ class MyWordEntity {
       'depth_word_2': this.depth_word_2,
       'depth_word_3': this.depth_word_3,
       'depth_word_4': this.depth_word_4,
-      'mean': this.mean,
+      'means': this.means,
     };
   }
 
@@ -89,7 +89,7 @@ class MyWordEntity {
       depth_word_2: map['depth_word_2'] as String,
       depth_word_3: map['depth_word_3'] as String,
       depth_word_4: map['depth_word_4'] as String,
-      mean: map['mean'] as String,
+      means: map['means'] as String,
     );
   }
 

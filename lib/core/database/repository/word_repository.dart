@@ -15,7 +15,9 @@ abstract interface class WordRepository {
 
   Future<void> insertWordMeans(List<WordMeanEntity> wordMeanList);
 
-  Future<void> insertMyWord(String targetWord);
+  Future<void> insertMyWord(String word);
+
+  Future<void> deleteMyWord(String word);
 
   Future<int> countWordInfo();
 
@@ -27,7 +29,7 @@ abstract interface class WordRepository {
 
   Future<SubWordWithWords?> getSubWordsByWord(String word);
 
-  Future<DeepWordWithWords?> getDeepWordsByWord(String word);
+  Stream<DeepWordWithWords?> getDeepWordsByWord(String word);
 
   Future<List<WordExampleView>> getExamples(String word, int seq);
 }

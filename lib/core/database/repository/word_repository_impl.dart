@@ -16,8 +16,8 @@ class WordRepositoryImpl implements WordRepository {
   WordRepositoryImpl({required this.wordDAO});
 
   @override
-  Future<void> insertMyWord(String targetWord) =>
-      wordDAO.insertMyWord(targetWord);
+  Future<void> insertMyWord(String word) =>
+      wordDAO.insertMyWord(word);
 
   @override
   Future<void> insertWordExamples(List<WordExampleEntity> wordExampleList) =>
@@ -49,10 +49,13 @@ class WordRepositoryImpl implements WordRepository {
       wordDAO.getSubWordsByWord(word);
 
   @override
-  Future<DeepWordWithWords?> getDeepWordsByWord(String word) =>
+  Stream<DeepWordWithWords?> getDeepWordsByWord(String word) =>
       wordDAO.getDeepWordsByWord(word);
 
   @override
   Future<List<WordExampleView>> getExamples(String word, int seq) =>
       wordDAO.getExamples(word, seq);
+
+  @override
+  Future<void> deleteMyWord(String word) => wordDAO.deleteMyWord(word);
 }
