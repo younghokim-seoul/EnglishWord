@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:bounce_tapper/bounce_tapper.dart';
+import 'package:englishword/core/audio/audio_manager.dart';
 import 'package:englishword/core/logger/app_logger.dart';
 import 'package:englishword/core/style/app_color.dart';
 import 'package:englishword/core/style/app_text_style.dart';
@@ -38,7 +39,10 @@ class ExampleDepthPage extends BasePage with ExampleDepthState {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   BounceTapper(
-                    onTap: () {},
+                    onTap: () async {
+                      logger.i("음원이름.." + item.word);
+                      await AudioManager.intance.play(item.word);
+                    },
                     child: Container(
                       width: double.infinity,
                       padding: const EdgeInsets.all(8),
@@ -84,6 +88,12 @@ class ExampleDepthPage extends BasePage with ExampleDepthState {
       error: (e, __) => const Center(child: CircularProgressIndicator()),
       loading: () => const Center(child: CircularProgressIndicator()),
     );
+  }
+
+  @override
+  void onDispose(WidgetRef ref) {
+    AudioManager.intance.stop();
+    super.onDispose(ref);
   }
 
   @override

@@ -44,13 +44,12 @@ class AudioManager {
     );
   }
 
-  Future<void> play() async {
+  Future<void> play(String fileName) async {
     try {
       await _handleActionWithLock(
         processingFlag: _isPlayProcessing,
         action: () async {
-          logger.d("AudioPlayerHandler: play() 호출");
-          await player.setUrl("ASdasd");
+          await player.setAudioSource(AudioSource.asset('assets/sound/$fileName.mp3'));
           await player.play();
           logger.d("AudioPlayerHandler: play() 완료");
         },

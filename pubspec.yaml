@@ -76,6 +76,7 @@ flutter:
     - assets/fonts/
     - assets/raw/
     - assets/icons/
+    - assets/sound/
 
   fonts:
     - family: pretendard
