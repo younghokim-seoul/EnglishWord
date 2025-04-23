@@ -9084,12 +9084,6 @@
 		"bold" : ""
 	},
 	{
-		"word" : "minor",
-		"seq" : 2,
-		"mean" : "중요하지 않은 ",
-		"bold" : ""
-	},
-	{
 		"word" : "minority",
 		"seq" : 2,
 		"mean" : "미성년",
@@ -9327,12 +9321,6 @@
 		"word" : "separated",
 		"seq" : 2,
 		"mean" : "(부부가)별거중인 ",
-		"bold" : "Y"
-	},
-	{
-		"word" : "partner",
-		"seq" : 2,
-		"mean" : "배우자, 짝 ",
 		"bold" : "Y"
 	},
 	{
@@ -10500,22 +10488,10 @@
 		"bold" : ""
 	},
 	{
-		"word" : "graft",
-		"seq" : 2,
-		"mean" : "피부이식, 피부이식하다",
-		"bold" : "Y"
-	},
-	{
 		"word" : "transplant",
 		"seq" : 2,
 		"mean" : "이식,  식물을 옮겨심다",
 		"bold" : ""
-	},
-	{
-		"word" : "transplantation",
-		"seq" : 2,
-		"mean" : "이식, 이식수술",
-		"bold" : "Y"
 	},
 	{
 		"word" : "swathe",
@@ -10539,12 +10515,6 @@
 		"word" : "fever",
 		"seq" : 2,
 		"mean" : "흥분, 열기",
-		"bold" : ""
-	},
-	{
-		"word" : "sick",
-		"seq" : 2,
-		"mean" : "역겨운, 화가난 ",
 		"bold" : ""
 	},
 	{
@@ -10695,12 +10665,6 @@
 		"word" : "mate",
 		"seq" : 3,
 		"mean" : "짝짓기하다(동물)",
-		"bold" : ""
-	},
-	{
-		"word" : "peer",
-		"seq" : 3,
-		"mean" : "자세히 들여보다, 자세히 보다",
 		"bold" : ""
 	},
 	{
@@ -10912,12 +10876,6 @@
 		"seq" : 3,
 		"mean" : "사지, 팔, 다리 ",
 		"bold" : "Y"
-	},
-	{
-		"word" : "sole",
-		"seq" : 3,
-		"mean" : "신발밑창",
-		"bold" : ""
 	},
 	{
 		"word" : "ass",
@@ -11166,12 +11124,6 @@
 		"bold" : ""
 	},
 	{
-		"word" : "minor",
-		"seq" : 4,
-		"mean" : "(음악)단조",
-		"bold" : ""
-	},
-	{
 		"word" : "set",
 		"seq" : 4,
 		"mean" : "조절.조정하다 ",
@@ -11325,12 +11277,6 @@
 		"word" : "stroke",
 		"seq" : 5,
 		"mean" : "쓰다듬다",
-		"bold" : ""
-	},
-	{
-		"word" : "subject",
-		"seq" : 6,
-		"mean" : "복속. 굴복시키다",
 		"bold" : ""
 	}
 ]

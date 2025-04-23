@@ -29,7 +29,7 @@ abstract interface class WordRepository {
 
   Future<SubWordWithWords?> getSubWordsByWord(String word);
 
-  Stream<DeepWordWithWords?> getDeepWordsByWord(String word);
+  Future<DeepWordWithWords?> getDeepWordsByWord(String word);
 
   Future<List<WordExampleView>> getExamples(String word, int seq);
 }

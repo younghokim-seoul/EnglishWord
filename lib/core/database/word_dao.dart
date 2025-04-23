@@ -36,7 +36,7 @@ abstract class WordDAO {
   Future<SubWordWithWords?> getSubWordsByWord(String word);
 
   @Query('SELECT * FROM DeepWordWithWords WHERE word = :word')
-  Stream<DeepWordWithWords?> getDeepWordsByWord(String word);
+  Future<DeepWordWithWords?> getDeepWordsByWord(String word);
 
   @Query('SELECT * FROM WordMeanWithInfo WHERE word = :word')
   Future<WordMeanWithInfo?> getWordMean(String word);

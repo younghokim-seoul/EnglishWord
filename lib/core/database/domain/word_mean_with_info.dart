@@ -4,14 +4,20 @@ import 'package:floor/floor.dart';
 import 'package:englishword/core/logger/app_logger.dart';
 
 @DatabaseView('''
-  SELECT wm.word, 
+  SELECT wm.word,
          '[' || GROUP_CONCAT(
            '{"seq":"'||wm.seq||
            '","mean":"'||wm.mean||
            '","bold":"'||wm.bold||'"}'
          ) || ']' AS means
-  FROM word_info wi
-  INNER JOIN word_mean wm ON wm.word = wi.word
+  FROM (
+    SELECT DISTINCT wi.word, wi.depth
+    FROM word_info wi
+  ) wi
+  INNER JOIN (
+    SELECT DISTINCT wm.*
+    FROM word_mean wm
+  ) wm ON wm.word = wi.word
   WHERE wi.depth = 4
   GROUP BY wm.word
 ''')
@@ -38,3 +44,4 @@ class WordMeanWithInfo {
     return [];
   }
 }
+

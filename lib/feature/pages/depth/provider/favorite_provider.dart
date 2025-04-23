@@ -17,12 +17,11 @@ class FavoriteProvider extends _$FavoriteProvider {
     final repository = getIt<WordRepository>();
     if (state.contains(targetModel)) {
       await repository.deleteMyWord(targetModel.word);
-   //   final removedModel = state..remove(targetModel);
-
-      ///  state = [...removedModel];
+      final removedModel = state..remove(targetModel);
+      state = [...removedModel];
     } else {
       await repository.insertMyWord(targetModel.word);
-      //    state = [...state, targetModel];
+      state = [...state, targetModel];
     }
   }
 

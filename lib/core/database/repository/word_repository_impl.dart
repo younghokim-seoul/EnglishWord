@@ -49,7 +49,7 @@ class WordRepositoryImpl implements WordRepository {
       wordDAO.getSubWordsByWord(word);
 
   @override
-  Stream<DeepWordWithWords?> getDeepWordsByWord(String word) =>
+  Future<DeepWordWithWords?> getDeepWordsByWord(String word) =>
       wordDAO.getDeepWordsByWord(word);
 
   @override

@@ -17,26 +17,13 @@ part 'splash.g.dart';
 class ReadyWords extends _$ReadyWords {
   @override
   FutureOr<void> build() async {
-
-
-      final jsonWordInfo =
-          json.decode(await rootBundle.loadString(Assets.jsonWordInfo))
-              as List<dynamic>;
-
-      final wordInfoList =
-          jsonWordInfo.map((e) => WordInfoEntity.fromMap(e)).toList();
-
-      logger.d("wordInfoList.. " + wordInfoList.length.toString());
-
-      logger.d("wordInfoList.. last " + wordInfoList.last.toString());
+    var startTime = DateTime.now();
 
     final repository = getIt<WordRepository>();
 
     bool didInsert = false;
 
     if (await repository.countWordExample() == 0) {
-      logger.i("word_example 삽입 필요 ");
-
       final jsonWordExample =
           json.decode(await rootBundle.loadString(Assets.jsonWordExample))
               as List<dynamic>;
@@ -49,7 +36,6 @@ class ReadyWords extends _$ReadyWords {
     }
 
     if (await repository.countWordInfo() == 0) {
-      logger.i("word_info 삽입 필요 ");
       final jsonWordInfo =
           json.decode(await rootBundle.loadString(Assets.jsonWordInfo))
               as List<dynamic>;
@@ -62,7 +48,6 @@ class ReadyWords extends _$ReadyWords {
     }
 
     if (await repository.countWordMean() == 0) {
-      logger.i("word_mean 삽입 필요 ");
       final jsonWordMean =
           json.decode(await rootBundle.loadString(Assets.jsonWordMean))
               as List<dynamic>;
@@ -74,13 +59,15 @@ class ReadyWords extends _$ReadyWords {
       didInsert = true;
     }
 
-
-    if(!didInsert){
-      logger.i("모든 데이터가 존재합니다. 딜레이 후 진행");
+    if (!didInsert) {
       await Future.delayed(const Duration(seconds: 2));
+    } else {
+      final diffTime = DateTime.now().difference(startTime);
+
+      if (diffTime < const Duration(seconds: 2)) {
+        final wait = const Duration(seconds: 2) - diffTime;
+        await Future.delayed(wait);
+      }
     }
-
   }
-
-
 }
