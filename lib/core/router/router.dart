@@ -6,6 +6,7 @@ import 'package:englishword/feature/pages/depth/provider/deep_depth_route_arg.da
 import 'package:englishword/feature/pages/depth/provider/depth_route_arg.dart';
 import 'package:englishword/feature/pages/depth/provider/example_depth_route_arg.dart';
 import 'package:englishword/feature/pages/home/home_page.dart';
+import 'package:englishword/feature/pages/my/my_word_page.dart';
 import 'package:englishword/feature/pages/splash/splash_page.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -63,6 +64,7 @@ class SplashRoute extends GoRouteData {
         ),
       ],
     ),
+    TypedGoRoute<MyWordRoute>(path: MyWordRoute.path, name: MyWordRoute.name),
   ],
 )
 class HomeRoute extends GoRouteData {
@@ -183,5 +185,31 @@ class ExampleDepthRoute extends GoRouteData {
 
   void updateArg({required String exampleWord, required int exampleSeq}) {
     arg = (exampleWord: exampleWord, exampleSeq: exampleSeq);
+  }
+}
+
+class MyWordRoute extends GoRouteData {
+  const MyWordRoute();
+
+  static const String path = 'my_word';
+  static const String name = 'my_word';
+
+  @override
+  Page<void> buildPage(BuildContext context, GoRouterState state) {
+    return CustomTransitionPage(
+      transitionsBuilder: (_, animation, __, child) {
+        var begin = const Offset(1.0, 0);
+        var end = Offset.zero;
+        var curve = Curves.ease;
+
+        var tween = Tween(
+          begin: begin,
+          end: end,
+        ).chain(CurveTween(curve: curve));
+
+        return SlideTransition(position: animation.drive(tween), child: child);
+      },
+      child: const MyWordPage(),
+    );
   }
 }

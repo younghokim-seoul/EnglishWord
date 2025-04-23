@@ -6,7 +6,7 @@ part of 'splash.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$readyWordsHash() => r'00cee323f60e277b1ab25f899c80c95392975bbc';
+String _$readyWordsHash() => r'727ba7af31ebefcfef4ae038886edbe40139237d';
 
 /// See also [ReadyWords].
 @ProviderFor(ReadyWords)

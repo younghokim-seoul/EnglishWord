@@ -58,6 +58,11 @@ RouteBase get $homeRoute => GoRouteData.$route(
             ),
           ],
         ),
+        GoRouteData.$route(
+          path: 'my_word',
+          name: 'my_word',
+          factory: $MyWordRouteExtension._fromState,
+        ),
       ],
     );
 
@@ -119,6 +124,23 @@ extension $ExampleDepthRouteExtension on ExampleDepthRoute {
 
   String get location => GoRouteData.$location(
         '/depth/deep_depth/example_depth',
+      );
+
+  void go(BuildContext context) => context.go(location);
+
+  Future<T?> push<T>(BuildContext context) => context.push<T>(location);
+
+  void pushReplacement(BuildContext context) =>
+      context.pushReplacement(location);
+
+  void replace(BuildContext context) => context.replace(location);
+}
+
+extension $MyWordRouteExtension on MyWordRoute {
+  static MyWordRoute _fromState(GoRouterState state) => const MyWordRoute();
+
+  String get location => GoRouteData.$location(
+        '/my_word',
       );
 
   void go(BuildContext context) => context.go(location);
