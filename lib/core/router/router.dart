@@ -48,21 +48,14 @@ class SplashRoute extends GoRouteData {
   path: HomeRoute.path,
   name: HomeRoute.name,
   routes: [
-    TypedGoRoute<DepthRoute>(
-      path: DepthRoute.path,
-      name: DepthRoute.name,
-      routes: [
-        TypedGoRoute<DeepDepthRoute>(
-          path: DeepDepthRoute.path,
-          name: DeepDepthRoute.name,
-          routes: [
-            TypedGoRoute<ExampleDepthRoute>(
-              path: ExampleDepthRoute.path,
-              name: ExampleDepthRoute.name,
-            ),
-          ],
-        ),
-      ],
+    TypedGoRoute<DepthRoute>(path: DepthRoute.path, name: DepthRoute.name),
+    TypedGoRoute<DeepDepthRoute>(
+      path: DeepDepthRoute.path,
+      name: DeepDepthRoute.name,
+    ),
+    TypedGoRoute<ExampleDepthRoute>(
+      path: ExampleDepthRoute.path,
+      name: ExampleDepthRoute.name,
     ),
     TypedGoRoute<MyWordRoute>(path: MyWordRoute.path, name: MyWordRoute.name),
   ],

@@ -257,6 +257,18 @@ class _$WordDAO extends WordDAO {
   }
 
   @override
+  Future<List<MyWordEntity>> getMyWord() async {
+    return _queryAdapter.queryList('SELECT * FROM my_word',
+        mapper: (Map<String, Object?> row) => MyWordEntity(
+            id: row['id'] as int?,
+            depth_word_1: row['depth_word_1'] as String,
+            depth_word_2: row['depth_word_2'] as String,
+            depth_word_3: row['depth_word_3'] as String,
+            depth_word_4: row['depth_word_4'] as String,
+            means: row['means'] as String));
+  }
+
+  @override
   Future<void> insertWordInfos(List<WordInfoEntity> wordInfoList) async {
     await _wordInfoEntityInsertionAdapter.insertList(
         wordInfoList, OnConflictStrategy.replace);
