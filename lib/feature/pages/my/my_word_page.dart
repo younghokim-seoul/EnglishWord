@@ -1,4 +1,10 @@
+import 'dart:ui';
+
 import 'package:bounce_tapper/bounce_tapper.dart';
+import 'package:englishword/core/logger/app_logger.dart';
+import 'package:englishword/core/router/router.dart';
+import 'package:englishword/core/style/app_color.dart';
+import 'package:englishword/core/style/app_text_style.dart';
 import 'package:englishword/feature/base/base_page.dart';
 import 'package:englishword/feature/pages/my/my_word_provider.dart';
 import 'package:englishword/feature/widget/app_bar/depth_page_app_bar.dart';
@@ -11,8 +17,15 @@ class MyWordPage extends BasePage {
   const MyWordPage({super.key});
 
   @override
+  void onInit(WidgetRef ref) {
+    // TODO: implement onInit
+    super.onInit(ref);
+    ref.read(myWordProviderProvider.notifier).getMyWordList();
+  }
+
+  @override
   Widget buildPage(BuildContext context, WidgetRef ref) {
-    return Column(children: []);
+    return const MyWordList();
   }
 
   @override
@@ -44,7 +57,14 @@ class MyWordList extends ConsumerWidget {
             children: [
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 8),
-                child: Icon(CupertinoIcons.trash,),
+                child: BounceTapper(
+                  onTap: () {
+                    ref
+                        .watch(myWordProviderProvider.notifier)
+                        .deleteMyWord(item);
+                  },
+                  child: const Icon(CupertinoIcons.trash, size: 24),
+                ),
               ),
               const Gap(16),
               Expanded(
@@ -54,7 +74,12 @@ class MyWordList extends ConsumerWidget {
                   children: [
                     BounceTapper(
                       onTap: () {
-
+                        const route = ExampleDepthRoute();
+                        route.updateArg(
+                          exampleWord: item.word,
+                          exampleSeq: int.parse(item.parsedWordList.first.seq),
+                        );
+                        route.push(ref.context);
                       },
                       child: Container(
                         width: double.infinity,
@@ -64,9 +89,9 @@ class MyWordList extends ConsumerWidget {
                           border: Border.all(
                             width: item.isBold ? 2 : 1,
                             color:
-                            item.isBold
-                                ? AppColor.borderImportant
-                                : AppColor.borderNormal,
+                                item.isBold
+                                    ? AppColor.borderImportant
+                                    : AppColor.borderNormal,
                           ),
                           borderRadius: BorderRadius.circular(4),
                         ),
@@ -82,14 +107,18 @@ class MyWordList extends ConsumerWidget {
                     Consumer(
                       builder: (context, ref, child) {
                         final isBlur =
-                        !ref
-                            .watch(blurProviderProvider)
-                            .contains(item);
+                            !ref
+                                .watch(
+                                  myWordProviderProvider.select(
+                                    (state) => state.blurList,
+                                  ),
+                                )
+                                .contains(item);
 
                         return BounceTapper(
                           onTap: () {
                             ref
-                                .read(blurProviderProvider.notifier)
+                                .watch(myWordProviderProvider.notifier)
                                 .toggleBlur(item);
                           },
                           child: Container(
@@ -97,16 +126,14 @@ class MyWordList extends ConsumerWidget {
                             padding: const EdgeInsets.all(8),
                             decoration: BoxDecoration(
                               color:
-                              isBlur
-                                  ? AppColor.of.brand5
-                                  : AppColor.of.yellow2,
+                                  isBlur
+                                      ? AppColor.of.brand5
+                                      : AppColor.of.yellow2,
                               borderRadius: BorderRadius.circular(4),
                             ),
                             child: AnimatedOpacity(
                               opacity: isBlur ? 0.2 : 1,
-                              duration: const Duration(
-                                milliseconds: 60,
-                              ),
+                              duration: const Duration(milliseconds: 60),
                               child: ImageFiltered(
                                 enabled: isBlur,
                                 imageFilter: ImageFilter.blur(
@@ -114,12 +141,12 @@ class MyWordList extends ConsumerWidget {
                                   sigmaY: 8,
                                 ),
                                 child: Text(
-                                  item.means.first.mean,
+                                  item.parsedWordList.first.mean,
                                   style: AppTextStyle.body3.copyWith(
                                     color:
-                                    isBlur
-                                        ? AppColor.of.gray1
-                                        : AppColor.of.black,
+                                        isBlur
+                                            ? AppColor.of.gray1
+                                            : AppColor.of.black,
                                   ),
                                 ),
                               ),

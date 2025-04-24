@@ -46,15 +46,15 @@ abstract class WordDAO {
   Future<List<WordExampleView>> getExamples(String word, int seq);
 
   @Query('''
-  INSERT INTO my_word (depth_word_1, depth_word_2, depth_word_3, depth_word_4, means)
+  INSERT INTO my_word (word, word_bold, means)
   SELECT * FROM MyWordInsertView
-  WHERE depth_word_4 = :word
+  WHERE word = :word
 ''')
   Future<void> insertMyWord(String word);
 
   @Query('''
   DELETE FROM my_word
-  WHERE depth_word_4 = :word
+  WHERE word = :word
 ''')
   Future<void> deleteMyWord(String word);
 

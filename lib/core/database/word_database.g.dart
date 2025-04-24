@@ -100,7 +100,7 @@ class _$WordDatabase extends WordDatabase {
         await database.execute(
             'CREATE TABLE IF NOT EXISTS `word_example` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `seq` INTEGER NOT NULL, `word` TEXT NOT NULL, `example` TEXT NOT NULL, `transfer` TEXT NOT NULL)');
         await database.execute(
-            'CREATE TABLE IF NOT EXISTS `my_word` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `depth_word_1` TEXT NOT NULL, `depth_word_2` TEXT NOT NULL, `depth_word_3` TEXT NOT NULL, `depth_word_4` TEXT NOT NULL, `means` TEXT NOT NULL)');
+            'CREATE TABLE IF NOT EXISTS `my_word` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `word` TEXT NOT NULL, `word_bold` TEXT NOT NULL, `means` TEXT NOT NULL)');
         await database.execute(
             'CREATE TABLE IF NOT EXISTS `word_info` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `depth` INTEGER NOT NULL, `word` TEXT NOT NULL, `bold` TEXT NOT NULL, `p_word` TEXT NOT NULL)');
 
@@ -109,13 +109,13 @@ class _$WordDatabase extends WordDatabase {
         await database.execute(
             'CREATE VIEW IF NOT EXISTS `SubWordWithWords` AS   SELECT \n    t1.word AS word,\n    \'[\' || GROUP_CONCAT(\'\"\' || t2.word || \'\"\') || \']\' AS words\n  FROM (\n    SELECT word \n    FROM word_info \n    WHERE depth = 2\n  ) AS t1\n  INNER JOIN (\n    SELECT word, bold, p_word \n    FROM word_info \n    WHERE depth = 3\n  ) AS t2 \n    ON t2.p_word = t1.word\n  GROUP BY t1.word\n');
         await database.execute(
-            'CREATE VIEW IF NOT EXISTS `DeepWordWithWords` AS   SELECT t1.word,\n         \'[\' || GROUP_CONCAT(\n           \'{\"word\":\"\'||t2.word||\n           \'\",\"bold\":\"\'||t2.bold||\n           \'\",\"chk\":\"\'||t2.chk||\n           \'\",\"means\":\'||t2.means||\n           \'}\'\n         ) || \']\' AS words\n  FROM (\n    SELECT word \n    FROM word_info \n    WHERE depth = 3\n  ) AS t1\n  INNER JOIN (\n    SELECT wi.word,\n           wi.bold,\n           wi.p_word,\n           CASE \n             WHEN mw.depth_word_4 IS NOT NULL THEN \'Y\'\n             ELSE \'N\'\n           END AS chk,\n           wm.means\n    FROM word_info wi\n    INNER JOIN (\n      SELECT wm.word,\n             \'[\' || GROUP_CONCAT(\n               \'{\"seq\":\"\' || wm.seq ||\n               \'\",\"mean\":\"\' || wm.mean ||\n               \'\",\"bold\":\"\' || wm.bold || \'\"}\'\n             ) || \']\' AS means\n      FROM word_info wi\n      INNER JOIN word_mean wm ON wm.word = wi.word\n      WHERE wi.depth = 4\n      GROUP BY wm.word\n    ) wm ON wm.word = wi.word\n    LEFT OUTER JOIN my_word mw ON mw.depth_word_4 = wi.word\n    WHERE wi.depth = 4\n  ) AS t2 ON t2.p_word = t1.word\n  GROUP BY t1.word\n');
+            'CREATE VIEW IF NOT EXISTS `DeepWordWithWords` AS   SELECT t1.word,\n         \'[\' || GROUP_CONCAT(\n           \'{\"word\":\"\'||t2.word||\n           \'\",\"bold\":\"\'||t2.bold||\n           \'\",\"chk\":\"\'||t2.chk||\n           \'\",\"means\":\'||t2.means||\n           \'}\'\n         ) || \']\' AS words\n  FROM (\n    SELECT word \n    FROM word_info \n    WHERE depth = 3\n  ) AS t1\n  INNER JOIN (\n    SELECT wi.word,\n           wi.bold,\n           wi.p_word,\n           CASE \n             WHEN mw.word IS NOT NULL THEN \'Y\'\n             ELSE \'N\'\n           END AS chk,\n           wm.means\n    FROM word_info wi\n    INNER JOIN (\n      SELECT wm.word,\n             \'[\' || GROUP_CONCAT(\n               \'{\"seq\":\"\' || wm.seq ||\n               \'\",\"mean\":\"\' || wm.mean ||\n               \'\",\"bold\":\"\' || wm.bold || \'\"}\'\n             ) || \']\' AS means\n      FROM word_info wi\n      INNER JOIN word_mean wm ON wm.word = wi.word\n      WHERE wi.depth = 4\n      GROUP BY wm.word\n    ) wm ON wm.word = wi.word\n    LEFT OUTER JOIN my_word mw ON mw.word = wi.word\n    WHERE wi.depth = 4\n  ) AS t2 ON t2.p_word = t1.word\n  GROUP BY t1.word\n');
         await database.execute(
             'CREATE VIEW IF NOT EXISTS `WordMeanWithInfo` AS   SELECT wm.word,\n         \'[\' || GROUP_CONCAT(\n           \'{\"seq\":\"\'||wm.seq||\n           \'\",\"mean\":\"\'||wm.mean||\n           \'\",\"bold\":\"\'||wm.bold||\'\"}\'\n         ) || \']\' AS means\n  FROM (\n    SELECT DISTINCT wi.word, wi.depth\n    FROM word_info wi\n  ) wi\n  INNER JOIN (\n    SELECT DISTINCT wm.*\n    FROM word_mean wm\n  ) wm ON wm.word = wi.word\n  WHERE wi.depth = 4\n  GROUP BY wm.word\n');
         await database.execute(
             'CREATE VIEW IF NOT EXISTS `WordExampleView` AS   SELECT DISTINCT\n         we.word,\n         we.seq,\n         we.example,\n         we.transfer\n  FROM word_info wi\n  INNER JOIN word_mean wm ON wm.word = wi.word\n  INNER JOIN word_example we ON we.word = wm.word AND we.seq = wm.seq\n  WHERE wi.\"depth\" = 4\n');
         await database.execute(
-            'CREATE VIEW IF NOT EXISTS `MyWordInsertView` AS   SELECT w1.word AS depth_word_1,\n         w2.word AS depth_word_2,\n         w3.word AS depth_word_3,\n         w4.word AS depth_word_4,\n         wm.means AS means\n  FROM word_info w1\n  INNER JOIN word_info w2 ON w2.p_word = w1.word AND w2.depth = 2\n  INNER JOIN word_info w3 ON w3.p_word = w2.word AND w3.depth = 3\n  INNER JOIN word_info w4 ON w4.p_word = w3.word AND w4.depth = 4\n  INNER JOIN (\n    SELECT wm.word,\n           \'[\' || GROUP_CONCAT(\n             \'{\"seq\":\"\' || wm.seq || \'\",\"mean\":\"\' || wm.mean || \'\",\"bold\":\"\' || wm.bold || \'\"}\'\n           ) || \']\' AS means\n    FROM word_info wi\n    INNER JOIN word_mean wm ON wm.word = wi.word\n    WHERE wi.depth = 4\n    GROUP BY wm.word\n  ) wm ON wm.word = w4.word\n  WHERE w1.depth = 1\n');
+            'CREATE VIEW IF NOT EXISTS `MyWordInsertView` AS   SELECT \n         w4.word AS word,\n         w4.bold AS word_bold,\n         wm.means AS means\n  FROM word_info w1\n  INNER JOIN word_info w2 ON w2.p_word = w1.word AND w2.depth = 2\n  INNER JOIN word_info w3 ON w3.p_word = w2.word AND w3.depth = 3\n  INNER JOIN word_info w4 ON w4.p_word = w3.word AND w4.depth = 4\n  INNER JOIN (\n    SELECT wm.word,\n           \'[\' || GROUP_CONCAT(\n             \'{\"seq\":\"\' || wm.seq || \'\",\"mean\":\"\' || wm.mean || \'\",\"bold\":\"\' || wm.bold || \'\"}\'\n           ) || \']\' AS means\n    FROM word_info wi\n    INNER JOIN word_mean wm ON wm.word = wi.word\n    WHERE wi.depth = 4\n    GROUP BY wm.word\n  ) wm ON wm.word = w4.word\n  WHERE w1.depth = 1\n');
 
         await callback?.onCreate?.call(database, version);
       },
@@ -245,14 +245,13 @@ class _$WordDAO extends WordDAO {
   @override
   Future<void> insertMyWord(String word) async {
     await _queryAdapter.queryNoReturn(
-        'INSERT INTO my_word (depth_word_1, depth_word_2, depth_word_3, depth_word_4, means)   SELECT * FROM MyWordInsertView   WHERE depth_word_4 = ?1',
+        'INSERT INTO my_word (word, word_bold, means)   SELECT * FROM MyWordInsertView   WHERE word = ?1',
         arguments: [word]);
   }
 
   @override
   Future<void> deleteMyWord(String word) async {
-    await _queryAdapter.queryNoReturn(
-        'DELETE FROM my_word   WHERE depth_word_4 = ?1',
+    await _queryAdapter.queryNoReturn('DELETE FROM my_word   WHERE word = ?1',
         arguments: [word]);
   }
 
@@ -261,10 +260,8 @@ class _$WordDAO extends WordDAO {
     return _queryAdapter.queryList('SELECT * FROM my_word',
         mapper: (Map<String, Object?> row) => MyWordEntity(
             id: row['id'] as int?,
-            depth_word_1: row['depth_word_1'] as String,
-            depth_word_2: row['depth_word_2'] as String,
-            depth_word_3: row['depth_word_3'] as String,
-            depth_word_4: row['depth_word_4'] as String,
+            word: row['word'] as String,
+            word_bold: row['word_bold'] as String,
             means: row['means'] as String));
   }
 

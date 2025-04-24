@@ -6,7 +6,7 @@ part of 'my_word_provider.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$myWordProviderHash() => r'4478a08233470414a85918952fadee0bb1f51c98';
+String _$myWordProviderHash() => r'09cde725b09e35402a98328948370cdfb502d519';
 
 /// See also [MyWordProvider].
 @ProviderFor(MyWordProvider)

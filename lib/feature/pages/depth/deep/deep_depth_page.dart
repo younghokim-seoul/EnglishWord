@@ -86,13 +86,13 @@ class DeepDepthPage extends BasePage with DeepDepthState, DeepDepthEvent {
                                   final isBlur =
                                       !ref
                                           .watch(blurProviderProvider)
-                                          .contains(item);
+                                          .contains(item.means.first);
 
                                   return BounceTapper(
                                     onTap: () {
                                       ref
                                           .read(blurProviderProvider.notifier)
-                                          .toggleBlur(item);
+                                          .toggleBlur(item.means.first);
                                     },
                                     child: Container(
                                       width: double.infinity,

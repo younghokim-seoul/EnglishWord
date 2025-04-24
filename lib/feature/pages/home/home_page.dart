@@ -2,6 +2,7 @@ import 'package:bounce_tapper/bounce_tapper.dart';
 import 'package:englishword/core/constants/assets.dart';
 import 'package:englishword/core/constants/word_board_tab_type.dart';
 import 'package:englishword/core/logger/app_logger.dart';
+import 'package:englishword/core/router/router.dart';
 import 'package:englishword/core/style/app_color.dart';
 import 'package:englishword/core/style/app_size.dart';
 import 'package:englishword/core/style/app_text_style.dart';
@@ -12,6 +13,7 @@ import 'package:englishword/feature/pages/home/widget/medical_tab_view.dart';
 import 'package:englishword/feature/widget/app_bar/home_app_bar.dart';
 import 'package:englishword/feature/widget/tab_bar/tab_bar_decorate_view.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class HomePage extends BasePage {
@@ -79,7 +81,10 @@ class HomePage extends BasePage {
     return HomeAppBar(
       actions: [
         BounceTapper(
-          onTap: () {},
+          onTap: () {
+            const route = MyWordRoute();
+            route.push(ref.context);
+          },
           child: Image.asset(Assets.myWord, height: 24, width: 24),
         ),
       ],

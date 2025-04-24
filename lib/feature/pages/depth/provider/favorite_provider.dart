@@ -9,23 +9,23 @@ part 'favorite_provider.g.dart';
 @Riverpod(keepAlive: true)
 class FavoriteProvider extends _$FavoriteProvider {
   @override
-  List<DeepWordInfo> build() {
+  List<String> build() {
     return [];
   }
 
-  Future<void> toggleFavorite(DeepWordInfo targetModel) async {
+  Future<void> toggleFavorite(String word) async {
     final repository = getIt<WordRepository>();
-    if (state.contains(targetModel)) {
-      await repository.deleteMyWord(targetModel.word);
-      final removedModel = state..remove(targetModel);
+    if (state.contains(word)) {
+      await repository.deleteMyWord(word);
+      final removedModel = state..remove(word);
       state = [...removedModel];
     } else {
-      await repository.insertMyWord(targetModel.word);
-      state = [...state, targetModel];
+      await repository.insertMyWord(word);
+      state = [...state, word];
     }
   }
 
-  void addAll(List<DeepWordInfo> list) {
+  void addAll(List<String> list) {
     state = [...list];
   }
 }
@@ -33,12 +33,12 @@ class FavoriteProvider extends _$FavoriteProvider {
 @Riverpod(keepAlive: true)
 class BlurProvider extends _$BlurProvider {
   @override
-  List<DeepWordInfo> build() {
+  List<WordMeaningInfo> build() {
     logger.d("build BlurProvider");
     return [];
   }
 
-  void toggleBlur(DeepWordInfo targetModel) {
+  void toggleBlur(WordMeaningInfo targetModel) {
     if (state.contains(targetModel)) {
       final removedModel = state..remove(targetModel);
       state = [...removedModel];

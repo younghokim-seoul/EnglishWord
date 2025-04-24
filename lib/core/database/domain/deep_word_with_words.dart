@@ -23,7 +23,7 @@ import 'package:englishword/core/logger/app_logger.dart';
            wi.bold,
            wi.p_word,
            CASE 
-             WHEN mw.depth_word_4 IS NOT NULL THEN 'Y'
+             WHEN mw.word IS NOT NULL THEN 'Y'
              ELSE 'N'
            END AS chk,
            wm.means
@@ -40,7 +40,7 @@ import 'package:englishword/core/logger/app_logger.dart';
       WHERE wi.depth = 4
       GROUP BY wm.word
     ) wm ON wm.word = wi.word
-    LEFT OUTER JOIN my_word mw ON mw.depth_word_4 = wi.word
+    LEFT OUTER JOIN my_word mw ON mw.word = wi.word
     WHERE wi.depth = 4
   ) AS t2 ON t2.p_word = t1.word
   GROUP BY t1.word

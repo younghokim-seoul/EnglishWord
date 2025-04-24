@@ -6,12 +6,12 @@ part of 'favorite_provider.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$favoriteProviderHash() => r'145f8641ccefd303c92b8778a68a23b494253b07';
+String _$favoriteProviderHash() => r'f94d6f5cf5c277b8fafb109f80d0c2879abdffe9';
 
 /// See also [FavoriteProvider].
 @ProviderFor(FavoriteProvider)
 final favoriteProviderProvider =
-    NotifierProvider<FavoriteProvider, List<DeepWordInfo>>.internal(
+    NotifierProvider<FavoriteProvider, List<String>>.internal(
   FavoriteProvider.new,
   name: r'favoriteProviderProvider',
   debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
@@ -21,13 +21,13 @@ final favoriteProviderProvider =
   allTransitiveDependencies: null,
 );
 
-typedef _$FavoriteProvider = Notifier<List<DeepWordInfo>>;
-String _$blurProviderHash() => r'1f59eb00f26cc6151964f0f2fdc72d2e32c0f40b';
+typedef _$FavoriteProvider = Notifier<List<String>>;
+String _$blurProviderHash() => r'26815b89f21c014f8d9ed0beebda74c45a61ec3b';
 
 /// See also [BlurProvider].
 @ProviderFor(BlurProvider)
 final blurProviderProvider =
-    NotifierProvider<BlurProvider, List<DeepWordInfo>>.internal(
+    NotifierProvider<BlurProvider, List<WordMeaningInfo>>.internal(
   BlurProvider.new,
   name: r'blurProviderProvider',
   debugGetCreateSourceHash:
@@ -36,6 +36,6 @@ final blurProviderProvider =
   allTransitiveDependencies: null,
 );
 
-typedef _$BlurProvider = Notifier<List<DeepWordInfo>>;
+typedef _$BlurProvider = Notifier<List<WordMeaningInfo>>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member

@@ -21,13 +21,13 @@ class FavoriteIconButton extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
 
-    final isLiked = ref.watch(favoriteProviderProvider).contains(model);
+    final isLiked = ref.watch(favoriteProviderProvider).contains(model.word);
 
 
 
     return GestureDetector(
       onTap: () {
-        ref.watch(favoriteProviderProvider.notifier).toggleFavorite(model);
+        ref.watch(favoriteProviderProvider.notifier).toggleFavorite(model.word);
       },
       child: AnimatedCrossFade(
         firstCurve: Curves.easeIn,

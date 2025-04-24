@@ -15,12 +15,19 @@ class DeepWordProvider extends _$DeepWordProvider {
   @override
   FutureOr<DeepWordWithWords?> build(String word) async {
     final repository = getIt<WordRepository>();
+
+    logger.i("DeepWordProvider 딥댑스 요청");
     final list = await repository.getDeepWordsByWord(word);
+
+    logger.i("DeepWordProvider build word: $list");
     if (list != null) {
       ref
           .watch(favoriteProviderProvider.notifier)
           .addAll(
-            list.parsedWordList.where((element) => element.isFavorite).toList(),
+            list.parsedWordList
+                .where((element) => element.isFavorite)
+                .map((e) => e.word)
+                .toList(),
           );
     }
     return list;

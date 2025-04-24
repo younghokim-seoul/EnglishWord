@@ -1,6 +1,7 @@
 import 'package:bounce_tapper/bounce_tapper.dart';
 import 'package:collection/collection.dart';
 import 'package:englishword/core/constants/assets.dart';
+import 'package:englishword/core/router/router.dart';
 import 'package:englishword/core/style/app_color.dart';
 import 'package:englishword/core/style/app_text_style.dart';
 import 'package:englishword/feature/pages/depth/depth_state.dart';
@@ -25,7 +26,10 @@ class DepthStepBar extends ConsumerWidget with DepthState {
           combineDepthHeader(depths),
           const Spacer(),
           BounceTapper(
-            onTap: () {},
+            onTap: () {
+              const route = MyWordRoute();
+              route.push(ref.context);
+            },
             child: Image.asset(Assets.myWord, height: 24, width: 24),
           ),
         ],
