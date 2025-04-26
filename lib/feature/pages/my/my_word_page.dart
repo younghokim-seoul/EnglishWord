@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:bounce_tapper/bounce_tapper.dart';
+import 'package:englishword/core/audio/audio_manager.dart';
 import 'package:englishword/core/logger/app_logger.dart';
 import 'package:englishword/core/router/router.dart';
 import 'package:englishword/core/style/app_color.dart';
@@ -8,6 +9,7 @@ import 'package:englishword/core/style/app_text_style.dart';
 import 'package:englishword/feature/base/base_page.dart';
 import 'package:englishword/feature/pages/my/my_word_provider.dart';
 import 'package:englishword/feature/widget/app_bar/depth_page_app_bar.dart';
+import 'package:englishword/feature/widget/mean/combine_mean.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -72,35 +74,68 @@ class MyWordList extends ConsumerWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    BounceTapper(
-                      onTap: () {
-                        const route = ExampleDepthRoute();
-                        route.updateArg(
-                          exampleWord: item.word,
-                          exampleSeq: int.parse(item.parsedWordList.first.seq),
-                        );
-                        route.push(ref.context);
-                      },
-                      child: Container(
-                        width: double.infinity,
-                        padding: const EdgeInsets.all(8),
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          border: Border.all(
-                            width: item.isBold ? 2 : 1,
-                            color:
+
+                    Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        border: Border.all(
+                          color: AppColor.borderNormal,
+                        ),
+                        borderRadius: BorderRadius.circular(4),
+                      ),
+                      child: Row(
+                        children: [
+                          BounceTapper(
+                            onTap: () {},
+                            enable: false,
+                            child: Text(
+                              item.word,
+                              style: AppTextStyle.body3.copyWith(
+                                color:
                                 item.isBold
-                                    ? AppColor.borderImportant
-                                    : AppColor.borderNormal,
+                                    ? AppColor.depthBoldBlue
+                                    : AppColor.depthBold,
+                              ),
+                            ),
                           ),
-                          borderRadius: BorderRadius.circular(4),
-                        ),
-                        child: Text(
-                          item.word,
-                          style: AppTextStyle.body3.copyWith(
-                            color: AppColor.depthBold,
+                          const Gap(10),
+                          BounceTapper(
+                            onTap: () async {
+                              await AudioManager.intance.play(
+                                item.word,
+                              );
+                            },
+                            child: const Padding(
+                              padding: EdgeInsets.symmetric(
+                                vertical: 2,
+                              ),
+                              child: Icon(
+                                CupertinoIcons.speaker_3,
+                              ),
+                            ),
                           ),
-                        ),
+                          const Spacer(),
+                          BounceTapper(
+                            onTap: () {
+                              const route = ExampleDepthRoute();
+                              route.updateArg(
+                                exampleWord: item.word,
+                                exampleSeq: int.parse(item.parsedWordList.first.seq),
+                              );
+                              route.push(ref.context);
+                            },
+                            child: const Padding(
+                              padding: EdgeInsets.symmetric(
+                                vertical: 2,
+                              ),
+                              child: Icon(
+                                CupertinoIcons.right_chevron,
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                     const Gap(1),
@@ -140,15 +175,7 @@ class MyWordList extends ConsumerWidget {
                                   sigmaX: 8,
                                   sigmaY: 8,
                                 ),
-                                child: Text(
-                                  item.parsedWordList.first.mean,
-                                  style: AppTextStyle.body3.copyWith(
-                                    color:
-                                        isBlur
-                                            ? AppColor.of.gray1
-                                            : AppColor.of.black,
-                                  ),
-                                ),
+                                child: CombineMean(means: item.parsedWordList),
                               ),
                             ),
                           ),

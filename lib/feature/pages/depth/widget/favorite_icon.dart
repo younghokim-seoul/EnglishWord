@@ -27,7 +27,7 @@ class FavoriteIconButton extends ConsumerWidget {
 
     return GestureDetector(
       onTap: () {
-        ref.watch(favoriteProviderProvider.notifier).toggleFavorite(model.word);
+        ref.watch(favoriteProviderProvider.notifier).toggleFavorite(model.word,model.bold);
       },
       child: AnimatedCrossFade(
         firstCurve: Curves.easeIn,

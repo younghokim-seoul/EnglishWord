@@ -31,6 +31,7 @@ import 'package:englishword/core/logger/app_logger.dart';
     INNER JOIN (
       SELECT wm.word,
              '[' || GROUP_CONCAT(
+               DISTINCT
                '{"seq":"' || wm.seq ||
                '","mean":"' || wm.mean ||
                '","bold":"' || wm.bold || '"}'

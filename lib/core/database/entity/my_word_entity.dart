@@ -17,7 +17,6 @@ class MyWordEntity {
   bool get isBold => word_bold == 'Y';
   List<WordMeaningInfo> get parsedWordList {
     try {
-      logger.i("means... " + means);
       final decoded = jsonDecode(means);
       if (decoded is List) {
         return decoded

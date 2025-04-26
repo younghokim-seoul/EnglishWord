@@ -1,7 +1,9 @@
 import 'package:floor/floor.dart';
 
+import 'package:floor/floor.dart';
+
 @DatabaseView('''
-  SELECT 
+  SELECT DISTINCT
          w4.word AS word,
          w4.bold AS word_bold,
          wm.means AS means
@@ -12,6 +14,7 @@ import 'package:floor/floor.dart';
   INNER JOIN (
     SELECT wm.word,
            '[' || GROUP_CONCAT(
+             DISTINCT
              '{"seq":"' || wm.seq || '","mean":"' || wm.mean || '","bold":"' || wm.bold || '"}'
            ) || ']' AS means
     FROM word_info wi
@@ -33,3 +36,5 @@ class MyWordInsertView {
     return 'MyWordInsertView{word: $word, word_bold: $word_bold, means: $means}';
   }
 }
+
+

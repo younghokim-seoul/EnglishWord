@@ -13,14 +13,14 @@ class FavoriteProvider extends _$FavoriteProvider {
     return [];
   }
 
-  Future<void> toggleFavorite(String word) async {
+  Future<void> toggleFavorite(String word,String bold) async {
     final repository = getIt<WordRepository>();
     if (state.contains(word)) {
-      await repository.deleteMyWord(word);
+      await repository.deleteMyWord(word,bold);
       final removedModel = state..remove(word);
       state = [...removedModel];
     } else {
-      await repository.insertMyWord(word);
+      await repository.insertMyWord(word,bold);
       state = [...state, word];
     }
   }
@@ -33,17 +33,17 @@ class FavoriteProvider extends _$FavoriteProvider {
 @Riverpod(keepAlive: true)
 class BlurProvider extends _$BlurProvider {
   @override
-  List<WordMeaningInfo> build() {
+  List<String> build() {
     logger.d("build BlurProvider");
     return [];
   }
 
-  void toggleBlur(WordMeaningInfo targetModel) {
-    if (state.contains(targetModel)) {
-      final removedModel = state..remove(targetModel);
+  void toggleBlur(String word) {
+    if (state.contains(word)) {
+      final removedModel = state..remove(word);
       state = [...removedModel];
     } else {
-      state = [...state, targetModel];
+      state = [...state, word];
     }
   }
 }

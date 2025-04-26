@@ -1,8 +1,14 @@
 import 'package:englishword/core/constants/assets.dart';
+import 'package:englishword/core/style/app_text_style.dart';
 import 'package:flutter/material.dart';
 
 class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const HomeAppBar({super.key, this.backgroundColor, this.actions, this.padding});
+  const HomeAppBar({
+    super.key,
+    this.backgroundColor,
+    this.actions,
+    this.padding,
+  });
 
   final Color? backgroundColor;
   final List<Widget>? actions;
@@ -18,7 +24,7 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
         color: backgroundColor ?? Colors.white,
         child: Row(
           children: [
-            Image.asset(Assets.titleLogo, height: 52),
+            Text("테마영어단어(Human)", style: AppTextStyle.headline1),
             const Spacer(),
             ...?actions,
           ],

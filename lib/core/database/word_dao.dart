@@ -42,21 +42,23 @@ abstract class WordDAO {
   @Query('SELECT * FROM WordMeanWithInfo WHERE word = :word')
   Future<WordMeanWithInfo?> getWordMean(String word);
 
-  @Query('SELECT * FROM WordExampleView WHERE word = :word AND seq = :seq')
-  Future<List<WordExampleView>> getExamples(String word, int seq);
+  @Query('SELECT * FROM WordExampleView WHERE word = :word')
+  Future<List<WordExampleView>> getExamples(String word);
 
   @Query('''
   INSERT INTO my_word (word, word_bold, means)
   SELECT * FROM MyWordInsertView
   WHERE word = :word
+    AND word_bold = :bold
 ''')
-  Future<void> insertMyWord(String word);
+  Future<void> insertMyWord(String word, String bold);
 
   @Query('''
   DELETE FROM my_word
-  WHERE word = :word
+  WHERE word = :word 
+  AND word_bold = :bold
 ''')
-  Future<void> deleteMyWord(String word);
+  Future<void> deleteMyWord(String word,String bold);
 
 
   @Query('SELECT * FROM my_word')

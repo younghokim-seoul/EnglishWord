@@ -6,7 +6,7 @@ part of 'deep_word_provider.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$deepWordProviderHash() => r'7ccc8d246e8d604a18b1c8b533175e31d196a077';
+String _$deepWordProviderHash() => r'1040563773ad469184c4283b8bf7ce2f9da92b4f';
 
 /// Copied from Dart SDK
 class _SystemHash {

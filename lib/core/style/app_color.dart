@@ -4,6 +4,7 @@ class AppColor extends ThemeExtension<AppColor> {
 
   static const depthNormal= Color(0xFF87919D);
   static const depthBold = Color(0xFF171F29);
+  static const depthBoldBlue = Color(0xFF0100FF);
   static const favoriteSelected = Color(0xFFF6C5C6);
   static const favoriteUnSelected = Color(0xFFEAEAEA);
 

@@ -9,16 +9,15 @@ import 'package:englishword/core/database/entity/word_info_entity.dart';
 import 'package:englishword/core/database/entity/word_mean_entity.dart';
 
 abstract interface class WordRepository {
-
   Future<void> insertWordInfos(List<WordInfoEntity> wordInfoList);
 
   Future<void> insertWordExamples(List<WordExampleEntity> wordExampleList);
 
   Future<void> insertWordMeans(List<WordMeanEntity> wordMeanList);
 
-  Future<void> insertMyWord(String word);
+  Future<void> insertMyWord(String word, String bold);
 
-  Future<void> deleteMyWord(String word);
+  Future<void> deleteMyWord(String word, String bold);
 
   Future<int> countWordInfo();
 
