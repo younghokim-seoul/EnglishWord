@@ -122,7 +122,7 @@ class MyWordList extends ConsumerWidget {
                               const route = ExampleDepthRoute();
                               route.updateArg(
                                 exampleWord: item.word,
-                                exampleSeq: int.parse(item.parsedWordList.first.seq),
+                                exampleSeq: item.p_word,
                               );
                               route.push(ref.context);
                             },

@@ -7,7 +7,7 @@ part of 'example_word_provider.dart';
 // **************************************************************************
 
 String _$exampleWordProviderHash() =>
-    r'25e1c8f88a3b78f2927528ca937f3a074397b3b9';
+    r'7f26b44383ba8e581c7ddfbf9304079a90b1754e';
 
 /// Copied from Dart SDK
 class _SystemHash {
@@ -33,11 +33,11 @@ class _SystemHash {
 abstract class _$ExampleWordProvider
     extends BuildlessAutoDisposeAsyncNotifier<List<WordExampleView>> {
   late final String word;
-  late final int seq;
+  late final String seq;
 
   FutureOr<List<WordExampleView>> build(
     String word,
-    int seq,
+    String seq,
   );
 }
 
@@ -54,7 +54,7 @@ class ExampleWordProviderFamily
   /// See also [ExampleWordProvider].
   ExampleWordProviderProvider call(
     String word,
-    int seq,
+    String seq,
   ) {
     return ExampleWordProviderProvider(
       word,
@@ -93,7 +93,7 @@ class ExampleWordProviderProvider extends AutoDisposeAsyncNotifierProviderImpl<
   /// See also [ExampleWordProvider].
   ExampleWordProviderProvider(
     String word,
-    int seq,
+    String seq,
   ) : this._internal(
           () => ExampleWordProvider()
             ..word = word
@@ -123,7 +123,7 @@ class ExampleWordProviderProvider extends AutoDisposeAsyncNotifierProviderImpl<
   }) : super.internal();
 
   final String word;
-  final int seq;
+  final String seq;
 
   @override
   FutureOr<List<WordExampleView>> runNotifierBuild(
@@ -183,7 +183,7 @@ mixin ExampleWordProviderRef
   String get word;
 
   /// The parameter `seq` of this provider.
-  int get seq;
+  String get seq;
 }
 
 class _ExampleWordProviderProviderElement
@@ -194,7 +194,7 @@ class _ExampleWordProviderProviderElement
   @override
   String get word => (origin as ExampleWordProviderProvider).word;
   @override
-  int get seq => (origin as ExampleWordProviderProvider).seq;
+  String get seq => (origin as ExampleWordProviderProvider).seq;
 }
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member

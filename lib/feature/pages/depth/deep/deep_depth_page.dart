@@ -101,7 +101,7 @@ class DeepDepthPage extends BasePage with DeepDepthState, DeepDepthEvent {
                                         routeToExampleDepth(
                                           ref,
                                           item.word,
-                                          int.parse(item.means.first.seq),
+                                          arg(ref).depth3,
                                         );
                                       },
                                       child: const Padding(

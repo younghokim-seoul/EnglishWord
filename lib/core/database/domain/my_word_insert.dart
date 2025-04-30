@@ -1,12 +1,10 @@
 import 'package:floor/floor.dart';
 
-import 'package:floor/floor.dart';
-
 @DatabaseView('''
   SELECT DISTINCT
          w4.word AS word,
+         w4.p_word AS p_word,
          w4.bold AS word_bold,
-         wm.p_word AS p_word,
          wm.means AS means
   FROM word_info w1
   INNER JOIN word_info w2 ON w2.p_word = w1.word AND w2.depth = 2
@@ -27,13 +25,13 @@ import 'package:floor/floor.dart';
 ''')
 class MyWordInsertView {
   final String word;
-  final String word_bold;
   final String p_word;
+  final String word_bold;
   final String means;
 
-  MyWordInsertView(this.word, this.word_bold, this.p_word, this.means);
+  MyWordInsertView(this.word, this.p_word, this.word_bold, this.means);
+
+  @override
+  String toString() =>
+      'MyWordInsertView{word: $word, p_word: $p_word, word_bold: $word_bold, means: $means}';
 }
-
-
-
-

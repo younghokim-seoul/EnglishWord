@@ -10,40 +10,34 @@ import 'package:floor/floor.dart';
            '{"word":"' || t2.word ||
            '","bold":"' || t2.bold ||
            '","chk":"' || t2.chk ||
-           '","means":' || t2.means ||
-           '}'
+           '","means":' || t2.means || '}'
          ) || ']' AS words
   FROM (
-    SELECT word 
-    FROM word_info 
+    SELECT word
+    FROM word_info
     WHERE depth = 3
-  ) AS t1
+  ) t1
   INNER JOIN (
     SELECT wi.word,
            wi.bold,
            wi.p_word,
-           CASE 
-             WHEN mw.word IS NOT NULL THEN 'Y'
-             ELSE 'N'
-           END AS chk,
+           CASE WHEN mw.word IS NOT NULL THEN 'Y' ELSE 'N' END AS chk,
            wm.means
     FROM word_info wi
     INNER JOIN (
       SELECT wm.word,
-             '[' || GROUP_CONCAT(
-               DISTINCT
-               '{"seq":"' || wm.seq ||
-               '","mean":"' || wm.mean ||
-               '","bold":"' || wm.bold || '"}'
+             wm.p_word,
+             '[' || GROUP_CONCAT(DISTINCT
+               '{"seq":"' || wm.seq || '","mean":"' || wm.mean || '","bold":"' || wm.bold || '"}'
              ) || ']' AS means
       FROM word_info wi
       INNER JOIN word_mean wm ON wm.word = wi.word AND wm.p_word = wi.p_word
       WHERE wi.depth = 4
-      GROUP BY wm.word
-    ) wm ON wm.word = wi.word
+      GROUP BY wm.word, wm.p_word
+    ) wm ON wm.word = wi.word AND wm.p_word = wi.p_word
     LEFT OUTER JOIN my_word mw ON mw.word = wi.word
     WHERE wi.depth = 4
-  ) AS t2 ON t2.p_word = t1.word
+  ) t2 ON t2.p_word = t1.word
   GROUP BY t1.word
 ''')
 class DeepWordWithWords {

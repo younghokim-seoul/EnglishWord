@@ -23,8 +23,6 @@ class ExampleDepthPage extends BasePage with ExampleDepthState {
   Widget buildPage(BuildContext context, WidgetRef ref) {
     return getExampleWordWithWords(ref).when(
       data: (model) {
-        logger.d("ExampleDepthPage => ... $model");
-
         return ListView.builder(
           shrinkWrap: true,
           padding: EdgeInsets.zero,
@@ -40,7 +38,6 @@ class ExampleDepthPage extends BasePage with ExampleDepthState {
                 children: [
                   BounceTapper(
                     onTap: () async {
-                      logger.i("음원이름.." + item.word);
                       await AudioManager.intance.play(item.word);
                     },
                     child: Container(
@@ -52,7 +49,7 @@ class ExampleDepthPage extends BasePage with ExampleDepthState {
                         borderRadius: BorderRadius.circular(4),
                       ),
                       child: Text(
-                        item.word,
+                        "${item.word} - ${item.mean}",
                         style: AppTextStyle.body3.copyWith(
                           color: AppColor.depthBold,
                         ),

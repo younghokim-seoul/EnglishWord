@@ -176,7 +176,7 @@ class ExampleDepthRoute extends GoRouteData {
     );
   }
 
-  void updateArg({required String exampleWord, required int exampleSeq}) {
+  void updateArg({required String exampleWord, required String exampleSeq}) {
     arg = (exampleWord: exampleWord, exampleSeq: exampleSeq);
   }
 }

@@ -12,7 +12,7 @@ String _$exampleDepthRouteArgHash() =>
 /// See also [exampleDepthRouteArg].
 @ProviderFor(exampleDepthRouteArg)
 final exampleDepthRouteArgProvider =
-    AutoDisposeProvider<({int exampleSeq, String exampleWord})>.internal(
+    AutoDisposeProvider<({String exampleSeq, String exampleWord})>.internal(
   exampleDepthRouteArg,
   name: r'exampleDepthRouteArgProvider',
   debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
@@ -23,6 +23,6 @@ final exampleDepthRouteArgProvider =
 );
 
 typedef ExampleDepthRouteArgRef
-    = AutoDisposeProviderRef<({int exampleSeq, String exampleWord})>;
+    = AutoDisposeProviderRef<({String exampleSeq, String exampleWord})>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member

@@ -16,7 +16,7 @@ part 'example_word_provider.g.dart';
 @riverpod
 class ExampleWordProvider extends _$ExampleWordProvider {
   @override
-  FutureOr<List<WordExampleView>> build(String word, int seq) async {
+  FutureOr<List<WordExampleView>> build(String word, String seq) async {
     final repository = getIt<WordRepository>();
     final list = await repository.getExamples(word, seq);
     logger.d("list => $list");

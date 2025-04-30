@@ -8,4 +8,4 @@ ExampleDepthRouteArg exampleDepthRouteArg(ExampleDepthRouteArgRef ref) {
   return ExampleDepthRoute.arg;
 }
 
-typedef ExampleDepthRouteArg = ({String exampleWord,int exampleSeq});
+typedef ExampleDepthRouteArg = ({String exampleWord,String exampleSeq});

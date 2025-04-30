@@ -38,13 +38,15 @@ abstract class WordDAO {
   @Query('SELECT * FROM DeepWordWithWords WHERE word = :word')
   Future<DeepWordWithWords?> getDeepWordsByWord(String word);
 
-
-  @Query('SELECT * FROM WordExampleView WHERE word = :word')
-  Future<List<WordExampleView>> getExamples(String word);
+  @Query('''
+  SELECT * FROM WordExampleView
+  WHERE word = :word AND p_word = :pWord
+''')
+  Future<List<WordExampleView>> getExamples(String word, String pWord);
 
   @Query('''
-  INSERT INTO my_word (word, word_bold, means)
-  SELECT word, word_bold, means
+  INSERT INTO my_word (word, p_word, word_bold, means)
+  SELECT word, p_word, word_bold, means
   FROM MyWordInsertView
   WHERE word = :word
     AND p_word = :pWord
@@ -56,10 +58,8 @@ abstract class WordDAO {
   WHERE word = :word 
   AND word_bold = :bold
 ''')
-  Future<void> deleteMyWord(String word,String bold);
-
+  Future<void> deleteMyWord(String word, String bold);
 
   @Query('SELECT * FROM my_word')
   Future<List<MyWordEntity>> getMyWord();
-
 }

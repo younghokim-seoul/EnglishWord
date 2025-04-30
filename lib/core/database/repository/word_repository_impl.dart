@@ -54,8 +54,8 @@ class WordRepositoryImpl implements WordRepository {
       wordDAO.getDeepWordsByWord(word);
 
   @override
-  Future<List<WordExampleView>> getExamples(String word, int seq) =>
-      wordDAO.getExamples(word);
+  Future<List<WordExampleView>> getExamples(String word, String seq) =>
+      wordDAO.getExamples(word,seq);
 
   @override
   Future<void> deleteMyWord(String word,String bold) => wordDAO.deleteMyWord(word,bold);

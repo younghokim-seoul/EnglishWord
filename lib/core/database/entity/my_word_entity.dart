@@ -11,6 +11,7 @@ class MyWordEntity {
   final int? id;
   final String word;
   final String word_bold;
+  final String p_word;
   final String means;
 
 
@@ -35,6 +36,7 @@ class MyWordEntity {
     this.id,
     required this.word,
     required this.word_bold,
+    required this.p_word,
     required this.means,
   });
 
@@ -45,11 +47,12 @@ class MyWordEntity {
           runtimeType == other.runtimeType &&
           id == other.id &&
           word == other.word &&
+          p_word == other.p_word &&
           word_bold == other.word_bold &&
           true);
 
   @override
-  int get hashCode => id.hashCode ^ word.hashCode ^ word_bold.hashCode;
+  int get hashCode => id.hashCode ^ word.hashCode ^ word_bold.hashCode ^ p_word.hashCode;
 
   @override
   String toString() {
@@ -58,17 +61,20 @@ class MyWordEntity {
         ' word: $word,' +
         ' word_bold: $word_bold,' +
         ' means: $means,' +
+        ' p_word: $p_word,' +
         '}';
   }
 
   MyWordEntity copyWith({
     int? id,
+    String? p_word,
     String? word,
     String? word_bold,
     String? means,
   }) {
     return MyWordEntity(
       id: id ?? this.id,
+      p_word: p_word ?? this.p_word,
       word: word ?? this.word,
       word_bold: word_bold ?? this.word_bold,
       means: means ?? this.means,
@@ -78,6 +84,7 @@ class MyWordEntity {
   Map<String, dynamic> toMap() {
     return {
       'id': this.id,
+      'p_word': this.p_word,
       'word': this.word,
       'word_bold': this.word_bold,
       'means': this.means,
@@ -89,6 +96,7 @@ class MyWordEntity {
       id: map['id'] as int,
       word: map['word'] as String,
       word_bold: map['word_bold'] as String,
+      p_word: map['p_word'] as String,
       means: map['means'] as String,
     );
   }

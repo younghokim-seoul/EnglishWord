@@ -30,7 +30,7 @@ abstract interface class WordRepository {
 
   Future<DeepWordWithWords?> getDeepWordsByWord(String word);
 
-  Future<List<WordExampleView>> getExamples(String word, int seq);
+  Future<List<WordExampleView>> getExamples(String word, String seq);
 
   Future<List<MyWordEntity>> getMyWord();
 }
