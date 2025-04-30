@@ -11,11 +11,9 @@ class SplashPage extends BasePage with SplashEvent {
 
   @override
   void onInit(WidgetRef ref) => initData(ref);
-
   @override
   Widget buildPage(BuildContext context, WidgetRef ref) {
-    logger.d("SplashPage buildPage");
-    return Center(child: Image.asset(Assets.splash, fit: BoxFit.cover));
+    return Center(child: Image.asset(Assets.splash, width: 233, height: 233));
   }
 
   @override
