@@ -3,7 +3,6 @@ import 'package:englishword/core/database/domain/sub_word_with_words.dart';
 import 'package:englishword/core/database/domain/word_example_view.dart';
 import 'package:englishword/core/database/domain/word_with_words.dart';
 import 'package:englishword/core/database/entity/my_word_entity.dart';
-import 'package:englishword/core/database/entity/word_example_detail.dart';
 import 'package:englishword/core/database/entity/word_example_entity.dart';
 import 'package:englishword/core/database/entity/word_info_entity.dart';
 import 'package:englishword/core/database/entity/word_mean_entity.dart';
@@ -15,7 +14,7 @@ abstract interface class WordRepository {
 
   Future<void> insertWordMeans(List<WordMeanEntity> wordMeanList);
 
-  Future<void> insertMyWord(String word, String bold);
+  Future<void> insertMyWord(String word, String p_word);
 
   Future<void> deleteMyWord(String word, String bold);
 

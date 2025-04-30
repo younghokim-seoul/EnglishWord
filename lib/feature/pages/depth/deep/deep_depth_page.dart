@@ -2,7 +2,6 @@ import 'dart:ui';
 
 import 'package:bounce_tapper/bounce_tapper.dart';
 import 'package:englishword/core/audio/audio_manager.dart';
-import 'package:englishword/core/logger/app_logger.dart';
 import 'package:englishword/core/style/app_color.dart';
 import 'package:englishword/core/style/app_text_style.dart';
 import 'package:englishword/feature/base/base_page.dart';
@@ -46,7 +45,10 @@ class DeepDepthPage extends BasePage with DeepDepthState, DeepDepthEvent {
                       children: [
                         Padding(
                           padding: const EdgeInsets.symmetric(vertical: 8),
-                          child: FavoriteIconButton(model: item),
+                          child: FavoriteIconButton(
+                            pWord: arg(ref).depth3,
+                            model: item,
+                          ),
                         ),
                         const Gap(16),
                         Expanded(
@@ -90,9 +92,7 @@ class DeepDepthPage extends BasePage with DeepDepthState, DeepDepthEvent {
                                         padding: EdgeInsets.symmetric(
                                           vertical: 2,
                                         ),
-                                        child: Icon(
-                                          CupertinoIcons.speaker_3,
-                                        ),
+                                        child: Icon(CupertinoIcons.speaker_3),
                                       ),
                                     ),
                                     const Spacer(),

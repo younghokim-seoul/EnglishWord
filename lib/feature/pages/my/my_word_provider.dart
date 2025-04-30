@@ -28,7 +28,7 @@ class MyWordProvider extends _$MyWordProvider {
   Future<void> deleteMyWord(MyWordEntity model) async {
     await ref
         .read(favoriteProviderProvider.notifier)
-        .toggleFavorite(model.word, model.word_bold);
+        .toggleFavorite(model.word, "", model.word_bold);
     final removedModel = state.myWordList..remove(model);
     state = state.copyWith(myWordList: [...removedModel]);
   }

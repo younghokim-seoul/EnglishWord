@@ -13,14 +13,14 @@ class FavoriteProvider extends _$FavoriteProvider {
     return [];
   }
 
-  Future<void> toggleFavorite(String word,String bold) async {
+  Future<void> toggleFavorite(String word,String p_word,String bold) async {
     final repository = getIt<WordRepository>();
     if (state.contains(word)) {
       await repository.deleteMyWord(word,bold);
       final removedModel = state..remove(word);
       state = [...removedModel];
     } else {
-      await repository.insertMyWord(word,bold);
+      await repository.insertMyWord(word,p_word);
       state = [...state, word];
     }
   }

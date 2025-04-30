@@ -8,10 +8,12 @@ class FavoriteIconButton extends ConsumerWidget {
   const FavoriteIconButton({
     super.key,
     this.size = 24,
+    required this.pWord,
     required this.model,
   });
 
 
+  final String pWord;
   final DeepWordInfo model;
   final double size;
 
@@ -27,7 +29,7 @@ class FavoriteIconButton extends ConsumerWidget {
 
     return GestureDetector(
       onTap: () {
-        ref.watch(favoriteProviderProvider.notifier).toggleFavorite(model.word,model.bold);
+        ref.watch(favoriteProviderProvider.notifier).toggleFavorite(model.word,pWord,model.bold);
       },
       child: AnimatedCrossFade(
         firstCurve: Curves.easeIn,

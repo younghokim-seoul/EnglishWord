@@ -1,7 +1,6 @@
 import 'package:englishword/core/database/domain/deep_word_with_words.dart';
 import 'package:englishword/core/database/domain/sub_word_with_words.dart';
 import 'package:englishword/core/database/domain/word_example_view.dart';
-import 'package:englishword/core/database/domain/word_mean_with_info.dart';
 import 'package:englishword/core/database/domain/word_with_words.dart';
 import 'package:englishword/core/database/entity/my_word_entity.dart';
 import 'package:englishword/core/database/entity/word_example_detail.dart';
@@ -39,19 +38,18 @@ abstract class WordDAO {
   @Query('SELECT * FROM DeepWordWithWords WHERE word = :word')
   Future<DeepWordWithWords?> getDeepWordsByWord(String word);
 
-  @Query('SELECT * FROM WordMeanWithInfo WHERE word = :word')
-  Future<WordMeanWithInfo?> getWordMean(String word);
 
   @Query('SELECT * FROM WordExampleView WHERE word = :word')
   Future<List<WordExampleView>> getExamples(String word);
 
   @Query('''
   INSERT INTO my_word (word, word_bold, means)
-  SELECT * FROM MyWordInsertView
+  SELECT word, word_bold, means
+  FROM MyWordInsertView
   WHERE word = :word
-    AND word_bold = :bold
+    AND p_word = :pWord
 ''')
-  Future<void> insertMyWord(String word, String bold);
+  Future<void> insertMyWord(String word, String pWord);
 
   @Query('''
   DELETE FROM my_word

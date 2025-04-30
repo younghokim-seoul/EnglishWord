@@ -1,16 +1,16 @@
 import 'dart:convert';
 
 import 'package:englishword/core/extension/list_extension.dart';
-import 'package:floor/floor.dart';
 import 'package:englishword/core/logger/app_logger.dart';
+import 'package:floor/floor.dart';
 
 @DatabaseView('''
   SELECT t1.word,
          '[' || GROUP_CONCAT(
-           '{"word":"'||t2.word||
-           '","bold":"'||t2.bold||
-           '","chk":"'||t2.chk||
-           '","means":'||t2.means||
+           '{"word":"' || t2.word ||
+           '","bold":"' || t2.bold ||
+           '","chk":"' || t2.chk ||
+           '","means":' || t2.means ||
            '}'
          ) || ']' AS words
   FROM (
@@ -37,7 +37,7 @@ import 'package:englishword/core/logger/app_logger.dart';
                '","bold":"' || wm.bold || '"}'
              ) || ']' AS means
       FROM word_info wi
-      INNER JOIN word_mean wm ON wm.word = wi.word
+      INNER JOIN word_mean wm ON wm.word = wi.word AND wm.p_word = wi.p_word
       WHERE wi.depth = 4
       GROUP BY wm.word
     ) wm ON wm.word = wi.word

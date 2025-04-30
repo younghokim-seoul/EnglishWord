@@ -17,8 +17,8 @@ class WordRepositoryImpl implements WordRepository {
   WordRepositoryImpl({required this.wordDAO});
 
   @override
-  Future<void> insertMyWord(String word,String bold) =>
-      wordDAO.insertMyWord(word,bold);
+  Future<void> insertMyWord(String word,String p_word) =>
+      wordDAO.insertMyWord(word,p_word);
 
   @override
   Future<void> insertWordExamples(List<WordExampleEntity> wordExampleList) =>

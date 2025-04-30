@@ -1,22 +1,23 @@
-
 import 'package:floor/floor.dart';
 
 @Entity(tableName: 'word_mean')
 class WordMeanEntity {
-
   @PrimaryKey(autoGenerate: true)
   final int? id;
 
   final int seq;
   final String word;
+  final String p_word;
   final String mean;
   final String bold;
 
   //<editor-fold desc="Data Methods">
+
   const WordMeanEntity({
     this.id,
     required this.seq,
     required this.word,
+    required this.p_word,
     required this.mean,
     required this.bold,
   });
@@ -29,6 +30,7 @@ class WordMeanEntity {
           id == other.id &&
           seq == other.seq &&
           word == other.word &&
+          p_word == other.p_word &&
           mean == other.mean &&
           bold == other.bold);
 
@@ -37,6 +39,7 @@ class WordMeanEntity {
       id.hashCode ^
       seq.hashCode ^
       word.hashCode ^
+      p_word.hashCode ^
       mean.hashCode ^
       bold.hashCode;
 
@@ -46,6 +49,7 @@ class WordMeanEntity {
         ' id: $id,' +
         ' seq: $seq,' +
         ' word: $word,' +
+        ' p_word: $p_word,' +
         ' mean: $mean,' +
         ' bold: $bold,' +
         '}';
@@ -55,6 +59,7 @@ class WordMeanEntity {
     int? id,
     int? seq,
     String? word,
+    String? p_word,
     String? mean,
     String? bold,
   }) {
@@ -62,6 +67,7 @@ class WordMeanEntity {
       id: id ?? this.id,
       seq: seq ?? this.seq,
       word: word ?? this.word,
+      p_word: p_word ?? this.p_word,
       mean: mean ?? this.mean,
       bold: bold ?? this.bold,
     );
@@ -72,6 +78,7 @@ class WordMeanEntity {
       'id': this.id,
       'seq': this.seq,
       'word': this.word,
+      'p_word': this.p_word,
       'mean': this.mean,
       'bold': this.bold,
     };
@@ -79,9 +86,9 @@ class WordMeanEntity {
 
   factory WordMeanEntity.fromMap(Map<String, dynamic> map) {
     return WordMeanEntity(
-      id: map.containsKey('id') ? map['id'] as int : null,
       seq: map['seq'] as int,
       word: map['word'] as String,
+      p_word: map['p_word'] as String,
       mean: map['mean'] as String,
       bold: map['bold'] as String,
     );
