@@ -37,6 +37,7 @@ class ExampleDepthPage extends BasePage with ExampleDepthState {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   BounceTapper(
+                    enable: false,
                     onTap: () async {
                       await AudioManager.intance.play(item.word);
                     },
@@ -71,7 +72,7 @@ class ExampleDepthPage extends BasePage with ExampleDepthState {
                     padding: const EdgeInsets.symmetric(horizontal: 8),
                     child: Text(
                       item.transfer,
-                      style: AppTextStyle.headline3.copyWith(
+                      style: AppTextStyle.body3.copyWith(
                         color: AppColor.depthBold,
                       ),
                     ),

@@ -11,7 +11,7 @@ class WordExampleEntity {
   final int seq;
   final String word;
   final String example;
-
+  final String p_word;
   final String transfer;
 
   //<editor-fold desc="Data Methods">
@@ -20,6 +20,7 @@ class WordExampleEntity {
     required this.seq,
     required this.word,
     required this.example,
+    required this.p_word,
     required this.transfer,
   });
 
@@ -32,6 +33,7 @@ class WordExampleEntity {
           seq == other.seq &&
           word == other.word &&
           example == other.example &&
+          p_word == other.p_word &&
           transfer == other.transfer);
 
   @override
@@ -40,6 +42,7 @@ class WordExampleEntity {
       seq.hashCode ^
       word.hashCode ^
       example.hashCode ^
+      p_word.hashCode ^
       transfer.hashCode;
 
   @override
@@ -49,6 +52,7 @@ class WordExampleEntity {
         ' seq: $seq,' +
         ' word: $word,' +
         ' example: $example,' +
+        ' p_word: $p_word,' +
         ' transfer: $transfer,' +
         '}';
   }
@@ -58,6 +62,7 @@ class WordExampleEntity {
     int? seq,
     String? word,
     String? example,
+    String? p_word,
     String? transfer,
   }) {
     return WordExampleEntity(
@@ -65,6 +70,7 @@ class WordExampleEntity {
       seq: seq ?? this.seq,
       word: word ?? this.word,
       example: example ?? this.example,
+      p_word: p_word ?? this.p_word,
       transfer: transfer ?? this.transfer,
     );
   }
@@ -75,16 +81,17 @@ class WordExampleEntity {
       'seq': this.seq,
       'word': this.word,
       'example': this.example,
+      'p_word': this.p_word,
       'transfer': this.transfer,
     };
   }
 
   factory WordExampleEntity.fromMap(Map<String, dynamic> map) {
     return WordExampleEntity(
-      id: map.containsKey('id') ? map['id'] as int : null,
       seq: map['seq'] as int,
       word: map['word'] as String,
       example: map['example'] as String,
+      p_word: map['p_word'] as String,
       transfer: map['transfer'] as String,
     );
   }

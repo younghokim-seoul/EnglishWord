@@ -1,15 +1,16 @@
 import 'package:floor/floor.dart';
 
 @DatabaseView('''
-  SELECT we.word,
+  SELECT DISTINCT
+         we.word,
          wm.seq,
          wm.mean,
          we.example,
          we.transfer,
          wi.p_word AS p_word
   FROM word_info wi
-  INNER JOIN word_mean wm ON wm.word = wi.word
-  INNER JOIN word_example we ON we.word = wm.word AND we.seq = wm.seq
+  INNER JOIN word_mean wm ON wm.word = wi.word AND wm.p_word = wi.p_word
+  INNER JOIN word_example we ON we.word = wm.word AND we.p_word = wm.p_word AND we.seq = wm.seq
   WHERE wi.depth = 4
 ''')
 class WordExampleView {

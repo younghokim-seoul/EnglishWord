@@ -1,5 +1,4 @@
-{
-"word_example": [
+[
 	{
 		"word" : "human",
 		"p_word" : "human",
@@ -573,13 +572,6 @@
 		"seq" : 1,
 		"example" : "May I come in, milady?",
 		"transfer" : "들어가도 될까요?마님?"
-	},
-	{
-		"word" : "sex",
-		"p_word" : "sex",
-		"seq" : 1,
-		"example" : "Why did you decide to undergo this sex change operation?",
-		"transfer" : "성전환 수술을 결심하게 된 계기는 무엇인가요? "
 	},
 	{
 		"word" : "gender",
@@ -13776,4 +13768,4 @@
 		"example" : "She is stroking down her hair.",
 		"transfer" : "그녀는 머리칼을 쓰다듬어 내리고 있다. "
 	}
-]}
+]

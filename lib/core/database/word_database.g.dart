@@ -98,7 +98,7 @@ class _$WordDatabase extends WordDatabase {
         await database.execute(
             'CREATE TABLE IF NOT EXISTS `word_mean` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `seq` INTEGER NOT NULL, `word` TEXT NOT NULL, `p_word` TEXT NOT NULL, `mean` TEXT NOT NULL, `bold` TEXT NOT NULL)');
         await database.execute(
-            'CREATE TABLE IF NOT EXISTS `word_example` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `seq` INTEGER NOT NULL, `word` TEXT NOT NULL, `example` TEXT NOT NULL, `transfer` TEXT NOT NULL)');
+            'CREATE TABLE IF NOT EXISTS `word_example` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `seq` INTEGER NOT NULL, `word` TEXT NOT NULL, `example` TEXT NOT NULL, `p_word` TEXT NOT NULL, `transfer` TEXT NOT NULL)');
         await database.execute(
             'CREATE TABLE IF NOT EXISTS `my_word` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `word` TEXT NOT NULL, `word_bold` TEXT NOT NULL, `p_word` TEXT NOT NULL, `means` TEXT NOT NULL)');
         await database.execute(
@@ -111,7 +111,7 @@ class _$WordDatabase extends WordDatabase {
         await database.execute(
             'CREATE VIEW IF NOT EXISTS `DeepWordWithWords` AS   SELECT t1.word,\n         \'[\' || GROUP_CONCAT(\n           \'{\"word\":\"\' || t2.word ||\n           \'\",\"bold\":\"\' || t2.bold ||\n           \'\",\"chk\":\"\' || t2.chk ||\n           \'\",\"means\":\' || t2.means || \'}\'\n         ) || \']\' AS words\n  FROM (\n    SELECT word\n    FROM word_info\n    WHERE depth = 3\n  ) t1\n  INNER JOIN (\n    SELECT wi.word,\n           wi.bold,\n           wi.p_word,\n           CASE WHEN mw.word IS NOT NULL THEN \'Y\' ELSE \'N\' END AS chk,\n           wm.means\n    FROM word_info wi\n    INNER JOIN (\n      SELECT wm.word,\n             wm.p_word,\n             \'[\' || GROUP_CONCAT(DISTINCT\n               \'{\"seq\":\"\' || wm.seq || \'\",\"mean\":\"\' || wm.mean || \'\",\"bold\":\"\' || wm.bold || \'\"}\'\n             ) || \']\' AS means\n      FROM word_info wi\n      INNER JOIN word_mean wm ON wm.word = wi.word AND wm.p_word = wi.p_word\n      WHERE wi.depth = 4\n      GROUP BY wm.word, wm.p_word\n    ) wm ON wm.word = wi.word AND wm.p_word = wi.p_word\n    LEFT OUTER JOIN my_word mw ON mw.word = wi.word\n    WHERE wi.depth = 4\n  ) t2 ON t2.p_word = t1.word\n  GROUP BY t1.word\n');
         await database.execute(
-            'CREATE VIEW IF NOT EXISTS `WordExampleView` AS   SELECT we.word,\n         wm.seq,\n         wm.mean,\n         we.example,\n         we.transfer,\n         wi.p_word AS p_word\n  FROM word_info wi\n  INNER JOIN word_mean wm ON wm.word = wi.word\n  INNER JOIN word_example we ON we.word = wm.word AND we.seq = wm.seq\n  WHERE wi.depth = 4\n');
+            'CREATE VIEW IF NOT EXISTS `WordExampleView` AS   SELECT DISTINCT\n         we.word,\n         wm.seq,\n         wm.mean,\n         we.example,\n         we.transfer,\n         wi.p_word AS p_word\n  FROM word_info wi\n  INNER JOIN word_mean wm ON wm.word = wi.word AND wm.p_word = wi.p_word\n  INNER JOIN word_example we ON we.word = wm.word AND we.p_word = wm.p_word AND we.seq = wm.seq\n  WHERE wi.depth = 4\n');
         await database.execute(
             'CREATE VIEW IF NOT EXISTS `MyWordInsertView` AS   SELECT DISTINCT\n         w4.word AS word,\n         w4.p_word AS p_word,\n         w4.bold AS word_bold,\n         wm.means AS means\n  FROM word_info w1\n  INNER JOIN word_info w2 ON w2.p_word = w1.word AND w2.depth = 2\n  INNER JOIN word_info w3 ON w3.p_word = w2.word AND w3.depth = 3\n  INNER JOIN word_info w4 ON w4.p_word = w3.word AND w4.depth = 4\n  INNER JOIN (\n    SELECT wm.word,\n           wm.p_word,\n           \'[\' || GROUP_CONCAT(\n             \'{\"seq\":\"\' || wm.seq || \'\",\"mean\":\"\' || wm.mean || \'\",\"bold\":\"\' || wm.bold || \'\"}\'\n           ) || \']\' AS means\n    FROM word_info wi\n    INNER JOIN word_mean wm ON wm.word = wi.word AND wm.p_word = wi.p_word\n    WHERE wi.depth = 4\n    GROUP BY wm.word, wm.p_word\n  ) wm ON wm.word = w4.word AND wm.p_word = w4.p_word\n  WHERE w1.depth = 1\n');
 
@@ -150,6 +150,7 @@ class _$WordDAO extends WordDAO {
                   'seq': item.seq,
                   'word': item.word,
                   'example': item.example,
+                  'p_word': item.p_word,
                   'transfer': item.transfer
                 }),
         _wordMeanEntityInsertionAdapter = InsertionAdapter(
